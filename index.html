@@ -1,1618 +1,517 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>شرکت نرم‌افزاری میثاق | Misagh Software Engineering</title>
-<meta name="description" content="شرکت نرم‌افزاری میثاق — طراحی و توسعه سامانه‌های اختصاصی، نرم‌افزارهای تحت وب، ویندوزی و موبایل برای کسب‌وکارها.">
-<meta name="keywords" content="نرم‌افزار,مهندسی نرم‌افزار,توسعه وب,اپلیکیشن موبایل,سامانه سازمانی,ERP,CRM,میثاق">
-<meta name="robots" content="index,follow">
-<meta name="author" content="Misagh Software Engineering">
-<link rel="canonical" href="https://misagh-eng.com/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="شرکت نرم‌افزاری میثاق">
-<meta property="og:description" content="طراحی و توسعه سامانه‌های اختصاصی، نرم‌افزارهای تحت وب، ویندوزی و موبایل">
-<meta property="og:url" content="https://misagh-eng.com/">
-<meta property="og:site_name" content="Misagh Software Engineering">
-<meta property="og:locale" content="fa_IR">
-<meta property="og:locale:alternate" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Misagh Software Engineering">
-<meta name="twitter:description" content="Engineering Reliable Software Solutions">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
-<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23f97316' width='100' height='100' rx='20'/><text x='50' y='68' text-anchor='middle' fill='white' font-size='50' font-family='sans-serif'>M</text></svg>">
-<link rel="manifest" href="manifest.json">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"شرکت نرم‌افزاری میثاق","alternateName":"Misagh Software Engineering","legalName":"شرکت دانش پردازان میثاق","url":"https://misagh-eng.com","description":"شرکت نرم‌افزاری میثاق با تمرکز بر مهندسی نرم‌افزار، طراحی و توسعه سامانه‌های اختصاصی","foundingDate":"2020","founder":{"@type":"Person","name":"محمدحسین خدابخشی"},"address":{"@type":"PostalAddress","streetAddress":"میدان انقلاب، نبش خیابان ۱۲ فروردین، ساختمان پارک علم و فناوری دانشگاه تهران، پلاک ۱۳۰۲، طبقه سوم، واحد ۳۰۱","addressLocality":"تهران","addressCountry":"IR"},"contactPoint":{"@type":"ContactPoint","telephone":"+989198417510","contactType":"customer service","availableLanguage":["Persian","English"]},"sameAs":["https://t.me/mhkh110"]}
+<!doctype html>
+<html lang="fa" dir="rtl">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260706-05-21290da"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شرکت نرم‌افزاری میثاق | Misagh Software Engineering</title>
+  <meta name="description" content="شرکت نرم‌افزاری میثاق؛ مهندسی، طراحی و توسعه سامانه‌های اختصاصی، نرم‌افزارهای ویندوزی، راهکارهای تحت وب و اپلیکیشن‌های موبایل.">
+  <meta name="keywords" content="مهندسی نرم‌افزار, میثاق, توسعه نرم‌افزار, سامانه سازمانی, اپلیکیشن موبایل, Misagh Software Engineering">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Misagh Software Engineering | شرکت نرم‌افزاری میثاق">
+  <meta property="og:description" content="مهندسی نرم‌افزار برای تصمیم‌های هوشمند.">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Misagh Software Engineering","alternateName":"شرکت دانش پردازان میثاق","email":"info@dpm-eng.com","telephone":"+989198417510","address":{"@type":"PostalAddress","addressLocality":"Tehran","addressCountry":"IR"}}
 </script>
-<style>
-/* ===== CSS VARIABLES ===== */
-:root {
-  --bg-primary: #050816;
-  --bg-secondary: #091229;
-  --glass: rgba(255,255,255,0.06);
-  --glass-hover: rgba(255,255,255,0.1);
-  --glass-strong: rgba(255,255,255,0.12);
-  --border: rgba(255,255,255,0.1);
-  --border-hover: rgba(255,255,255,0.2);
-  --text-primary: #f0f0f5;
-  --text-secondary: rgba(240,240,245,0.65);
-  --text-muted: rgba(240,240,245,0.4);
-  --accent-orange: #f97316;
-  --accent-orange-light: #fb923c;
-  --accent-orange-dark: #ea580c;
-  --accent-blue: #3b82f6;
-  --accent-purple: #a855f7;
-  --accent-cyan: #06b6d4;
-  --accent-emerald: #10b981;
-  --accent-red: #ef4444;
-  --accent-amber: #f59e0b;
-  --shadow-soft: 0 4px 30px rgba(0,0,0,0.3);
-  --shadow-glow-orange: 0 0 40px rgba(249,115,22,0.15);
-  --shadow-glow-blue: 0 0 40px rgba(59,130,246,0.15);
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
-  --blur: 20px;
-  --blur-strong: 40px;
-  --font-fa: 'Vazirmatn', sans-serif;
-  --font-en: 'Inter', sans-serif;
-  --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --transition-fast: 0.2s ease;
-  --transition-slow: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --navbar-h: 72px;
-  --container: 1280px;
-}
-
-/* ===== LIGHT THEME ===== */
-[data-theme="light"] {
-  --bg-primary: #f0f2f8;
-  --bg-secondary: #e4e8f2;
-  --glass: rgba(255,255,255,0.55);
-  --glass-hover: rgba(255,255,255,0.7);
-  --glass-strong: rgba(255,255,255,0.8);
-  --border: rgba(0,0,0,0.07);
-  --border-hover: rgba(0,0,0,0.13);
-  --text-primary: #0f172a;
-  --text-secondary: rgba(15,23,42,0.6);
-  --text-muted: rgba(15,23,42,0.35);
-  --shadow-soft: 0 4px 30px rgba(0,0,0,0.08);
-  --shadow-glow-orange: 0 0 40px rgba(249,115,22,0.1);
-  --shadow-glow-blue: 0 0 40px rgba(59,130,246,0.08);
-}
-
-/* ===== RESET ===== */
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; font-size:16px; -webkit-text-size-adjust:100%; }
-body {
-  font-family: var(--font-fa);
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  overflow-x: hidden;
-  line-height: 1.7;
-  transition: background var(--transition-slow), color var(--transition);
-}
-[lang="en"] body, [data-lang="en"] body { font-family: var(--font-en); }
-a { color:inherit; text-decoration:none; }
-ul, ol { list-style:none; }
-img { max-width:100%; display:block; }
-button { border:none; background:none; cursor:pointer; font-family:inherit; color:inherit; }
-input, textarea { font-family:inherit; border:none; outline:none; background:none; color:inherit; }
-
-/* ===== BASE ===== */
-.container { max-width:var(--container); margin:0 auto; padding:0 24px; }
-section { padding: 100px 0; position:relative; }
-.glass-card {
-  background: var(--glass);
-  backdrop-filter: blur(var(--blur));
-  -webkit-backdrop-filter: blur(var(--blur));
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  transition: all var(--transition);
-}
-.glass-card:hover {
-  background: var(--glass-hover);
-  border-color: var(--border-hover);
-  box-shadow: var(--shadow-soft);
-}
-.section-header { text-align:center; margin-bottom:64px; }
-.section-title {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 800;
-  margin-bottom: 12px;
-  letter-spacing: -0.02em;
-}
-.section-subtitle {
-  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
-  color: var(--text-secondary);
-  font-weight: 400;
-}
-.section-subtitle-en {
-  font-family: var(--font-en);
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-top: 4px;
-}
-.accent-text { color: var(--accent-orange); }
-.accent-blue { color: var(--accent-blue); }
-.accent-purple { color: var(--accent-purple); }
-.accent-cyan { color: var(--accent-cyan); }
-
-/* Section Divider */
-.section-divider {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border), transparent);
-  margin: 0;
-  border: none;
-}
-
-/* ===== LOADING SCREEN ===== */
-#loading-screen {
-  position:fixed; inset:0; z-index:10000;
-  background: var(--bg-primary);
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-#loading-screen.hidden { opacity:0; visibility:hidden; pointer-events:none; }
-.loader-logo {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: 8px;
-  opacity:0; animation: fadeInUp 0.6s 0.2s forwards;
-}
-.loader-subtitle {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 40px;
-  opacity:0; animation: fadeInUp 0.6s 0.4s forwards;
-}
-.loader-aurora {
-  width:120px; height:120px; border-radius:50%;
-  background: radial-gradient(circle, rgba(249,115,22,0.15), rgba(59,130,246,0.1), transparent 70%);
-  animation: auroraPulse 2s ease-in-out infinite;
-  margin-bottom: 40px;
-  opacity:0; animation: fadeInUp 0.6s 0.1s forwards, auroraPulse 2s 0.5s ease-in-out infinite;
-  position: relative;
-}
-.loader-aurora::after {
-  content:''; position:absolute; inset:20px; border-radius:50%;
-  border: 2px solid rgba(249,115,22,0.3);
-  animation: spin 3s linear infinite;
-}
-.loader-bar {
-  width:200px; height:2px; background:var(--border); border-radius:2px; overflow:hidden;
-  opacity:0; animation: fadeInUp 0.6s 0.5s forwards;
-}
-.loader-bar-fill {
-  height:100%; width:0; border-radius:2px;
-  background: linear-gradient(90deg, var(--accent-orange), var(--accent-blue));
-  transition: width 0.1s linear;
-}
-
-/* ===== CUSTOM CURSOR ===== */
-.cursor-dot {
-  position:fixed; width:6px; height:6px; border-radius:50%;
-  background: var(--accent-orange); pointer-events:none; z-index:9999;
-  transition: transform 0.1s ease;
-  mix-blend-mode: difference;
-}
-.cursor-ring {
-  position:fixed; width:36px; height:36px; border-radius:50%;
-  border: 1.5px solid rgba(249,115,22,0.4); pointer-events:none; z-index:9998;
-  transition: transform 0.25s ease, width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
-  transform: translate(-50%, -50%);
-}
-.cursor-ring.hover {
-  width:52px; height:52px;
-  border-color: rgba(249,115,22,0.7);
-  background: rgba(249,115,22,0.05);
-}
-.cursor-glow {
-  position:fixed; width:300px; height:300px; border-radius:50%;
-  background: radial-gradient(circle, rgba(249,115,22,0.04), transparent 70%);
-  pointer-events:none; z-index:1;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s;
-}
-
-/* ===== BACKGROUND CANVAS ===== */
-#bg-canvas {
-  position:fixed; inset:0; z-index:0; pointer-events:none;
-}
-.aurora-layer {
-  position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden;
-}
-.aurora-blob {
-  position:absolute; border-radius:50%; filter:blur(80px); opacity:0.12;
-  animation: auroraFloat 20s ease-in-out infinite;
-}
-.aurora-blob:nth-child(1) {
-  width:600px; height:600px; top:-10%; right:-10%;
-  background: var(--accent-orange);
-  animation-delay: 0s;
-}
-.aurora-blob:nth-child(2) {
-  width:500px; height:500px; bottom:-10%; left:-5%;
-  background: var(--accent-blue);
-  animation-delay: -7s;
-  animation-duration: 25s;
-}
-.aurora-blob:nth-child(3) {
-  width:400px; height:400px; top:40%; left:30%;
-  background: var(--accent-purple);
-  animation-delay: -14s;
-  animation-duration: 22s;
-  opacity:0.07;
-}
-[data-theme="light"] .aurora-blob { opacity:0.06; }
-
-/* ===== NAVBAR ===== */
-#navbar {
-  position:fixed; top:0; left:0; right:0; z-index:1000;
-  height:var(--navbar-h);
-  display:flex; align-items:center; justify-content:center;
-  transition: all var(--transition);
-  padding: 0 24px;
-}
-#navbar.scrolled {
-  background: var(--glass);
-  backdrop-filter: blur(var(--blur-strong));
-  -webkit-backdrop-filter: blur(var(--blur-strong));
-  border-bottom: 1px solid var(--border);
-  box-shadow: 0 1px 20px rgba(0,0,0,0.15);
-  height: 60px;
-}
-.nav-inner {
-  max-width:var(--container); width:100%;
-  display:flex; align-items:center; justify-content:space-between;
-}
-.nav-brand { display:flex; align-items:center; gap:12px; cursor:pointer; }
-.nav-logo {
-  width:38px; height:38px; border-radius:var(--radius-sm);
-  background: linear-gradient(135deg, var(--accent-orange), var(--accent-orange-dark));
-  display:flex; align-items:center; justify-content:center;
-  font-weight:900; font-size:1.1rem; color:#fff;
-  box-shadow: 0 2px 12px rgba(249,115,22,0.3);
-  transition: transform var(--transition-fast);
-}
-.nav-brand:hover .nav-logo { transform:scale(1.05); }
-.nav-brand-text h1 { font-size:0.95rem; font-weight:700; line-height:1.2; }
-.nav-brand-text span { font-size:0.65rem; color:var(--text-muted); display:block; }
-.nav-links { display:flex; align-items:center; gap:4px; }
-.nav-link {
-  padding:8px 14px; border-radius:var(--radius-sm);
-  font-size:0.85rem; font-weight:500; color:var(--text-secondary);
-  transition: all var(--transition-fast); position:relative;
-}
-.nav-link:hover, .nav-link.active { color:var(--text-primary); }
-.nav-link.active::after {
-  content:''; position:absolute; bottom:2px; left:50%; transform:translateX(-50%);
-  width:16px; height:2px; border-radius:2px;
-  background: var(--accent-orange);
-}
-.nav-controls { display:flex; align-items:center; gap:8px; }
-.nav-btn {
-  width:36px; height:36px; border-radius:var(--radius-sm);
-  display:flex; align-items:center; justify-content:center;
-  color:var(--text-secondary); transition:all var(--transition-fast);
-  background:transparent;
-}
-.nav-btn:hover { color:var(--text-primary); background:var(--glass); }
-.nav-btn svg { width:18px; height:18px; }
-.mobile-menu-btn { display:none; width:40px; height:40px; border-radius:var(--radius-sm); flex-direction:column; align-items:center; justify-content:center; gap:5px; }
-.mobile-menu-btn span { display:block; width:20px; height:2px; background:var(--text-primary); border-radius:2px; transition:all var(--transition); }
-.mobile-menu-btn.open span:nth-child(1) { transform:rotate(45deg) translate(5px,5px); }
-.mobile-menu-btn.open span:nth-child(2) { opacity:0; }
-.mobile-menu-btn.open span:nth-child(3) { transform:rotate(-45deg) translate(5px,-5px); }
-
-/* ===== MOBILE MENU ===== */
-#mobile-menu {
-  position:fixed; inset:0; z-index:999;
-  background: var(--bg-primary);
-  backdrop-filter: blur(var(--blur-strong));
-  -webkit-backdrop-filter: blur(var(--blur-strong));
-  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
-  opacity:0; visibility:hidden; transition:all var(--transition);
-}
-#mobile-menu.open { opacity:1; visibility:visible; }
-#mobile-menu .nav-link { font-size:1.3rem; padding:14px 24px; }
-#mobile-menu .nav-controls { margin-top:32px; }
-
-/* ===== HERO ===== */
-#hero {
-  min-height:100vh; display:flex; align-items:center;
-  position:relative; padding-top:var(--navbar-h);
-  overflow:hidden;
-}
-.hero-inner {
-  display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;
-  position:relative; z-index:2;
-}
-.hero-text { max-width:580px; }
-.hero-badge {
-  display:inline-flex; align-items:center; gap:8px;
-  padding:6px 16px; border-radius:100px;
-  background:var(--glass); border:1px solid var(--border);
-  font-size:0.75rem; color:var(--text-secondary);
-  margin-bottom:24px;
-}
-.hero-badge-dot { width:6px; height:6px; border-radius:50%; background:var(--accent-emerald); animation:pulse 2s infinite; }
-.hero-title {
-  font-size:clamp(1.6rem,3.5vw,2.6rem);
-  font-weight:800; line-height:1.3;
-  margin-bottom:12px;
-}
-.hero-title-highlight {
-  display:block; font-size:clamp(2rem,4.5vw,3.2rem);
-  background:linear-gradient(135deg, var(--accent-orange), var(--accent-orange-light));
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.hero-tagline {
-  font-size:1.1rem; color:var(--accent-blue);
-  font-weight:600; margin-bottom:20px;
-  line-height:1.6;
-}
-.hero-desc {
-  font-size:0.92rem; color:var(--text-secondary);
-  line-height:1.8; margin-bottom:36px; max-width:480px;
-}
-.hero-btns { display:flex; gap:14px; flex-wrap:wrap; }
-.btn-primary {
-  padding:14px 32px; border-radius:var(--radius-md);
-  background:linear-gradient(135deg, var(--accent-orange), var(--accent-orange-dark));
-  color:#fff; font-weight:600; font-size:0.9rem;
-  box-shadow: var(--shadow-glow-orange);
-  transition:all var(--transition);
-  position:relative; overflow:hidden;
-}
-.btn-primary::before {
-  content:''; position:absolute; inset:0;
-  background:linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
-  opacity:0; transition:opacity var(--transition-fast);
-}
-.btn-primary:hover { transform:translateY(-2px); box-shadow:0 0 50px rgba(249,115,22,0.3); }
-.btn-primary:hover::before { opacity:1; }
-.btn-secondary {
-  padding:14px 32px; border-radius:var(--radius-md);
-  background:transparent; border:1px solid var(--border);
-  color:var(--text-primary); font-weight:500; font-size:0.9rem;
-  transition:all var(--transition);
-}
-.btn-secondary:hover { border-color:var(--accent-orange); color:var(--accent-orange); background:rgba(249,115,22,0.05); }
-.hero-visual { display:flex; align-items:center; justify-content:center; position:relative; }
-.hero-sphere {
-  width:380px; height:380px; position:relative;
-}
-.sphere-core {
-  position:absolute; inset:60px; border-radius:50%;
-  background:radial-gradient(circle at 35% 35%, rgba(249,115,22,0.25), rgba(59,130,246,0.15), rgba(168,85,247,0.1));
-  border:1px solid rgba(249,115,22,0.2);
-  box-shadow: 0 0 80px rgba(249,115,22,0.1), inset 0 0 60px rgba(59,130,246,0.05);
-  animation: floatSphere 6s ease-in-out infinite;
-}
-.sphere-ring {
-  position:absolute; border-radius:50%;
-  border:1px solid rgba(255,255,255,0.06);
-}
-.sphere-ring:nth-child(2) { inset:20px; animation: spin 20s linear infinite; border-color:rgba(249,115,22,0.1); }
-.sphere-ring:nth-child(3) { inset:0; animation: spin 30s linear infinite reverse; border-color:rgba(59,130,246,0.08); }
-.sphere-ring:nth-child(4) { inset:40px; animation: spin 25s linear infinite; border-color:rgba(168,85,247,0.06); }
-.sphere-dot {
-  position:absolute; width:6px; height:6px; border-radius:50%;
-  background:var(--accent-orange); box-shadow:0 0 10px var(--accent-orange);
-}
-.sphere-dot:nth-child(5) { top:58px; right:60px; animation:floatDot 4s ease-in-out infinite; }
-.sphere-dot:nth-child(6) { bottom:80px; left:40px; background:var(--accent-blue); box-shadow:0 0 10px var(--accent-blue); animation:floatDot 5s 1s ease-in-out infinite; }
-.sphere-dot:nth-child(7) { top:50%; left:10px; background:var(--accent-cyan); box-shadow:0 0 10px var(--accent-cyan); animation:floatDot 4.5s 0.5s ease-in-out infinite; }
-.scroll-indicator {
-  position:absolute; bottom:32px; left:50%; transform:translateX(-50%);
-  display:flex; flex-direction:column; align-items:center; gap:8px;
-  color:var(--text-muted); font-size:0.7rem;
-  animation: fadeInUp 1s 2.5s both;
-}
-.scroll-mouse {
-  width:22px; height:34px; border-radius:11px;
-  border:1.5px solid var(--text-muted);
-  position:relative;
-}
-.scroll-mouse::after {
-  content:''; position:absolute; top:6px; left:50%; transform:translateX(-50%);
-  width:3px; height:8px; border-radius:2px; background:var(--text-muted);
-  animation: scrollWheel 2s ease-in-out infinite;
-}
-
-/* ===== TECHNOLOGIES ===== */
-#technologies { padding:80px 0; }
-.tech-grid {
-  display:flex; flex-wrap:wrap; justify-content:center; gap:12px;
-  max-width:900px; margin:0 auto;
-}
-.tech-chip {
-  padding:10px 20px; border-radius:100px;
-  background:var(--glass); border:1px solid var(--border);
-  font-size:0.82rem; font-weight:500; color:var(--text-secondary);
-  transition:all var(--transition);
-  backdrop-filter:blur(10px);
-  font-family:var(--font-en);
-  cursor:default;
-}
-.tech-chip:hover {
-  background:var(--glass-hover); border-color:var(--border-hover);
-  color:var(--text-primary); transform:translateY(-2px);
-  box-shadow:var(--shadow-soft);
-}
-
-/* ===== ABOUT ===== */
-#about { position:relative; }
-.about-content { display:grid; grid-template-columns:1.2fr 1fr; gap:48px; align-items:start; }
-.about-text p { color:var(--text-secondary); font-size:0.95rem; line-height:1.9; margin-bottom:16px; }
-.about-cards { display:flex; flex-direction:column; gap:16px; }
-.about-card {
-  padding:24px; border-radius:var(--radius-md);
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(var(--blur));
-  transition:all var(--transition);
-}
-.about-card:hover { border-color:var(--border-hover); transform:translateX(-4px); }
-[dir="ltr"] .about-card:hover { transform:translateX(4px); }
-.about-card-icon {
-  width:40px; height:40px; border-radius:var(--radius-sm);
-  display:flex; align-items:center; justify-content:center;
-  margin-bottom:12px; font-size:1.1rem;
-}
-.about-card h3 { font-size:1rem; font-weight:700; margin-bottom:6px; }
-.about-card p { font-size:0.82rem; color:var(--text-secondary); line-height:1.7; }
-
-/* ===== SERVICES ===== */
-#services { position:relative; }
-.services-grid {
-  display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
-  gap:20px;
-}
-.service-card {
-  padding:32px 28px; border-radius:var(--radius-lg);
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(var(--blur));
-  transition:all var(--transition);
-  position:relative; overflow:hidden;
-}
-.service-card::before {
-  content:''; position:absolute; top:0; right:0; left:0; height:2px;
-  background:linear-gradient(90deg, transparent, var(--accent-orange), transparent);
-  opacity:0; transition:opacity var(--transition);
-}
-.service-card:hover {
-  background:var(--glass-hover); border-color:var(--border-hover);
-  transform:translateY(-4px);
-  box-shadow: var(--shadow-soft), var(--shadow-glow-orange);
-}
-.service-card:hover::before { opacity:1; }
-.service-icon {
-  width:48px; height:48px; border-radius:var(--radius-md);
-  display:flex; align-items:center; justify-content:center;
-  margin-bottom:20px; font-size:1.3rem;
-  background:rgba(249,115,22,0.08); color:var(--accent-orange);
-  border:1px solid rgba(249,115,22,0.15);
-  transition:all var(--transition);
-}
-.service-card:hover .service-icon { background:rgba(249,115,22,0.15); transform:scale(1.05); }
-.service-card h3 { font-size:1.05rem; font-weight:700; margin-bottom:8px; }
-.service-card p { font-size:0.83rem; color:var(--text-secondary); line-height:1.7; }
-
-/* ===== PORTFOLIO ===== */
-#portfolio { position:relative; }
-.portfolio-toolbar {
-  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
-  gap:16px; margin-bottom:40px;
-}
-.portfolio-filters {
-  display:flex; flex-wrap:wrap; gap:8px;
-}
-.filter-btn {
-  padding:8px 18px; border-radius:100px;
-  font-size:0.8rem; font-weight:500; color:var(--text-secondary);
-  background:var(--glass); border:1px solid var(--border);
-  transition:all var(--transition-fast);
-}
-.filter-btn:hover { color:var(--text-primary); border-color:var(--border-hover); }
-.filter-btn.active {
-  background:linear-gradient(135deg, var(--accent-orange), var(--accent-orange-dark));
-  color:#fff; border-color:transparent;
-  box-shadow:var(--shadow-glow-orange);
-}
-.portfolio-search {
-  position:relative;
-}
-.portfolio-search input {
-  padding:8px 16px 8px 36px; border-radius:100px;
-  background:var(--glass); border:1px solid var(--border);
-  font-size:0.82rem; color:var(--text-primary);
-  width:220px; transition:all var(--transition);
-  backdrop-filter:blur(10px);
-}
-[dir="rtl"] .portfolio-search input { padding:8px 36px 8px 16px; }
-.portfolio-search input:focus { border-color:var(--accent-orange); width:280px; }
-.portfolio-search input::placeholder { color:var(--text-muted); }
-.portfolio-search svg {
-  position:absolute; top:50%; transform:translateY(-50%);
-  width:16px; height:16px; color:var(--text-muted);
-  left:12px;
-}
-[dir="rtl"] .portfolio-search svg { left:auto; right:12px; }
-.portfolio-grid {
-  display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
-  gap:24px;
-}
-.project-card {
-  border-radius:var(--radius-lg); overflow:hidden;
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(var(--blur));
-  transition:all var(--transition);
-  cursor:pointer;
-}
-.project-card:hover {
-  border-color:var(--border-hover);
-  transform:translateY(-6px);
-  box-shadow:var(--shadow-soft);
-}
-.project-cover {
-  position:relative; overflow:hidden;
-  height:200px;
-}
-.project-cover img { width:100%; height:100%; object-fit:cover; transition:transform var(--transition-slow); }
-.project-card:hover .project-cover img { transform:scale(1.05); }
-.project-cover-overlay {
-  position:absolute; inset:0;
-  background:linear-gradient(to top, rgba(5,8,22,0.8), transparent);
-}
-.project-category-badge {
-  position:absolute; top:14px; right:14px;
-  padding:4px 12px; border-radius:100px;
-  background:rgba(249,115,22,0.9); color:#fff;
-  font-size:0.7rem; font-weight:600;
-  backdrop-filter:blur(10px);
-}
-[dir="ltr"] .project-category-badge { right:auto; left:14px; }
-.project-info { padding:20px; }
-.project-info h3 { font-size:1rem; font-weight:700; margin-bottom:8px; }
-.project-info p { font-size:0.8rem; color:var(--text-secondary); line-height:1.6; margin-bottom:14px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
-.project-techs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
-.project-tech {
-  padding:3px 10px; border-radius:100px;
-  background:var(--glass); border:1px solid var(--border);
-  font-size:0.68rem; font-family:var(--font-en); color:var(--text-muted);
-}
-.project-actions { display:flex; gap:8px; }
-.project-btn {
-  padding:7px 16px; border-radius:var(--radius-sm);
-  font-size:0.78rem; font-weight:500;
-  transition:all var(--transition-fast);
-}
-.project-btn-primary {
-  background:rgba(249,115,22,0.12); color:var(--accent-orange);
-  border:1px solid rgba(249,115,22,0.2);
-}
-.project-btn-primary:hover { background:rgba(249,115,22,0.2); }
-.project-btn-ghost {
-  color:var(--text-muted); border:1px solid var(--border);
-}
-.project-btn-ghost:hover { color:var(--text-primary); border-color:var(--border-hover); }
-.portfolio-empty {
-  grid-column:1/-1; text-align:center; padding:80px 20px;
-  color:var(--text-muted);
-}
-.portfolio-empty-icon { font-size:3rem; margin-bottom:16px; opacity:0.3; }
-
-/* ===== PHILOSOPHY ===== */
-#philosophy { position:relative; }
-.philosophy-grid {
-  display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
-  gap:20px;
-}
-.philosophy-card {
-  padding:32px 28px; border-radius:var(--radius-lg);
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(var(--blur));
-  text-align:center; transition:all var(--transition);
-}
-.philosophy-card:hover {
-  transform:translateY(-4px);
-  border-color:var(--border-hover);
-  box-shadow:var(--shadow-soft);
-}
-.philosophy-num {
-  font-family:var(--font-en); font-size:2.5rem; font-weight:900;
-  background:linear-gradient(135deg, var(--accent-orange), var(--accent-blue));
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-  background-clip:text; margin-bottom:16px; line-height:1;
-}
-.philosophy-card h3 { font-size:1.05rem; font-weight:700; margin-bottom:10px; }
-.philosophy-card p { font-size:0.82rem; color:var(--text-secondary); line-height:1.7; }
-
-/* ===== FOUNDER ===== */
-#founder { position:relative; }
-.founder-card {
-  max-width:800px; margin:0 auto;
-  padding:48px; border-radius:var(--radius-xl);
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(var(--blur));
-  display:grid; grid-template-columns:200px 1fr; gap:40px; align-items:start;
-}
-.founder-avatar {
-  width:200px; height:200px; border-radius:var(--radius-lg);
-  background:linear-gradient(135deg, var(--bg-secondary), rgba(249,115,22,0.1));
-  border:2px solid var(--border);
-  display:flex; align-items:center; justify-content:center;
-  font-size:4rem; color:var(--accent-orange); position:relative; overflow:hidden;
-}
-.founder-avatar::after {
-  content:''; position:absolute; inset:0;
-  background:linear-gradient(135deg, transparent 40%, rgba(249,115,22,0.08));
-}
-.founder-info h3 { font-size:1.3rem; font-weight:800; margin-bottom:4px; }
-.founder-role {
-  font-family:var(--font-en); font-size:0.82rem; color:var(--accent-orange);
-  margin-bottom:16px; letter-spacing:0.02em;
-}
-.founder-bio { font-size:0.88rem; color:var(--text-secondary); line-height:1.9; margin-bottom:20px; }
-.founder-skills { display:flex; flex-wrap:wrap; gap:8px; }
-.founder-skill {
-  padding:5px 14px; border-radius:100px;
-  background:var(--glass); border:1px solid var(--border);
-  font-size:0.75rem; color:var(--text-muted);
-}
-
-/* ===== CONTACT ===== */
-#contact { position:relative; }
-.contact-grid {
-  display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start;
-}
-.contact-info { display:flex; flex-direction:column; gap:16px; }
-.contact-card {
-  padding:20px 24px; border-radius:var(--radius-md);
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(var(--blur));
-  display:flex; align-items:center; gap:16px;
-  transition:all var(--transition);
-}
-.contact-card:hover { border-color:var(--border-hover); transform:translateX(-4px); }
-[dir="ltr"] .contact-card:hover { transform:translateX(4px); }
-.contact-card-icon {
-  width:44px; height:44px; border-radius:var(--radius-sm);
-  display:flex; align-items:center; justify-content:center;
-  background:rgba(249,115,22,0.08); color:var(--accent-orange);
-  flex-shrink:0;
-}
-.contact-card-icon svg { width:20px; height:20px; }
-.contact-card-text h4 { font-size:0.85rem; font-weight:600; margin-bottom:2px; }
-.contact-card-text p { font-size:0.78rem; color:var(--text-secondary); line-height:1.6; direction:ltr; text-align:right; }
-[dir="ltr"] .contact-card-text p { text-align:left; direction:ltr; }
-.contact-map {
-  border-radius:var(--radius-lg); overflow:hidden;
-  border:1px solid var(--border);
-  height:400px;
-  position:relative;
-}
-.contact-map iframe { width:100%; height:100%; border:none; filter:grayscale(0.6) brightness(0.7) contrast(1.1); }
-[data-theme="light"] .contact-map iframe { filter:grayscale(0.3) brightness(1) contrast(0.95); }
-
-/* ===== FOOTER ===== */
-#footer {
-  padding:60px 0 30px; position:relative;
-  border-top:1px solid var(--border);
-}
-.footer-inner {
-  display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:40px;
-  margin-bottom:40px;
-}
-.footer-brand h3 { font-size:1.1rem; font-weight:700; margin-bottom:4px; }
-.footer-brand p { font-size:0.72rem; color:var(--text-muted); margin-bottom:16px; }
-.footer-legal { font-size:0.72rem; color:var(--text-muted); line-height:1.7; }
-.footer-col h4 { font-size:0.85rem; font-weight:700; margin-bottom:16px; }
-.footer-col a {
-  display:block; font-size:0.8rem; color:var(--text-secondary);
-  padding:4px 0; transition:color var(--transition-fast);
-}
-.footer-col a:hover { color:var(--accent-orange); }
-.footer-social { display:flex; gap:10px; margin-top:16px; }
-.footer-social a {
-  width:36px; height:36px; border-radius:var(--radius-sm);
-  background:var(--glass); border:1px solid var(--border);
-  display:flex; align-items:center; justify-content:center;
-  transition:all var(--transition-fast);
-}
-.footer-social a:hover { border-color:var(--accent-orange); color:var(--accent-orange); }
-.footer-social svg { width:16px; height:16px; }
-.footer-bottom {
-  display:flex; align-items:center; justify-content:space-between;
-  padding-top:24px; border-top:1px solid var(--border);
-  font-size:0.75rem; color:var(--text-muted);
-}
-.footer-bottom-links { display:flex; gap:16px; }
-.footer-bottom-links a { transition:color var(--transition-fast); }
-.footer-bottom-links a:hover { color:var(--accent-orange); }
-
-/* ===== FLOATING CONTACT ===== */
-#floating-contact {
-  position:fixed; bottom:28px; left:28px; z-index:900;
-}
-[dir="ltr"] #floating-contact { left:auto; right:28px; }
-.fc-toggle {
-  width:56px; height:56px; border-radius:50%;
-  background:linear-gradient(135deg, var(--accent-orange), var(--accent-orange-dark));
-  color:#fff; display:flex; align-items:center; justify-content:center;
-  box-shadow:0 4px 20px rgba(249,115,22,0.4);
-  transition:all var(--transition);
-  position:relative; z-index:2;
-}
-.fc-toggle svg { width:24px; height:24px; transition:transform var(--transition); }
-#floating-contact.open .fc-toggle { transform:rotate(45deg); }
-.fc-menu {
-  position:absolute; bottom:70px; left:0;
-  display:flex; flex-direction:column; gap:10px;
-  opacity:0; visibility:hidden; transform:translateY(10px);
-  transition:all var(--transition);
-}
-[dir="ltr"] .fc-menu { left:auto; right:0; }
-#floating-contact.open .fc-menu { opacity:1; visibility:visible; transform:translateY(0); }
-.fc-item {
-  display:flex; align-items:center; gap:10px; flex-direction:row-reverse;
-  white-space:nowrap;
-}
-[dir="ltr"] .fc-item { flex-direction:row; }
-.fc-item-label {
-  padding:6px 14px; border-radius:var(--radius-sm);
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(var(--blur));
-  font-size:0.78rem; color:var(--text-secondary);
-}
-.fc-item-btn {
-  width:42px; height:42px; border-radius:50%;
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(var(--blur));
-  display:flex; align-items:center; justify-content:center;
-  transition:all var(--transition-fast);
-}
-.fc-item-btn:hover { border-color:var(--accent-orange); color:var(--accent-orange); }
-.fc-item-btn svg { width:18px; height:18px; }
-
-/* ===== PROJECT MODAL ===== */
-#project-modal {
-  position:fixed; inset:0; z-index:2000;
-  display:flex; align-items:center; justify-content:center;
-  opacity:0; visibility:hidden; transition:all var(--transition);
-}
-#project-modal.open { opacity:1; visibility:visible; }
-.modal-backdrop {
-  position:absolute; inset:0;
-  background:rgba(5,8,22,0.85);
-  backdrop-filter:blur(8px);
-}
-[data-theme="light"] .modal-backdrop { background:rgba(240,242,248,0.9); }
-.modal-content {
-  position:relative; z-index:1;
-  width:90%; max-width:900px; max-height:85vh;
-  background:var(--bg-secondary);
-  border:1px solid var(--border);
-  border-radius:var(--radius-xl);
-  overflow-y:auto; overflow-x:hidden;
-  transform:translateY(30px) scale(0.96);
-  transition:transform var(--transition);
-}
-#project-modal.open .modal-content { transform:translateY(0) scale(1); }
-.modal-close {
-  position:sticky; top:16px; float:left;
-  width:40px; height:40px; border-radius:50%;
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(10px);
-  display:flex; align-items:center; justify-content:center;
-  z-index:10; margin:16px 16px 0 0;
-  transition:all var(--transition-fast);
-}
-[dir="ltr"] .modal-close { float:right; margin:16px 0 0 16px; }
-.modal-close:hover { background:rgba(239,68,68,0.15); color:var(--accent-red); border-color:var(--accent-red); }
-.modal-cover { width:100%; height:300px; object-fit:cover; }
-.modal-body { padding:32px; }
-.modal-body h2 { font-size:1.5rem; font-weight:800; margin-bottom:8px; }
-.modal-meta { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:24px; }
-.modal-badge {
-  padding:4px 14px; border-radius:100px;
-  background:rgba(249,115,22,0.1); border:1px solid rgba(249,115,22,0.2);
-  font-size:0.75rem; color:var(--accent-orange);
-}
-.modal-section { margin-bottom:24px; }
-.modal-section h4 {
-  font-size:0.95rem; font-weight:700; margin-bottom:10px;
-  padding-bottom:8px; border-bottom:1px solid var(--border);
-}
-.modal-section p { font-size:0.88rem; color:var(--text-secondary); line-height:1.9; }
-.modal-techs { display:flex; flex-wrap:wrap; gap:8px; }
-.modal-tech {
-  padding:5px 14px; border-radius:100px;
-  background:var(--glass); border:1px solid var(--border);
-  font-size:0.78rem; font-family:var(--font-en);
-}
-.modal-gallery {
-  display:grid; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr));
-  gap:12px; margin-top:12px;
-}
-.modal-gallery img {
-  width:100%; height:120px; object-fit:cover;
-  border-radius:var(--radius-sm); border:1px solid var(--border);
-}
-.modal-links { display:flex; gap:12px; margin-top:24px; }
-
-/* ===== BACK TO TOP ===== */
-#back-to-top {
-  position:fixed; bottom:28px; right:28px; z-index:800;
-  width:44px; height:44px; border-radius:50%;
-  background:var(--glass); border:1px solid var(--border);
-  backdrop-filter:blur(10px);
-  display:flex; align-items:center; justify-content:center;
-  opacity:0; visibility:hidden; transform:translateY(10px);
-  transition:all var(--transition);
-}
-[dir="ltr"] #back-to-top { right:auto; left:28px; }
-#back-to-top.visible { opacity:1; visibility:visible; transform:translateY(0); }
-#back-to-top:hover { border-color:var(--accent-orange); color:var(--accent-orange); }
-#back-to-top svg { width:18px; height:18px; }
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
-@keyframes auroraPulse { 0%,100%{transform:scale(1);opacity:0.8} 50%{transform:scale(1.15);opacity:1} }
-@keyframes spin { to{transform:rotate(360deg)} }
-@keyframes floatSphere { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-15px)} }
-@keyframes floatDot { 0%,100%{transform:translate(0,0)} 50%{transform:translate(5px,-8px)} }
-@keyframes scrollWheel { 0%{opacity:1;transform:translateX(-50%) translateY(0)} 100%{opacity:0;transform:translateX(-50%) translateY(12px)} }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-@keyframes auroraFloat {
-  0%,100%{transform:translate(0,0) scale(1)}
-  25%{transform:translate(30px,-40px) scale(1.05)}
-  50%{transform:translate(-20px,20px) scale(0.95)}
-  75%{transform:translate(40px,30px) scale(1.02)}
-}
-
-/* Scroll Reveal */
-.reveal {
-  opacity:0; transform:translateY(30px);
-  transition:opacity 0.7s ease, transform 0.7s ease;
-}
-.reveal.visible { opacity:1; transform:translateY(0); }
-.reveal-delay-1 { transition-delay:0.1s; }
-.reveal-delay-2 { transition-delay:0.2s; }
-.reveal-delay-3 { transition-delay:0.3s; }
-.reveal-delay-4 { transition-delay:0.4s; }
-.reveal-delay-5 { transition-delay:0.5s; }
-
-/* ===== RESPONSIVE ===== */
-@media (max-width:1024px) {
-  .hero-inner { grid-template-columns:1fr; text-align:center; }
-  .hero-text { max-width:100%; margin:0 auto; }
-  .hero-desc { max-width:100%; }
-  .hero-btns { justify-content:center; }
-  .hero-visual { display:none; }
-  .about-content { grid-template-columns:1fr; }
-  .founder-card { grid-template-columns:1fr; text-align:center; }
-  .founder-avatar { margin:0 auto; }
-  .founder-skills { justify-content:center; }
-  .contact-grid { grid-template-columns:1fr; }
-  .footer-inner { grid-template-columns:1fr 1fr; }
-}
-@media (max-width:768px) {
-  section { padding:70px 0; }
-  .nav-links { display:none; }
-  .mobile-menu-btn { display:flex; }
-  .portfolio-grid { grid-template-columns:1fr; }
-  .services-grid { grid-template-columns:1fr; }
-  .philosophy-grid { grid-template-columns:1fr 1fr; }
-  .footer-inner { grid-template-columns:1fr; gap:32px; }
-  .footer-bottom { flex-direction:column; gap:12px; text-align:center; }
-  .modal-body { padding:20px; }
-  .founder-card { padding:28px; }
-  .portfolio-search input { width:160px; }
-  .portfolio-search input:focus { width:200px; }
-  .portfolio-toolbar { flex-direction:column; align-items:stretch; }
-  .portfolio-filters { overflow-x:auto; flex-wrap:nowrap; padding-bottom:4px; }
-  .filter-btn { flex-shrink:0; }
-  .cursor-dot, .cursor-ring, .cursor-glow { display:none !important; }
-}
-@media (max-width:480px) {
-  .container { padding:0 16px; }
-  .hero-title { font-size:1.4rem; }
-  .hero-title-highlight { font-size:1.8rem; }
-  .section-title { font-size:1.5rem; }
-  .philosophy-grid { grid-template-columns:1fr; }
-  .btn-primary, .btn-secondary { padding:12px 24px; font-size:0.85rem; width:100%; text-align:center; }
-  .hero-btns { flex-direction:column; }
-}
-
-/* ===== ACCESSIBILITY ===== */
-@media (prefers-reduced-motion:reduce) {
-  *, *::before, *::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
-  .reveal { opacity:1; transform:none; }
-}
-:focus-visible {
-  outline:2px solid var(--accent-orange);
-  outline-offset:2px;
-  border-radius:4px;
-}
-.sr-only {
-  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
-  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar { width:6px; }
-::-webkit-scrollbar-track { background:var(--bg-primary); }
-::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
-::-webkit-scrollbar-thumb:hover { background:var(--border-hover); }
-
-/* Selection */
-::selection { background:rgba(249,115,22,0.25); color:var(--text-primary); }
+  <style>
+  :root{
+    --bg:#050816; --bg2:#091229;
+    --glass:rgba(255,255,255,0.08); --border:rgba(255,255,255,0.15);
+    --orange:#ff7a18; --orange2:#ff9f45;
+    --blue:#3b82f6; --purple:#a855f7; --cyan:#22d3ee; --emerald:#10b981;
+    --text:#e8ecf6; --muted:#9aa6c4;
+  }
+  html.light{
+    --bg:#eaf1ff; --bg2:#f6f9ff;
+    --glass:rgba(255,255,255,0.55); --border:rgba(20,40,90,0.12);
+    --text:#0f1b3a; --muted:#4b5a80;
+  }
+  *{scroll-behavior:smooth;}
+  body{font-family:'Vazirmatn','Inter',sans-serif; background:var(--bg); color:var(--text); overflow-x:hidden;}
+  html[dir="ltr"] body{font-family:'Inter','Vazirmatn',sans-serif;}
+  .glass{background:var(--glass); border:1px solid var(--border); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);}
+  .aurora{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden;}
+  .blob{position:absolute; border-radius:50%; filter:blur(90px); opacity:.5; animation:drift 22s ease-in-out infinite;}
+  .b1{width:46vw;height:46vw;background:radial-gradient(circle,var(--orange),transparent 65%);top:-10%;right:-8%;}
+  .b2{width:50vw;height:50vw;background:radial-gradient(circle,var(--blue),transparent 65%);top:30%;left:-12%;animation-delay:-6s;}
+  .b3{width:40vw;height:40vw;background:radial-gradient(circle,var(--purple),transparent 65%);bottom:-12%;right:20%;animation-delay:-12s;}
+  html.light .blob{opacity:.28;}
+  @keyframes drift{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(4%,6%) scale(1.1);}66%{transform:translate(-4%,-4%) scale(.95);}}
+  #stars{position:fixed;inset:0;z-index:0;pointer-events:none;}
+  .content{position:relative;z-index:2;}
+  #mouse-glow{position:fixed;width:400px;height:400px;border-radius:50%;pointer-events:none;z-index:1;
+    background:radial-gradient(circle,rgba(255,122,24,.10),transparent 60%);transform:translate(-50%,-50%);transition:opacity .4s;}
+  .reveal{opacity:0;transform:translateY(38px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+  .reveal.in{opacity:1;transform:none;}
+  .card-tilt{transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s;}
+  .card-tilt:hover{transform:translateY(-8px);box-shadow:0 30px 60px -20px rgba(255,122,24,.25);border-color:rgba(255,159,69,.4);}
+  .btn-mag{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .3s;}
+  .grad-orange{background:linear-gradient(120deg,var(--orange),var(--orange2));}
+  .glow-orange{box-shadow:0 10px 40px -8px rgba(255,122,24,.55);}
+  .sphere{position:relative;width:min(420px,80vw);aspect-ratio:1;margin:auto;}
+  .sphere .ring{position:absolute;inset:0;border:1px solid var(--border);border-radius:50%;animation:spin 18s linear infinite;}
+  .sphere .ring:nth-child(2){inset:12%;border-color:rgba(255,122,24,.4);animation-duration:26s;animation-direction:reverse;}
+  .sphere .ring:nth-child(3){inset:26%;border-color:rgba(59,130,246,.4);animation-duration:14s;}
+  .sphere .core{position:absolute;inset:36%;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--orange2),var(--orange) 40%,transparent 75%);filter:blur(2px);animation:pulse 5s ease-in-out infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  @keyframes pulse{0%,100%{transform:scale(1);opacity:.9;}50%{transform:scale(1.12);opacity:1;}}
+  .float{animation:fl 6s ease-in-out infinite;}
+  @keyframes fl{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+  .scroll-mouse{width:26px;height:44px;border:2px solid var(--border);border-radius:16px;position:relative;}
+  .scroll-mouse::after{content:'';position:absolute;top:8px;left:50%;width:4px;height:8px;background:var(--orange);border-radius:2px;transform:translateX(-50%);animation:sd 1.6s infinite;}
+  @keyframes sd{0%{opacity:0;top:8px;}40%{opacity:1;}80%{opacity:0;top:20px;}}
+  #loader{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .8s,visibility .8s;}
+  #loader.done{opacity:0;visibility:hidden;}
+  .loader-logo{width:76px;height:76px;border-radius:22px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:34px;color:#fff;animation:pulse 2.4s ease-in-out infinite;}
+  .loader-bar{width:220px;height:4px;border-radius:4px;background:var(--border);overflow:hidden;}
+  .loader-fill{height:100%;width:0;background:linear-gradient(90deg,var(--orange),var(--purple));animation:load 2s ease forwards;}
+  @keyframes load{to{width:100%;}}
+  .modal-wrap{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(5,8,22,.7);backdrop-filter:blur(10px);}
+  .modal-wrap.open{display:flex;animation:mf .4s ease;}
+  @keyframes mf{from{opacity:0;}to{opacity:1;}}
+  .nav-scrolled{box-shadow:0 12px 40px -12px rgba(0,0,0,.5);}
+  .tab-active{background:linear-gradient(120deg,var(--orange),var(--orange2));color:#fff;border-color:transparent;}
+  .link-u{position:relative;}
+  .link-u::after{content:'';position:absolute;bottom:-4px;right:0;width:0;height:2px;background:var(--orange);transition:width .3s;}
+  .link-u:hover::after{width:100%;}
+  ::-webkit-scrollbar{width:10px;}::-webkit-scrollbar-track{background:var(--bg2);}::-webkit-scrollbar-thumb{background:var(--orange);border-radius:8px;}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+  :focus-visible{outline:2px solid var(--orange);outline-offset:3px;}
 </style>
-</head>
-<body>
-
-<!-- Loading Screen -->
-<div id="loading-screen" role="status" aria-label="Loading">
-  <div class="loader-aurora"></div>
-  <div class="loader-logo" data-i18n="loader.title">شرکت نرم‌افزاری میثاق</div>
-  <div class="loader-subtitle" data-i18n="loader.subtitle">Software Engineering Company</div>
-  <div class="loader-bar"><div class="loader-bar-fill" id="loader-fill"></div></div>
-</div>
-
-<!-- Custom Cursor -->
-<div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
-<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
-<div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
-
-<!-- Background -->
-<canvas id="bg-canvas" aria-hidden="true"></canvas>
-<div class="aurora-layer" aria-hidden="true">
-  <div class="aurora-blob"></div>
-  <div class="aurora-blob"></div>
-  <div class="aurora-blob"></div>
-</div>
-
-<!-- Navbar -->
-<nav id="navbar" role="navigation" aria-label="Main navigation">
-  <div class="nav-inner">
-    <div class="nav-brand" onclick="scrollToSection('hero')" tabindex="0" role="button" aria-label="Go to top">
-      <div class="nav-logo">M</div>
-      <div class="nav-brand-text">
-        <h1 data-i18n="brand.name">شرکت نرم‌افزاری میثاق</h1>
-        <span data-i18n="brand.sub">Software Engineering Company</span>
-      </div>
-    </div>
-    <div class="nav-links" role="menubar">
-      <a class="nav-link active" href="#hero" data-i18n="nav.home" role="menuitem">خانه</a>
-      <a class="nav-link" href="#about" data-i18n="nav.about" role="menuitem">درباره ما</a>
-      <a class="nav-link" href="#services" data-i18n="nav.services" role="menuitem">خدمات</a>
-      <a class="nav-link" href="#portfolio" data-i18n="nav.portfolio" role="menuitem">نمونه‌کارها</a>
-      <a class="nav-link" href="#founder" data-i18n="nav.founder" role="menuitem">بنیان‌گذار</a>
-      <a class="nav-link" href="#contact" data-i18n="nav.contact" role="menuitem">تماس با ما</a>
-    </div>
-    <div class="nav-controls">
-      <button class="nav-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-        <svg id="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        <svg id="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-      <button class="nav-btn" id="lang-toggle" aria-label="Switch language" title="Switch language" style="font-family:var(--font-en);font-size:0.75rem;font-weight:700;width:auto;padding:0 10px;">EN</button>
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <script src="/_sdk/0179d719c431a79e.data_sdk.js" type="text/javascript" integrity="sha512-OsRvJkI5GkC3MJQcgotQYotpzrMSX415GiKKgvYdxQEEkzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
+  <script src="/_sdk/0b3af1c300e720aa.resizing_sdk.js" type="text/javascript" integrity="sha512-nX1P6oXZmEY5wCI2lUVg3BwKu1cr0yi+ZpXgZ0Yn90vkSwvpmyzBMvOyD6VLJUtBwFI2dSrw1b6OvORxSggw3w=="></script>
+ </head>
+ <body data-template-id="__page-root"><!-- Loading -->
+  <div id="loader" role="status" aria-label="در حال بارگذاری">
+   <div class="loader-logo grad-orange glow-orange" data-template-id="loader-logo"></div>
+   <div class="loader-bar">
+    <div class="loader-fill"></div>
+   </div>
+   <p class="text-sm" style="color:var(--muted)" data-template-id="loader-text"></p>
   </div>
-</nav>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
-  <a class="nav-link" href="#hero" data-i18n="nav.home" onclick="closeMobileMenu()">خانه</a>
-  <a class="nav-link" href="#about" data-i18n="nav.about" onclick="closeMobileMenu()">درباره ما</a>
-  <a class="nav-link" href="#services" data-i18n="nav.services" onclick="closeMobileMenu()">خدمات</a>
-  <a class="nav-link" href="#portfolio" data-i18n="nav.portfolio" onclick="closeMobileMenu()">نمونه‌کارها</a>
-  <a class="nav-link" href="#founder" data-i18n="nav.founder" onclick="closeMobileMenu()">بنیان‌گذار</a>
-  <a class="nav-link" href="#contact" data-i18n="nav.contact" onclick="closeMobileMenu()">تماس با ما</a>
-  <div class="nav-controls">
-    <button class="nav-btn" onclick="toggleTheme()" aria-label="Toggle theme">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-    </button>
-    <button class="nav-btn" onclick="toggleLanguage()" style="font-family:var(--font-en);font-size:0.75rem;font-weight:700;width:auto;padding:0 10px;" aria-label="Switch language">EN</button>
+  <div class="aurora">
+   <div class="blob b1"></div>
+   <div class="blob b2"></div>
+   <div class="blob b3"></div>
   </div>
-</div>
-
-<!-- Main Content -->
-<main id="main-content" style="position:relative;z-index:2;opacity:0;transition:opacity 0.6s ease;">
-
-  <!-- Hero -->
-  <section id="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <div class="hero-badge reveal">
-            <span class="hero-badge-dot"></span>
-            <span data-i18n="hero.badge">Misagh Software Engineering</span>
-          </div>
-          <h2 class="hero-title reveal reveal-delay-1">
-            <span data-i18n="hero.title">شرکت نرم‌افزاری میثاق</span>
-            <span class="hero-title-highlight" data-i18n="hero.highlight">طراحی آینده، مهندسی امروز</span>
-          </h2>
-          <p class="hero-tagline reveal reveal-delay-2" data-i18n="hero.tagline">مهندسی نرم‌افزار، برای تصمیم‌های هوشمند.</p>
-          <p class="hero-desc reveal reveal-delay-3" data-i18n="hero.desc">شرکت نرم‌افزاری میثاق با تمرکز بر مهندسی نرم‌افزار، طراحی و توسعه سامانه‌های اختصاصی، نرم‌افزارهای ویندوزی، راهکارهای تحت وب و اپلیکیشن‌های موبایل، راهکارهایی پایدار، توسعه‌پذیر و متناسب با نیاز کسب‌وکارها ارائه می‌دهد.</p>
-          <div class="hero-btns reveal reveal-delay-4">
-            <a href="#portfolio" class="btn-primary" data-i18n="hero.cta1">مشاهده نمونه‌کارها</a>
-            <a href="#contact" class="btn-secondary" data-i18n="hero.cta2">شروع همکاری</a>
-          </div>
+  <canvas id="stars"></canvas>
+  <div id="mouse-glow"></div>
+  <div class="content"><!-- Navbar -->
+   <header class="fixed top-3 left-0 right-0 z-50 px-4">
+    <nav class="glass rounded-2xl max-w-7xl mx-auto px-5 py-3 flex items-center justify-between transition-all" id="navbar" aria-label="ناوبری اصلی"><a href="#hero" class="flex items-center gap-3"> <span class="grad-orange w-10 h-10 rounded-xl flex items-center justify-center font-extrabold text-white text-lg">م</span> <span class="leading-tight"> <span class="block font-bold" data-template-id="nav-brand"></span> <span class="block text-xs" style="color:var(--muted)" data-template-id="nav-subtitle"></span> </span> </a>
+     <div class="hidden lg:flex items-center gap-6 text-sm"><a href="#hero" class="link-u canva-link" data-template-id="nav-home" data-en="Home"></a> <a href="#about" class="link-u canva-link" data-template-id="nav-about" data-en="About"></a> <a href="#services" class="link-u canva-link" data-template-id="nav-services" data-en="Solutions"></a> <a href="#portfolio" class="link-u canva-link" data-template-id="nav-portfolio" data-en="Portfolio"></a> <a href="#founder" class="link-u canva-link" data-template-id="nav-founder" data-en="Founder"></a> <a href="#contact" class="link-u canva-link" data-template-id="nav-contact" data-en="Contact"></a>
+     </div>
+     <div class="flex items-center gap-2"><button id="theme-btn" class="glass w-10 h-10 rounded-xl flex items-center justify-center btn-mag" aria-label="تغییر تم"><i data-lucide="moon"></i></button> <button id="lang-btn" class="glass px-3 h-10 rounded-xl text-sm font-semibold btn-mag" aria-label="تغییر زبان">EN</button> <button id="menu-btn" class="glass w-10 h-10 rounded-xl flex items-center justify-center lg:hidden" aria-label="منو"><i data-lucide="menu"></i></button>
+     </div>
+    </nav>
+   </header><!-- Mobile menu -->
+   <div id="mobile-menu" class="fixed inset-0 z-40 hidden flex-col items-center justify-center gap-7 text-2xl" style="background:rgba(5,8,22,.92);backdrop-filter:blur(16px)"><button id="menu-close" class="absolute top-6 left-6 glass w-11 h-11 rounded-xl flex items-center justify-center" aria-label="بستن"><i data-lucide="x"></i></button> <a href="#hero" class="m-link" data-en="Home" data-ref="nav-home">خانه</a> <a href="#about" class="m-link" data-en="About" data-ref="nav-about">درباره ما</a> <a href="#services" class="m-link" data-en="Solutions" data-ref="nav-services">خدمات</a> <a href="#portfolio" class="m-link" data-en="Portfolio" data-ref="nav-portfolio">نمونه‌کارها</a> <a href="#founder" class="m-link" data-en="Founder" data-ref="nav-founder">بنیان‌گذار</a> <a href="#contact" class="m-link" data-en="Contact" data-ref="nav-contact">تماس با ما</a>
+   </div>
+   <main class="w-full"><!-- Hero -->
+    <section id="hero" class="min-h-screen flex items-center pt-28 pb-16 px-6">
+     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center w-full">
+      <div class="reveal"><span class="glass inline-block px-4 py-1.5 rounded-full text-xs mb-6" data-template-id="hero-badge" data-en="Enterprise Software Engineering"></span>
+       <h1 class="font-extrabold leading-tight mb-4" data-template-id="hero-title" data-en="Misagh Software Engineering"></h1>
+       <h2 class="font-bold mb-6" style="color:var(--orange2)" data-template-id="hero-subtitle" data-en="Design the future, engineer it today."></h2>
+       <p class="mb-6 leading-8 max-w-xl" style="color:var(--muted)" data-template-id="hero-desc" data-en="Misagh Software Engineering focuses on software engineering, design and development of custom systems, Windows applications, web solutions and mobile apps — delivering stable, scalable solutions tailored to each business. We build software that grows with your business."></p>
+       <p class="font-semibold mb-8 leading-8" data-template-id="hero-tagline" data-en="Software engineering, for smart decisions."></p>
+       <div class="flex flex-wrap gap-4"><a href="#portfolio" class="grad-orange glow-orange btn-mag text-white px-7 py-3.5 rounded-xl font-semibold canva-button" data-template-id="hero-cta1" data-en="View Portfolio"></a> <a href="#contact" class="glass btn-mag px-7 py-3.5 rounded-xl font-semibold canva-button" data-template-id="hero-cta2" data-en="Start Collaboration"></a>
+       </div>
+      </div>
+      <div class="reveal flex justify-center">
+       <div class="sphere float">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="core"></div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <div class="flex flex-col items-center gap-2 -mt-6 mb-10 reveal">
+     <div class="scroll-mouse"></div><span class="text-xs" style="color:var(--muted)" data-template-id="scroll-hint" data-en="Scroll"></span>
+    </div><!-- Technologies -->
+    <section class="px-6 py-16">
+     <div class="max-w-7xl mx-auto">
+      <h2 class="text-center font-bold mb-10 reveal" data-template-id="tech-title" data-en="Trusted Technologies"></h2>
+      <div class="flex flex-wrap justify-center gap-3"><span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-1">PHP</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-2">Laravel</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-3">.NET</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-4">C#</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-5">Java</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-6">C++</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-7">Python</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-8">JavaScript</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-9">TypeScript</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-10">Flutter</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-11">Ionic</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-12">MySQL</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-13">SQL Server</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-14">REST API</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-15">WordPress</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-16">Docker</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-17">Linux</span> <span class="glass card-tilt px-5 py-2.5 rounded-xl text-sm reveal canva-tag" data-template-id="tech-18">Git</span>
+      </div>
+     </div>
+    </section><!-- About -->
+    <section id="about" class="px-6 py-20">
+     <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 reveal">
+       <h2 class="font-extrabold mb-2" data-template-id="about-title" data-en="About Misagh"></h2>
+       <p style="color:var(--orange2)" class="font-semibold" data-template-id="about-subtitle" data-en="Engineering Reliable Software"></p>
+      </div>
+      <div class="glass rounded-3xl p-8 md:p-12 reveal mb-10">
+       <p class="leading-9" style="color:var(--muted)" data-template-id="about-body" data-en="Misagh Software Engineering focuses on building professional software solutions for businesses and organizations, including enterprise systems, web applications, desktop software, mobile applications, custom software and digital platforms. Our approach is grounded in software architecture and long-term maintainability. The company operates under the registered legal entity Danesh Pardazan Misagh (شرکت دانش پردازان میثاق)."></p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card"><i data-lucide="target" class="mb-4" style="color:var(--orange2)"></i>
+        <h3 class="font-bold mb-2" data-template-id="about-c1-title" data-en="Mission"></h3>
+        <p class="text-sm leading-7" style="color:var(--muted)" data-template-id="about-c1-body" data-en="Develop reliable software."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card"><i data-lucide="eye" class="mb-4" style="color:var(--blue)"></i>
+        <h3 class="font-bold mb-2" data-template-id="about-c2-title" data-en="Vision"></h3>
+        <p class="text-sm leading-7" style="color:var(--muted)" data-template-id="about-c2-body" data-en="Become a trusted engineering partner."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card"><i data-lucide="gem" class="mb-4" style="color:var(--purple)"></i>
+        <h3 class="font-bold mb-2" data-template-id="about-c3-title" data-en="Values"></h3>
+        <p class="text-sm leading-7" style="color:var(--muted)" data-template-id="about-c3-body" data-en="Quality · Innovation · Security · Maintainability · Transparency"></p>
+       </div>
+      </div>
+     </div>
+    </section><!-- Services -->
+    <section id="services" class="px-6 py-20">
+     <div class="max-w-7xl mx-auto">
+      <h2 class="text-center font-extrabold mb-3 reveal" data-template-id="svc-title" data-en="Software Engineering Solutions"></h2>
+      <p class="text-center mb-12 reveal" style="color:var(--muted)" data-template-id="svc-subtitle" data-en="Engineering-grade solutions built for real business needs."></p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="code-2" class="mb-3" style="color:var(--orange2)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-1-t" data-en="Software Engineering"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-1-d" data-en="Robust engineering from architecture to delivery."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="settings-2" class="mb-3" style="color:var(--blue)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-2-t" data-en="Custom Systems Development"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-2-d" data-en="Tailored systems matched to your workflow."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="globe" class="mb-3" style="color:var(--cyan)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-3-t" data-en="Web Application Development"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-3-d" data-en="Scalable, secure web platforms."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="monitor" class="mb-3" style="color:var(--purple)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-4-t" data-en="Windows Software Development"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-4-d" data-en="Powerful native desktop applications."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="smartphone" class="mb-3" style="color:var(--orange2)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-5-t" data-en="Mobile App Design"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-5-d" data-en="Cross-platform apps that feel native."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="layout-template" class="mb-3" style="color:var(--blue)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-6-t" data-en="Software Architecture"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-6-d" data-en="Clean, maintainable system design."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="lightbulb" class="mb-3" style="color:var(--cyan)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-7-t" data-en="Technical Consulting"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-7-d" data-en="Guidance from experienced engineers."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="brain-circuit" class="mb-3" style="color:var(--purple)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-8-t" data-en="AI &amp; Automation"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-8-d" data-en="Intelligent automation of processes."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="building-2" class="mb-3" style="color:var(--orange2)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-9-t" data-en="Enterprise Systems"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-9-d" data-en="Systems built for organizational scale."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="rocket" class="mb-3" style="color:var(--blue)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-10-t" data-en="Digital Transformation"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-10-d" data-en="Modernize legacy processes end to end."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="plug" class="mb-3" style="color:var(--cyan)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-11-t" data-en="API Solutions"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-11-d" data-en="Reliable, documented integrations."></p>
+       </div>
+       <div class="glass card-tilt rounded-3xl p-7 reveal canva-card">
+        <i data-lucide="cloud" class="mb-3" style="color:var(--purple)"></i>
+        <h3 class="font-bold mb-1" data-template-id="svc-12-t" data-en="Cloud-ready Solutions"></h3>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="svc-12-d" data-en="Deployable, resilient cloud architectures."></p>
+       </div>
+      </div>
+     </div>
+    </section><!-- Portfolio -->
+    <section id="portfolio" class="px-6 py-20">
+     <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-8 reveal">
+       <h2 class="font-extrabold mb-2" data-template-id="pf-title" data-en="Portfolio"></h2>
+       <p style="color:var(--orange2)" class="font-semibold mb-2" data-template-id="pf-subtitle" data-en="Solutions we have crafted for businesses"></p>
+       <p style="color:var(--muted)" class="max-w-2xl mx-auto" data-template-id="pf-desc" data-en="A selection of software projects and solutions developed by Misagh Software Engineering across various domains."></p>
+      </div>
+      <div class="max-w-md mx-auto mb-6 reveal"><label for="pf-search" class="sr-only" data-template-id="pf-search-label" data-en="Search projects"></label>
+       <div class="glass rounded-xl flex items-center px-4"><i data-lucide="search" style="color:var(--muted)"></i> <input id="pf-search" type="text" class="bg-transparent w-full py-3 px-3 outline-none text-sm" data-template-id="pf-search" data-en="Search by name, technology or category">
+       </div>
+      </div>
+      <div id="pf-tabs" class="flex flex-wrap justify-center gap-2 mb-10 reveal text-sm"></div>
+      <div id="pf-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      <div id="pf-empty" class="hidden text-center py-16 reveal"><i data-lucide="loader" class="mx-auto mb-4" style="color:var(--orange2);width:40px;height:40px"></i>
+       <p style="color:var(--muted)" data-template-id="pf-empty-text" data-en="In development..."></p>
+      </div>
+     </div>
+    </section><!-- Founder -->
+    <section id="founder" class="px-6 py-20">
+     <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10 reveal">
+       <h2 class="font-extrabold mb-2" data-template-id="founder-title" data-en="Founder"></h2>
+       <p style="color:var(--orange2)" class="font-semibold" data-template-id="founder-subtitle" data-en="Founder &amp; Lead Software Engineer"></p>
+      </div>
+      <div class="glass rounded-3xl p-8 md:p-10 grid md:grid-cols-[220px_1fr] gap-8 items-center reveal"><img data-template-id="founder-photo" loading="lazy" class="canva-image w-full aspect-square object-cover rounded-3xl">
+       <div>
+        <h3 class="font-extrabold mb-1" data-template-id="founder-name" data-en="Mohammad Hossein Khodabakhshi"></h3>
+        <p class="mb-4" style="color:var(--orange2)" data-template-id="founder-role" data-en="Founder &amp; Lead Software Engineer"></p>
+        <p class="leading-8 mb-5" style="color:var(--muted)" data-template-id="founder-bio" data-en="Mohammad Hossein Khodabakhshi, founder of Misagh Software Engineering, works with a focus on designing and developing custom software, software architecture and delivering technological solutions — aiming to create stable, scalable, high-quality products."></p>
+        <div class="flex flex-wrap gap-2 mb-5"><span class="glass px-3 py-1.5 rounded-lg text-xs canva-tag" data-template-id="founder-f1" data-en="Software Engineering"></span> <span class="glass px-3 py-1.5 rounded-lg text-xs canva-tag" data-template-id="founder-f2" data-en="Enterprise Systems"></span> <span class="glass px-3 py-1.5 rounded-lg text-xs canva-tag" data-template-id="founder-f3" data-en="Desktop Applications"></span> <span class="glass px-3 py-1.5 rounded-lg text-xs canva-tag" data-template-id="founder-f4" data-en="Web Applications"></span> <span class="glass px-3 py-1.5 rounded-lg text-xs canva-tag" data-template-id="founder-f5" data-en="Mobile Apps"></span> <span class="glass px-3 py-1.5 rounded-lg text-xs canva-tag" data-template-id="founder-f6" data-en="Software Architecture"></span> <span class="glass px-3 py-1.5 rounded-lg text-xs canva-tag" data-template-id="founder-f7" data-en="WordPress Solutions"></span> <span class="glass px-3 py-1.5 rounded-lg text-xs canva-tag" data-template-id="founder-f8" data-en="Artificial Intelligence"></span>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-sphere">
-            <div class="sphere-ring"></div>
-            <div class="sphere-ring"></div>
-            <div class="sphere-ring"></div>
-            <div class="sphere-core"></div>
-            <div class="sphere-dot"></div>
-            <div class="sphere-dot"></div>
-            <div class="sphere-dot"></div>
-          </div>
+        <p class="text-2xl" style="font-family:'Vazirmatn';color:var(--orange2)" data-template-id="founder-sign" data-en="M.H. Khodabakhshi"></p>
+       </div>
+      </div>
+     </div>
+    </section><!-- Contact -->
+    <section id="contact" class="px-6 py-20">
+     <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 reveal">
+       <h2 class="font-extrabold mb-2" data-template-id="contact-title" data-en="Contact Misagh"></h2>
+       <p style="color:var(--muted)" class="max-w-2xl mx-auto" data-template-id="contact-subtitle" data-en="Reach out for consulting, collaboration and software project delivery."></p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"><a href="tel:09198417510" class="glass card-tilt rounded-2xl p-6 canva-card"><i data-lucide="phone" class="mb-3" style="color:var(--emerald)"></i><h3 class="font-bold mb-1" data-template-id="ct-phone-t" data-en="Phone"></h3><p style="color:var(--muted)" dir="ltr" data-template-id="ct-phone-v">09198417510</p></a> <a href="https://wa.me/989198417510" target="_blank" rel="noopener noreferrer" class="glass card-tilt rounded-2xl p-6 canva-card"><i data-lucide="message-circle" class="mb-3" style="color:var(--emerald)"></i><h3 class="font-bold mb-1" data-template-id="ct-wa-t" data-en="WhatsApp"></h3><p style="color:var(--muted)" dir="ltr" data-template-id="ct-wa-v">09198417510</p></a> <a href="https://t.me/mhkh110" target="_blank" rel="noopener noreferrer" class="glass card-tilt rounded-2xl p-6 canva-card"><i data-lucide="send" class="mb-3" style="color:var(--blue)"></i><h3 class="font-bold mb-1" data-template-id="ct-tg-t" data-en="Telegram"></h3><p style="color:var(--muted)" dir="ltr" data-template-id="ct-tg-v">@mhkh110</p></a> <a href="https://ble.ir/mhkh110" target="_blank" rel="noopener noreferrer" class="glass card-tilt rounded-2xl p-6 canva-card"><i data-lucide="message-square" class="mb-3" style="color:var(--purple)"></i><h3 class="font-bold mb-1" data-template-id="ct-bale-t" data-en="Bale"></h3><p style="color:var(--muted)" dir="ltr" data-template-id="ct-bale-v">@mhkh110</p></a> <a href="mailto:info@dpm-eng.com" class="glass card-tilt rounded-2xl p-6 canva-card"><i data-lucide="mail" class="mb-3" style="color:var(--orange2)"></i><h3 class="font-bold mb-1" data-template-id="ct-email-t" data-en="Email"></h3><p style="color:var(--muted)" dir="ltr" data-template-id="ct-email-v">info@dpm-eng.com</p></a>
+       <div class="glass card-tilt rounded-2xl p-6 canva-card">
+        <i data-lucide="clock" class="mb-3" style="color:var(--cyan)"></i>
+        <h3 class="font-bold mb-1" data-template-id="ct-hours-t" data-en="Working Hours"></h3>
+        <p style="color:var(--muted)" class="text-sm leading-7" data-template-id="ct-hours-v" data-en="Saturday to Wednesday, 9:00–20:00. Thursday: online support."></p>
+       </div>
+       <div class="glass card-tilt rounded-2xl p-6 sm:col-span-2 lg:col-span-2 canva-card">
+        <i data-lucide="map-pin" class="mb-3" style="color:var(--orange2)"></i>
+        <h3 class="font-bold mb-1" data-template-id="ct-addr-t" data-en="Address"></h3>
+        <p style="color:var(--muted)" class="text-sm leading-7" data-template-id="ct-addr-v" data-en="Tehran, Enghelab Square, corner of 12 Farvardin St., University of Tehran Science and Technology Park Building, No. 1302, 3rd Floor, Unit 301."></p>
+       </div><a href="https://www.google.com/maps/search/?api=1&amp;query=University+of+Tehran+Science+and+Technology+Park" target="_blank" rel="noopener noreferrer" class="glass card-tilt rounded-2xl p-6 flex flex-col justify-center items-center text-center canva-button"><i data-lucide="map" class="mb-3" style="color:var(--emerald)"></i><span class="font-bold" data-template-id="ct-map-t" data-en="Open in Google Maps"></span></a>
+      </div>
+     </div>
+    </section><!-- Footer -->
+    <footer class="px-6 pt-16 pb-10 mt-10">
+     <div class="glass rounded-3xl max-w-7xl mx-auto p-10">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+       <div>
+        <div class="flex items-center gap-3 mb-3"><span class="grad-orange w-10 h-10 rounded-xl flex items-center justify-center font-extrabold text-white">م</span> <span class="font-bold" data-template-id="footer-brand" data-en="Misagh Software Engineering"></span>
         </div>
-      </div>
-    </div>
-    <div class="scroll-indicator" aria-hidden="true">
-      <div class="scroll-mouse"></div>
-      <span data-i18n="hero.scroll">اسکرول کنید</span>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- Technologies -->
-  <section id="technologies">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="tech.title">فناوری‌های مورد اعتماد</h2>
-        <p class="section-subtitle" data-i18n="tech.subtitle">ابزارها و فناوری‌هایی که در پروژه‌ها استفاده می‌کنیم</p>
-      </div>
-      <div class="tech-grid" id="tech-grid"></div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="about.title">درباره میثاق</h2>
-        <p class="section-subtitle-en">Engineering Reliable Software</p>
-      </div>
-      <div class="about-content">
-        <div class="about-text reveal">
-          <p data-i18n="about.p1">شرکت نرم‌افزاری میثاق با تمرکز بر مهندسی نرم‌افزار، راهکارهای حرفه‌ای برای کسب‌وکارها و سازمان‌ها ارائه می‌دهد. این شرکت در زمینه توسعه سامانه‌های سازمانی، اپلیکیشن‌های تحت وب، نرم‌افزارهای ویندوزی، اپلیکیشن‌های موبایل و نرم‌افزارهای سفارشی فعالیت می‌کند.</p>
-          <p data-i18n="about.p2">میثاق با رویکرد معماری‌محور و توسعه‌پذیر، سامانه‌هایی طراحی می‌کند که علاوه بر پاسخگویی به نیازهای فعلی، قابلیت توسعه و مقیاس‌پذیری برای آینده را نیز داشته باشند. شرکت دانش پردازان میثاق به عنوان شخصیت حقوقی ثبت‌شده این مجموعه، پایه‌های قانونی و سازمانی فعالیت‌ها را شکل می‌دهد.</p>
-          <p data-i18n="about.p3">تیم فنی میثاق ترکیبی از تجربه در توسعه نرم‌افزار، معماری سیستم‌ها و آشنایی با چالش‌های واقعی کسب‌وکار است که باعث می‌شود هر پروژه با درک عمیق از نیاز مشتری و استانداردهای مهندسی نرم‌افزار اجرا شود.</p>
+        <p class="text-sm" style="color:var(--muted)" data-template-id="footer-legal" data-en="Registered name: Danesh Pardazan Misagh"></p>
+       </div>
+       <div>
+        <h3 class="font-bold mb-3" data-template-id="footer-links-t" data-en="Quick Links"></h3>
+        <ul class="space-y-2 text-sm" style="color:var(--muted)">
+         <li><a href="#services" class="link-u canva-link" data-template-id="footer-l1" data-en="Solutions"></a></li>
+         <li><a href="#portfolio" class="link-u canva-link" data-template-id="footer-l2" data-en="Projects"></a></li>
+         <li><a href="#about" class="link-u canva-link" data-template-id="footer-l3" data-en="About"></a></li>
+         <li><a href="#founder" class="link-u canva-link" data-template-id="footer-l4" data-en="Founder"></a></li>
+         <li><a href="#contact" class="link-u canva-link" data-template-id="footer-l5" data-en="Contact"></a></li>
+        </ul>
+       </div>
+       <div>
+        <h3 class="font-bold mb-3" data-template-id="footer-social-t" data-en="Follow"></h3>
+        <div class="flex gap-3"><a href="https://t.me/mhkh110" target="_blank" rel="noopener noreferrer" class="glass w-10 h-10 rounded-xl flex items-center justify-center" aria-label="Telegram"><i data-lucide="send"></i></a> <a href="https://wa.me/989198417510" target="_blank" rel="noopener noreferrer" class="glass w-10 h-10 rounded-xl flex items-center justify-center" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a> <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="glass w-10 h-10 rounded-xl flex items-center justify-center" aria-label="GitHub"><i data-lucide="github"></i></a> <a href="mailto:info@dpm-eng.com" class="glass w-10 h-10 rounded-xl flex items-center justify-center" aria-label="Email"><i data-lucide="mail"></i></a>
         </div>
-        <div class="about-cards">
-          <div class="about-card reveal reveal-delay-1">
-            <div class="about-card-icon" style="background:rgba(249,115,22,0.1);color:var(--accent-orange);">🎯</div>
-            <h3 data-i18n="about.mission_title">ماموریت</h3>
-            <p data-i18n="about.mission_desc">توسعه نرم‌افزارهای قابل اعتماد که چالش‌های واقعی کسب‌وکارها را حل کنند و ارزش پایدار ایجاد نمایند.</p>
-          </div>
-          <div class="about-card reveal reveal-delay-2">
-            <div class="about-card-icon" style="background:rgba(59,130,246,0.1);color:var(--accent-blue);">🔭</div>
-            <h3 data-i18n="about.vision_title">چشم‌انداز</h3>
-            <p data-i18n="about.vision_desc">تبدیل شدن به شریک مهندسی مورد اعتماد سازمان‌ها در طراحی و توسعه راهکارهای نرم‌افزاری.</p>
-          </div>
-          <div class="about-card reveal reveal-delay-3">
-            <div class="about-card-icon" style="background:rgba(168,85,247,0.1);color:var(--accent-purple);">💎</div>
-            <h3 data-i18n="about.values_title">ارزش‌ها</h3>
-            <p data-i18n="about.values_desc">کیفیت، نوآوری، امنیت، قابلیت نگهداری، شفافیت و تعهد به اصول مهندسی نرم‌افزار.</p>
-          </div>
-        </div>
+       </div>
       </div>
+      <div class="h-px w-full" style="background:var(--border)"></div>
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6">
+       <p class="text-sm" style="color:var(--muted)" data-template-id="footer-copy" data-en="© 2026 Misagh Software Engineering. All Rights Reserved."></p><a href="#hero" class="glass px-4 py-2 rounded-xl text-sm flex items-center gap-2 canva-button" data-template-id="footer-top" data-en="Back to Top"><i data-lucide="arrow-up" style="width:16px;height:16px"></i></a>
+      </div>
+     </div>
+    </footer>
+   </main>
+  </div><!-- FAB -->
+  <div class="fixed bottom-6 left-6 z-[60] flex flex-col items-start gap-3">
+   <div id="fab-items" class="flex-col gap-3 hidden"><a href="https://wa.me/989198417510" target="_blank" rel="noopener noreferrer" class="glass w-12 h-12 rounded-full flex items-center justify-center" aria-label="WhatsApp"><i data-lucide="message-circle" style="color:var(--emerald)"></i></a> <a href="https://t.me/mhkh110" target="_blank" rel="noopener noreferrer" class="glass w-12 h-12 rounded-full flex items-center justify-center" aria-label="Telegram"><i data-lucide="send" style="color:var(--blue)"></i></a> <a href="https://ble.ir/mhkh110" target="_blank" rel="noopener noreferrer" class="glass w-12 h-12 rounded-full flex items-center justify-center" aria-label="Bale"><i data-lucide="message-square" style="color:var(--purple)"></i></a> <a href="tel:09198417510" class="glass w-12 h-12 rounded-full flex items-center justify-center" aria-label="Call"><i data-lucide="phone" style="color:var(--orange2)"></i></a>
+   </div><button id="fab-btn" class="grad-orange glow-orange w-14 h-14 rounded-full flex items-center justify-center text-white btn-mag" aria-label="ارتباط سریع"><i data-lucide="headphones"></i></button>
+  </div><!-- Portfolio card template -->
+  <template id="pf-card-tpl">
+   <article class="glass card-tilt rounded-3xl overflow-hidden reveal cursor-pointer" tabindex="0" role="button"><img class="w-full h-44 object-cover pf-cover" loading="lazy">
+    <div class="p-5"><span class="pf-cat inline-block text-xs px-3 py-1 rounded-full mb-3" style="background:rgba(255,122,24,.15);color:var(--orange2)"></span>
+     <h3 class="font-bold mb-2 pf-name"></h3>
+     <p class="text-sm mb-3 pf-short" style="color:var(--muted)"></p>
+     <div class="flex flex-wrap gap-1.5 pf-tech"></div>
     </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- Services -->
-  <section id="services">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="services.title">راهکارهای مهندسی نرم‌افزار</h2>
-        <p class="section-subtitle" data-i18n="services.subtitle">خدمات و راهکارهایی که با رویکرد مهندسی ارائه می‌دهیم</p>
-      </div>
-      <div class="services-grid" id="services-grid"></div>
+   </article>
+  </template><!-- Modal -->
+  <div id="pf-modal" class="modal-wrap" role="dialog" aria-modal="true">
+   <div class="glass rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+    <div class="relative"><img id="m-cover" class="w-full h-56 object-cover" loading="lazy"> <button id="m-close" class="absolute top-4 left-4 glass w-10 h-10 rounded-xl flex items-center justify-center" aria-label="بستن"><i data-lucide="x"></i></button>
     </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="portfolio.title">نمونه‌کارها</h2>
-        <p class="section-subtitle" data-i18n="portfolio.subtitle">راهکارهایی که برای کسب‌وکارها خلق کرده‌ایم</p>
-        <p class="section-subtitle" data-i18n="portfolio.desc" style="margin-top:8px;max-width:600px;margin-left:auto;margin-right:auto;">نمونه‌ای از پروژه‌ها و راهکارهای نرم‌افزاری توسعه‌یافته توسط شرکت نرم‌افزاری میثاق در حوزه‌های مختلف.</p>
-      </div>
-      <div class="portfolio-toolbar reveal">
-        <div class="portfolio-filters" id="portfolio-filters" role="tablist"></div>
-        <div class="portfolio-search">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input type="text" id="portfolio-search-input" data-i18n-placeholder="portfolio.search" placeholder="جستجوی پروژه..." aria-label="Search projects">
-        </div>
-      </div>
-      <div class="portfolio-grid" id="portfolio-grid"></div>
+    <div class="p-8"><span id="m-cat" class="inline-block text-xs px-3 py-1 rounded-full mb-3" style="background:rgba(255,122,24,.15);color:var(--orange2)"></span>
+     <h3 id="m-name" class="font-extrabold mb-4 text-2xl"></h3>
+     <div id="m-body" class="space-y-5" style="color:var(--muted)"></div>
+     <div id="m-tech" class="flex flex-wrap gap-2 mt-5"></div>
     </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- Philosophy -->
-  <section id="philosophy">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="philosophy.title">فلسفه توسعه</h2>
-        <p class="section-subtitle-en">Development Philosophy</p>
-      </div>
-      <div class="philosophy-grid" id="philosophy-grid"></div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- Founder -->
-  <section id="founder">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="founder.title">بنیان‌گذار</h2>
-        <p class="section-subtitle-en">Founder & Lead Software Engineer</p>
-      </div>
-      <div class="founder-card glass-card reveal">
-        <div class="founder-avatar" aria-hidden="true">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        </div>
-        <div class="founder-info">
-          <h3 data-i18n="founder.name">محمدحسین خدابخشی</h3>
-          <div class="founder-role" data-i18n="founder.role">Founder & Lead Software Engineer</div>
-          <p class="founder-bio" data-i18n="founder.bio">محمدحسین خدابخشی، بنیان‌گذار شرکت نرم‌افزاری میثاق، با تمرکز بر طراحی و توسعه نرم‌افزارهای اختصاصی، معماری نرم‌افزار و ارائه راهکارهای فناورانه، فعالیت خود را با هدف ایجاد محصولات پایدار، مقیاس‌پذیر و باکیفیت آغاز کرده است.</p>
-          <div class="founder-skills" id="founder-skills"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="contact.title">ارتباط با میثاق</h2>
-        <p class="section-subtitle" data-i18n="contact.subtitle">برای مشاوره، همکاری و اجرای پروژه‌های نرم‌افزاری با ما در ارتباط باشید.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info" id="contact-info"></div>
-        <div class="contact-map reveal">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9!2d51.389!3d35.699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzAuMCJOIDUxwrAyMycyMC40IkU!5e0!3m2!1sfa!2sir!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office location"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- Footer -->
-<footer id="footer" style="position:relative;z-index:2;">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <h3 data-i18n="brand.name">شرکت نرم‌افزاری میثاق</h3>
-        <p data-i18n="brand.sub">Software Engineering Company</p>
-        <p class="footer-legal" data-i18n="footer.legal">شرکت دانش پردازان میثاق — شخصیت حقوقی ثبت‌شده</p>
-        <div class="footer-social">
-          <a href="https://t.me/mhkh110" target="_blank" rel="noopener" aria-label="Telegram">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          </a>
-          <a href="https://wa.me/989198417510" target="_blank" rel="noopener" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-          <a href="mailto:info@dpm-eng.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4 data-i18n="footer.quickLinks">لینک‌های سریع</h4>
-        <a href="#hero" data-i18n="nav.home">خانه</a>
-        <a href="#about" data-i18n="nav.about">درباره ما</a>
-        <a href="#services" data-i18n="nav.services">خدمات</a>
-        <a href="#portfolio" data-i18n="nav.portfolio">نمونه‌کارها</a>
-        <a href="#founder" data-i18n="nav.founder">بنیان‌گذار</a>
-        <a href="#contact" data-i18n="nav.contact">تماس با ما</a>
-      </div>
-      <div class="footer-col">
-        <h4 data-i18n="footer.services">راهکارها</h4>
-        <a href="#services" data-i18n="footer.s1">مهندسی نرم‌افزار</a>
-        <a href="#services" data-i18n="footer.s2">توسعه وب</a>
-        <a href="#services" data-i18n="footer.s3">نرم‌افزار ویندوزی</a>
-        <a href="#services" data-i18n="footer.s4">اپلیکیشن موبایل</a>
-        <a href="#services" data-i18n="footer.s5">سامانه‌های سازمانی</a>
-      </div>
-      <div class="footer-col">
-        <h4 data-i18n="footer.settings">تنظیمات</h4>
-        <a href="javascript:void(0)" onclick="toggleTheme()" data-i18n="footer.theme">تغییر تم</a>
-        <a href="javascript:void(0)" onclick="toggleLanguage()" data-i18n="footer.lang">تغییر زبان</a>
-        <a href="javascript:void(0)" onclick="scrollToSection('hero')" data-i18n="footer.top">بازگشت به بالا</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span data-i18n="footer.copyright">© 2026 Misagh Software Engineering. All Rights Reserved.</span>
-      <div class="footer-bottom-links">
-        <a href="javascript:void(0)" onclick="toggleTheme()" id="footer-theme-btn" aria-label="Toggle theme">🌙</a>
-        <a href="javascript:void(0)" onclick="toggleLanguage()" id="footer-lang-btn" aria-label="Switch language">EN</a>
-      </div>
-    </div>
+   </div>
   </div>
-</footer>
+  <script src="/_sdk/e063511df281944a.editing_sdk.js" integrity="sha512-Xa8p4aPfoMxVnzxQE2WAG0FfoaPLxdjOJMfUZGm1yZosJTYmnNDvgLkJ2EoN0i3zxjeQVAzUMSXNvTKQVqbXyQ=="></script>
+  <script>
+lucide.createIcons();
 
-<!-- Floating Contact Button -->
-<div id="floating-contact" aria-label="Quick contact">
-  <div class="fc-menu">
-    <div class="fc-item">
-      <span class="fc-item-label" data-i18n="fc.whatsapp">واتساپ</span>
-      <a href="https://wa.me/989198417510" target="_blank" rel="noopener" class="fc-item-btn" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-    <div class="fc-item">
-      <span class="fc-item-label" data-i18n="fc.telegram">تلگرام</span>
-      <a href="https://t.me/mhkh110" target="_blank" rel="noopener" class="fc-item-btn" aria-label="Telegram">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-      </a>
-    </div>
-    <div class="fc-item">
-      <span class="fc-item-label" data-i18n="fc.bale">بله</span>
-      <a href="https://ble.ir/mhkh110" target="_blank" rel="noopener" class="fc-item-btn" aria-label="Bale">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-      </a>
-    </div>
-    <div class="fc-item">
-      <span class="fc-item-label" data-i18n="fc.phone">تماس تلفنی</span>
-      <a href="tel:+989198417510" class="fc-item-btn" aria-label="Phone call">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      </a>
-    </div>
-  </div>
-  <button class="fc-toggle" id="fc-toggle-btn" aria-label="Open contact options">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-  </button>
-</div>
+/* ---------- Theme ---------- */
+const root=document.documentElement;
+function setTheme(t){root.classList.toggle('light',t==='light');localStorage.setItem('misagh-theme',t);
+  document.querySelector('#theme-btn i').setAttribute('data-lucide',t==='light'?'sun':'moon');lucide.createIcons();}
+setTheme(localStorage.getItem('misagh-theme')||'dark');
+document.getElementById('theme-btn').addEventListener('click',()=>setTheme(root.classList.contains('light')?'dark':'light'));
 
-<!-- Project Modal -->
-<div id="project-modal" role="dialog" aria-modal="true" aria-label="Project details">
-  <div class="modal-backdrop" onclick="closeModal()"></div>
-  <div class="modal-content" id="modal-content"></div>
-</div>
+/* ---------- Language ---------- */
+let lang=localStorage.getItem('misagh-lang')||'fa';
+const faStore=new Map();
+function applyLang(){
+  root.setAttribute('dir',lang==='fa'?'rtl':'ltr');
+  root.setAttribute('lang',lang);
+  document.getElementById('lang-btn').textContent = lang==='fa'?'EN':'فا';
+  // toggle text on [data-en] elements
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    if(!faStore.has(el)) faStore.set(el, el.textContent);
+    // skip elements whose text is JS-managed (portfolio handled separately)
+    if(el.tagName==='INPUT'){ el.placeholder = lang==='fa' ? (el.getAttribute('data-fa-ph')||el.placeholder) : el.getAttribute('data-en'); return;}
+    el.textContent = lang==='fa' ? faStore.get(el) : el.getAttribute('data-en');
+  });
+  renderProjects();
+}
+// capture Persian input placeholder once SDK applied
+window.addEventListener('load',()=>{ setTimeout(()=>{
+  const s=document.getElementById('pf-search'); if(s) s.setAttribute('data-fa-ph', s.placeholder);
+  applyLang();
+},600); });
+document.getElementById('lang-btn').addEventListener('click',()=>{lang=lang==='fa'?'en':'fa';localStorage.setItem('misagh-lang',lang);applyLang();});
 
-<!-- Back to Top -->
-<button id="back-to-top" aria-label="Back to top" onclick="scrollToSection('hero')">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-</button>
+/* ---------- Loader ---------- */
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('done'),2000));
 
-<script>
-/* ===== TRANSLATIONS ===== */
-const T = {
-  fa: {
-    "loader.title": "شرکت نرم‌افزاری میثاق",
-    "loader.subtitle": "Software Engineering Company",
-    "brand.name": "شرکت نرم‌افزاری میثاق",
-    "brand.sub": "Software Engineering Company",
-    "nav.home": "خانه",
-    "nav.about": "درباره ما",
-    "nav.services": "خدمات",
-    "nav.portfolio": "نمونه‌کارها",
-    "nav.founder": "بنیان‌گذار",
-    "nav.contact": "تماس با ما",
-    "hero.badge": "Misagh Software Engineering",
-    "hero.title": "شرکت نرم‌افزاری میثاق",
-    "hero.highlight": "طراحی آینده، مهندسی امروز",
-    "hero.tagline": "مهندسی نرم‌افزار، برای تصمیم‌های هوشمند.",
-    "hero.desc": "شرکت نرم‌افزاری میثاق با تمرکز بر مهندسی نرم‌افزار، طراحی و توسعه سامانه‌های اختصاصی، نرم‌افزارهای ویندوزی، راهکارهای تحت وب و اپلیکیشن‌های موبایل، راهکارهایی پایدار، توسعه‌پذیر و متناسب با نیاز کسب‌وکارها ارائه می‌دهد.",
-    "hero.cta1": "مشاهده نمونه‌کارها",
-    "hero.cta2": "شروع همکاری",
-    "hero.scroll": "اسکرول کنید",
-    "tech.title": "فناوری‌های مورد اعتماد",
-    "tech.subtitle": "ابزارها و فناوری‌هایی که در پروژه‌ها استفاده می‌کنیم",
-    "about.title": "درباره میثاق",
-    "about.p1": "شرکت نرم‌افزاری میثاق با تمرکز بر مهندسی نرم‌افزار، راهکارهای حرفه‌ای برای کسب‌وکارها و سازمان‌ها ارائه می‌دهد. این شرکت در زمینه توسعه سامانه‌های سازمانی، اپلیکیشن‌های تحت وب، نرم‌افزارهای ویندوزی، اپلیکیشن‌های موبایل و نرم‌افزارهای سفارشی فعالیت می‌کند.",
-    "about.p2": "میثاق با رویکرد معماری‌محور و توسعه‌پذیر، سامانه‌هایی طراحی می‌کند که علاوه بر پاسخگویی به نیازهای فعلی، قابلیت توسعه و مقیاس‌پذیری برای آینده را نیز داشته باشند. شرکت دانش پردازان میثاق به عنوان شخصیت حقوقی ثبت‌شده این مجموعه، پایه‌های قانونی و سازمانی فعالیت‌ها را شکل می‌دهد.",
-    "about.p3": "تیم فنی میثاق ترکیبی از تجربه در توسعه نرم‌افزار، معماری سیستم‌ها و آشنایی با چالش‌های واقعی کسب‌وکار است که باعث می‌شود هر پروژه با درک عمیق از نیاز مشتری و استانداردهای مهندسی نرم‌افزار اجرا شود.",
-    "about.mission_title": "ماموریت",
-    "about.mission_desc": "توسعه نرم‌افزارهای قابل اعتماد که چالش‌های واقعی کسب‌وکارها را حل کنند و ارزش پایدار ایجاد نمایند.",
-    "about.vision_title": "چشم‌انداز",
-    "about.vision_desc": "تبدیل شدن به شریک مهندسی مورد اعتماد سازمان‌ها در طراحی و توسعه راهکارهای نرم‌افزاری.",
-    "about.values_title": "ارزش‌ها",
-    "about.values_desc": "کیفیت، نوآوری، امنیت، قابلیت نگهداری، شفافیت و تعهد به اصول مهندسی نرم‌افزار.",
-    "services.title": "راهکارهای مهندسی نرم‌افزار",
-    "services.subtitle": "خدمات و راهکارهایی که با رویکرد مهندسی ارائه می‌دهیم",
-    "portfolio.title": "نمونه‌کارها",
-    "portfolio.subtitle": "راهکارهایی که برای کسب‌وکارها خلق کرده‌ایم",
-    "portfolio.desc": "نمونه‌ای از پروژه‌ها و راهکارهای نرم‌افزاری توسعه‌یافته توسط شرکت نرم‌افزاری میثاق در حوزه‌های مختلف.",
-    "portfolio.search": "جستجوی پروژه...",
-    "portfolio.all": "همه پروژه‌ها",
-    "portfolio.empty": "در حال توسعه...",
-    "portfolio.details": "مشاهده جزئیات",
-    "portfolio.github": "گیت‌هاب",
-    "portfolio.demo": "دمو",
-    "modal.problem": "چالش",
-    "modal.approach": "رویکرد",
-    "modal.architecture": "معماری",
-    "modal.outcome": "نتیجه",
-    "modal.future": "توسعه آینده",
-    "modal.features": "ویژگی‌های کلیدی",
-    "modal.close": "بستن",
-    "philosophy.title": "فلسفه توسعه",
-    "founder.title": "بنیان‌گذار",
-    "founder.name": "محمدحسین خدابخشی",
-    "founder.role": "Founder & Lead Software Engineer",
-    "founder.bio": "محمدحسین خدابخشی، بنیان‌گذار شرکت نرم‌افزاری میثاق، با تمرکز بر طراحی و توسعه نرم‌افزارهای اختصاصی، معماری نرم‌افزار و ارائه راهکارهای فناورانه، فعالیت خود را با هدف ایجاد محصولات پایدار، مقیاس‌پذیر و باکیفیت آغاز کرده است.",
-    "contact.title": "ارتباط با میثاق",
-    "contact.subtitle": "برای مشاوره، همکاری و اجرای پروژه‌های نرم‌افزاری با ما در ارتباط باشید.",
-    "contact.phone": "تلفن",
-    "contact.whatsapp": "واتساپ",
-    "contact.telegram": "تلگرام",
-    "contact.bale": "بله",
-    "contact.email": "ایمیل",
-    "contact.address": "آدرس دفتر",
-    "contact.hours": "ساعات کاری",
-    "contact.hours_detail": "شنبه تا چهارشنبه ۹:۰۰ الی ۲۰:۰۰ — پنجشنبه پاسخگویی آنلاین",
-    "footer.legal": "شرکت دانش پردازان میثاق — شخصیت حقوقی ثبت‌شده",
-    "footer.quickLinks": "لینک‌های سریع",
-    "footer.services": "راهکارها",
-    "footer.settings": "تنظیمات",
-    "footer.s1": "مهندسی نرم‌افزار",
-    "footer.s2": "توسعه وب",
-    "footer.s3": "نرم‌افزار ویندوزی",
-    "footer.s4": "اپلیکیشن موبایل",
-    "footer.s5": "سامانه‌های سازمانی",
-    "footer.theme": "تغییر تم",
-    "footer.lang": "تغییر زبان",
-    "footer.top": "بازگشت به بالا",
-    "footer.copyright": "© 2026 Misagh Software Engineering. All Rights Reserved.",
-    "fc.whatsapp": "واتساپ",
-    "fc.telegram": "تلگرام",
-    "fc.bale": "بله",
-    "fc.phone": "تماس تلفنی"
-  },
-  en: {
-    "loader.title": "Misagh Software Engineering",
-    "loader.subtitle": "Software Engineering Company",
-    "brand.name": "Misagh Software Engineering",
-    "brand.sub": "Software Engineering Company",
-    "nav.home": "Home",
-    "nav.about": "About",
-    "nav.services": "Services",
-    "nav.portfolio": "Portfolio",
-    "nav.founder": "Founder",
-    "nav.contact": "Contact",
-    "hero.badge": "Misagh Software Engineering",
-    "hero.title": "Misagh Software Engineering",
-    "hero.highlight": "Designing the Future, Engineering Today",
-    "hero.tagline": "Software Engineering, for Smarter Decisions.",
-    "hero.desc": "Misagh Software Engineering focuses on building professional software solutions for businesses and organizations. We develop enterprise systems, web applications, desktop software, and mobile apps that are stable, scalable, and aligned with business needs.",
-    "hero.cta1": "View Portfolio",
-    "hero.cta2": "Start Collaboration",
-    "hero.scroll": "Scroll Down",
-    "tech.title": "Trusted Technologies",
-    "tech.subtitle": "Tools and technologies we use in our projects",
-    "about.title": "About Misagh",
-    "about.p1": "Misagh Software Engineering focuses on building professional software solutions for businesses and organizations. The company develops enterprise systems, web applications, desktop software, mobile applications, and custom software solutions.",
-    "about.p2": "With an architecture-driven and scalable approach, Misagh designs systems that not only address current needs but also offer extensibility and scalability for the future. Danesh Pardazan Misagh is the registered legal entity of this organization.",
-    "about.p3": "Misagh's technical team combines software development experience, systems architecture expertise, and familiarity with real business challenges, ensuring every project is executed with deep understanding of client needs and software engineering standards.",
-    "about.mission_title": "Mission",
-    "about.mission_desc": "Develop reliable software that solves real business challenges and creates lasting value.",
-    "about.vision_title": "Vision",
-    "about.vision_desc": "Become a trusted engineering partner for organizations in designing and developing software solutions.",
-    "about.values_title": "Values",
-    "about.values_desc": "Quality, Innovation, Security, Maintainability, Transparency, and commitment to software engineering principles.",
-    "services.title": "Software Engineering Solutions",
-    "services.subtitle": "Solutions we deliver with an engineering approach",
-    "portfolio.title": "Portfolio",
-    "portfolio.subtitle": "Solutions we've built for businesses",
-    "portfolio.desc": "A selection of software projects and solutions developed by Misagh Software Engineering across various domains.",
-    "portfolio.search": "Search projects...",
-    "portfolio.all": "All Projects",
-    "portfolio.empty": "In Development...",
-    "portfolio.details": "View Details",
-    "portfolio.github": "GitHub",
-    "portfolio.demo": "Demo",
-    "modal.problem": "Challenge",
-    "modal.approach": "Approach",
-    "modal.architecture": "Architecture",
-    "modal.outcome": "Outcome",
-    "modal.future": "Future Development",
-    "modal.features": "Key Features",
-    "modal.close": "Close",
-    "philosophy.title": "Development Philosophy",
-    "founder.title": "Founder",
-    "founder.name": "Mohammad Hossein Khodabakhshi",
-    "founder.role": "Founder & Lead Software Engineer",
-    "founder.bio": "Mohammad Hossein Khodabakhshi, founder of Misagh Software Engineering, focuses on designing and developing custom software, software architecture, and delivering technology solutions with the goal of creating stable, scalable, and high-quality products.",
-    "contact.title": "Contact Misagh",
-    "contact.subtitle": "Get in touch for consulting, collaboration, and software project execution.",
-    "contact.phone": "Phone",
-    "contact.whatsapp": "WhatsApp",
-    "contact.telegram": "Telegram",
-    "contact.bale": "Bale",
-    "contact.email": "Email",
-    "contact.address": "Office Address",
-    "contact.hours": "Working Hours",
-    "contact.hours_detail": "Saturday to Wednesday 9:00 AM - 8:00 PM — Thursday Online Support",
-    "footer.legal": "Danesh Pardazan Misagh — Registered Legal Entity",
-    "footer.quickLinks": "Quick Links",
-    "footer.services": "Solutions",
-    "footer.settings": "Settings",
-    "footer.s1": "Software Engineering",
-    "footer.s2": "Web Development",
-    "footer.s3": "Desktop Software",
-    "footer.s4": "Mobile Apps",
-    "footer.s5": "Enterprise Systems",
-    "footer.theme": "Toggle Theme",
-    "footer.lang": "Switch Language",
-    "footer.top": "Back to Top",
-    "footer.copyright": "© 2026 Misagh Software Engineering. All Rights Reserved.",
-    "fc.whatsapp": "WhatsApp",
-    "fc.telegram": "Telegram",
-    "fc.bale": "Bale",
-    "fc.phone": "Phone Call"
-  }
-};
+/* ---------- Mobile menu ---------- */
+const mm=document.getElementById('mobile-menu');
+document.getElementById('menu-btn').addEventListener('click',()=>{mm.classList.remove('hidden');mm.classList.add('flex');});
+function closeMenu(){mm.classList.add('hidden');mm.classList.remove('flex');}
+document.getElementById('menu-close').addEventListener('click',closeMenu);
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 
-/* ===== DATA ===== */
-const technologies = ["PHP","Laravel",".NET","C#","Java","C++","Python","JavaScript","TypeScript","Flutter","Ionic","MySQL","SQL Server","REST API","WordPress","Docker","Linux","Git"];
+/* ---------- Navbar scroll ---------- */
+const nav=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{nav.classList.toggle('nav-scrolled',window.scrollY>40);});
 
-const services = [
-  { icon: "⚙️", key: "s1", fa: "مهندسی نرم‌افزار", en: "Software Engineering", faDesc: "طراحی و توسعه نرم‌افزار با رعایت اصول مهندسی و الگوهای طراحی استاندارد.", enDesc: "Design and development of software following engineering principles and standard design patterns." },
-  { icon: "🏗️", key: "s2", fa: "توسعه سامانه‌های اختصاصی", en: "Custom System Development", faDesc: "ساخت سامانه‌هایی کاملاً متناسب با نیازها و فرآیندهای سازمانی شما.", enDesc: "Building systems fully tailored to your organizational needs and processes." },
-  { icon: "🌐", key: "s3", fa: "توسعه نرم‌افزارهای تحت وب", en: "Web Application Development", faDesc: "توسعه اپلیکیشن‌های وب حرفه‌ای با عملکرد بالا و تجربه کاربری عالی.", enDesc: "Developing professional web applications with high performance and excellent UX." },
-  { icon: "🖥️", key: "s4", fa: "توسعه نرم‌افزارهای ویندوزی", en: "Desktop Software Development", faDesc: "نرم‌افزارهای دسکتاپ ویندوز با رابط کاربری حرفه‌ای و عملکرد پایدار.", enDesc: "Windows desktop applications with professional UI and stable performance." },
-  { icon: "📱", key: "s5", fa: "طراحی اپلیکیشن موبایل", en: "Mobile App Development", faDesc: "اپلیکیشن‌های موبایل کراس‌پلتفرم و نیتیو برای اندروید و iOS.", enDesc: "Cross-platform and native mobile apps for Android and iOS." },
-  { icon: "📐", key: "s6", fa: "معماری نرم‌افزار", en: "Software Architecture", faDesc: "طراحی معماری سیستم‌ها برای مقیاس‌پذیری، پایداری و قابلیت نگهداری.", enDesc: "Designing system architectures for scalability, stability, and maintainability." },
-  { icon: "🔍", key: "s7", fa: "مشاوره فنی", en: "Technical Consulting", faDesc: "ارائه مشاوره تخصصی در انتخاب فناوری، معماری و استراتژی توسعه.", enDesc: "Expert consulting on technology selection, architecture, and development strategy." },
-  { icon: "🤖", key: "s8", fa: "هوش مصنوعی و اتوماسیون", en: "AI & Automation", faDesc: "بهره‌گیری از هوش مصنوعی و اتوماسیون فرآیندها برای بهبود بهره‌وری.", enDesc: "Leveraging AI and process automation to improve productivity." },
-  { icon: "🏢", key: "s9", fa: "سامانه‌های سازمانی", en: "Enterprise Systems", faDesc: "توسعه ERP، CRM و سامانه‌های مدیریت سازمانی یکپارچه.", enDesc: "Developing ERP, CRM, and integrated enterprise management systems." },
-  { icon: "🔄", key: "s10", fa: "تحول دیجیتال", en: "Digital Transformation", faDesc: "همراهی سازمان‌ها در مسیر دیجیتالی‌سازی فرآیندها و خدمات.", enDesc: "Guiding organizations through digitalization of processes and services." },
-  { icon: "🔗", key: "s11", fa: "API Solutions", en: "API Solutions", faDesc: "طراحی و توسعه APIهای RESTful و وب‌سرویس‌های یکپارچه.", enDesc: "Designing and developing RESTful APIs and integrated web services." },
-  { icon: "☁️", key: "s12", fa: "Cloud-ready Solutions", en: "Cloud-ready Solutions", faDesc: "راهکارهایی آماده استقرار در فضای ابری با مقیاس‌پذیری بالا.", enDesc: "Solutions ready for cloud deployment with high scalability." }
+/* ---------- Reveal ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+function observeReveals(){document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));}
+observeReveals();
+
+/* ---------- Mouse glow + magnetic ---------- */
+const glow=document.getElementById('mouse-glow');
+window.addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';});
+document.querySelectorAll('.btn-mag').forEach(b=>{
+  b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();const x=e.clientX-r.left-r.width/2;const y=e.clientY-r.top-r.height/2;b.style.transform=`translate(${x*.2}px,${y*.2}px)`;});
+  b.addEventListener('mouseleave',()=>b.style.transform='');
+});
+
+/* ---------- Starfield ---------- */
+const cv=document.getElementById('stars'),ctx=cv.getContext('2d');let stars=[];
+function resize(){cv.width=innerWidth;cv.height=innerHeight;stars=Array.from({length:120},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.4+.2,s:Math.random()*.4+.1}));}
+resize();addEventListener('resize',resize);
+function draw(){ctx.clearRect(0,0,cv.width,cv.height);const light=root.classList.contains('light');ctx.fillStyle=light?'rgba(40,70,140,.5)':'rgba(255,255,255,.8)';stars.forEach(st=>{st.y-=st.s;if(st.y<0)st.y=cv.height;ctx.globalAlpha=Math.random()*.6+.3;ctx.beginPath();ctx.arc(st.x,st.y,st.r,0,7);ctx.fill();});ctx.globalAlpha=1;requestAnimationFrame(draw);}
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)draw();
+
+/* ---------- Projects (application data) ---------- */
+const IMG={web:"https://images.pexels.com/photos/9858906/pexels-photo-9858906.jpeg?auto=compress&cs=tinysrgb&w=800",
+enterprise:"https://images.pexels.com/photos/37730212/pexels-photo-37730212.jpeg?auto=compress&cs=tinysrgb&w=800",
+mobile:"https://images.pexels.com/photos/5678243/pexels-photo-5678243.jpeg?auto=compress&cs=tinysrgb&w=800",
+ai:"https://images.pexels.com/photos/14314636/pexels-photo-14314636.jpeg?auto=compress&cs=tinysrgb&w=800",
+crm:"https://images.pexels.com/photos/35501997/pexels-photo-35501997.jpeg?auto=compress&cs=tinysrgb&w=800",
+desktop:"https://images.pexels.com/photos/6424583/pexels-photo-6424583.jpeg?auto=compress&cs=tinysrgb&w=800"};
+
+const CATS=[{k:'all',fa:'همه پروژه‌ها',en:'All Projects'},{k:'web',fa:'وب',en:'Web'},{k:'windows',fa:'ویندوز',en:'Windows'},{k:'mobile',fa:'موبایل',en:'Mobile'},{k:'enterprise',fa:'سامانه سازمانی',en:'Enterprise'},{k:'crm',fa:'CRM',en:'CRM'},{k:'ai',fa:'هوش مصنوعی',en:'AI'},{k:'automation',fa:'اتوماسیون',en:'Automation'},{k:'finance',fa:'مالی',en:'Finance'},{k:'custom',fa:'سفارشی',en:'Custom'}];
+
+const PROJECTS=[
+ {id:1,cat:['enterprise','custom'],img:IMG.enterprise,tech:['Laravel','MySQL','Docker'],
+  fa:{name:'سامانه یکپارچه سازمانی',short:'مدیریت متمرکز فرایندها و منابع سازمانی.',problem:'فرایندهای پراکنده و ناهماهنگ در واحدهای مختلف.',approach:'طراحی معماری ماژولار و یکپارچه‌سازی داده‌ها.',arch:'معماری چندلایه با API مرکزی و پایگاه‌داده رابطه‌ای.',outcome:'کاهش چشمگیر خطاهای دستی و افزایش شفافیت داده.',future:'افزودن داشبورد تحلیلی و گزارش‌های هوشمند.'},
+  en:{name:'Integrated Enterprise System',short:'Centralized management of processes and resources.',problem:'Fragmented, uncoordinated processes across units.',approach:'Modular architecture and data unification.',arch:'Multi-layer architecture with a central API and relational database.',outcome:'Major reduction in manual errors and improved data transparency.',future:'Analytics dashboard and intelligent reporting.'}},
+ {id:2,cat:['web','custom'],img:IMG.web,tech:['PHP','Laravel','REST API'],
+  fa:{name:'پلتفرم تحت وب کسب‌وکار',short:'راهکار تحت وب مقیاس‌پذیر و امن.',problem:'نیاز به دسترسی چندکاربره و مدیریت آنلاین.',approach:'توسعه پلتفرم واکنش‌گرا با کنترل دسترسی دقیق.',arch:'Backend بر پایه Laravel و REST API.',outcome:'دسترسی پایدار و افزایش بهره‌وری تیم.',future:'پشتیبانی از چند‌زبانه و توسعه ماژول‌ها.'},
+  en:{name:'Business Web Platform',short:'Scalable and secure web solution.',problem:'Need for multi-user access and online management.',approach:'Responsive platform with fine-grained access control.',arch:'Laravel backend with REST API.',outcome:'Reliable access and higher team productivity.',future:'Multi-language support and module expansion.'}},
+ {id:3,cat:['mobile'],img:IMG.mobile,tech:['Flutter','REST API'],
+  fa:{name:'اپلیکیشن موبایل خدمات',short:'اپلیکیشن چندسکویی با تجربه بومی.',problem:'نیاز به حضور موبایلی روی iOS و Android.',approach:'توسعه یکپارچه با Flutter.',arch:'کلاینت Flutter متصل به API امن.',outcome:'انتشار همزمان روی دو سکو با یک کدپایه.',future:'اعلان‌های هوشمند و حالت آفلاین.'},
+  en:{name:'Services Mobile App',short:'Cross-platform app with a native experience.',problem:'Need for mobile presence on iOS and Android.',approach:'Unified development with Flutter.',arch:'Flutter client connected to a secure API.',outcome:'Simultaneous release on both platforms from one codebase.',future:'Smart notifications and offline mode.'}},
+ {id:4,cat:['ai','automation'],img:IMG.ai,tech:['Python','REST API'],
+  fa:{name:'سامانه هوش مصنوعی و اتوماسیون',short:'خودکارسازی فرایندها با یادگیری ماشین.',problem:'کارهای تکراری و زمان‌بر انسانی.',approach:'ساخت موتور اتوماسیون مبتنی بر مدل‌های داده.',arch:'سرویس Python با API و صف پردازش.',outcome:'کاهش زمان اجرای فرایندها به‌صورت محسوس.',future:'یکپارچه‌سازی با سامانه‌های سازمانی موجود.'},
+  en:{name:'AI & Automation System',short:'Process automation powered by machine learning.',problem:'Repetitive, time-consuming manual tasks.',approach:'Building an automation engine driven by data models.',arch:'Python service with API and processing queue.',outcome:'Noticeable reduction in process execution time.',future:'Integration with existing enterprise systems.'}},
+ {id:5,cat:['crm','finance','web'],img:IMG.crm,tech:['.NET','SQL Server'],
+  fa:{name:'سامانه CRM و مالی',short:'مدیریت ارتباط با مشتریان و امور مالی.',problem:'پراکندگی اطلاعات مشتری و تراکنش‌ها.',approach:'یکپارچه‌سازی CRM با ماژول مالی.',arch:'بر پایه .NET و SQL Server با گزارش‌گیری.',outcome:'دید یکپارچه از مشتری و جریان مالی.',future:'پیش‌بینی فروش با تحلیل داده.'},
+  en:{name:'CRM & Finance System',short:'Customer relationship and financial management.',problem:'Scattered customer and transaction data.',approach:'Integrating CRM with a finance module.',arch:'Built on .NET and SQL Server with reporting.',outcome:'Unified view of the customer and cash flow.',future:'Sales forecasting via data analytics.'}},
+ {id:6,cat:['windows','desktop','custom'],img:IMG.desktop,tech:['C#','.NET','SQL Server'],
+  fa:{name:'نرم‌افزار ویندوزی اختصاصی',short:'نرم‌افزار دسکتاپ پرقدرت و پایدار.',problem:'نیاز به ابزار محلی با کارایی بالا.',approach:'توسعه اپلیکیشن native ویندوز.',arch:'C#/.NET با پایگاه‌داده محلی و همگام‌سازی.',outcome:'عملکرد سریع و پایدار در محیط offline.',future:'همگام‌سازی ابری و نسخه چندکاربره.'},
+  en:{name:'Custom Windows Software',short:'Powerful, stable desktop application.',problem:'Need for a high-performance local tool.',approach:'Native Windows application development.',arch:'C#/.NET with local database and sync.',outcome:'Fast, stable performance in offline environments.',future:'Cloud sync and multi-user edition.'}}
 ];
 
-const categories = [
-  { key: "all", fa: "همه پروژه‌ها", en: "All Projects" },
-  { key: "web", fa: "وب", en: "Web" },
-  { key: "windows", fa: "ویندوز", en: "Windows" },
-  { key: "mobile", fa: "موبایل", en: "Mobile" },
-  { key: "enterprise", fa: "سامانه سازمانی", en: "Enterprise" },
-  { key: "erp", fa: "ERP", en: "ERP" },
-  { key: "crm", fa: "CRM", en: "CRM" },
-  { key: "ai", fa: "هوش مصنوعی", en: "AI" },
-  { key: "automation", fa: "اتوماسیون", en: "Automation" },
-  { key: "iot", fa: "IoT", en: "IoT" },
-  { key: "finance", fa: "مالی", en: "Finance" },
-  { key: "custom", fa: "سفارشی", en: "Custom" }
-];
+let activeCat='all', query='';
+const grid=document.getElementById('pf-grid'), tabsEl=document.getElementById('pf-tabs');
+function buildTabs(){tabsEl.innerHTML='';CATS.forEach(c=>{const b=document.createElement('button');b.className='glass px-4 py-2 rounded-xl transition'+(c.k===activeCat?' tab-active':'');b.textContent=lang==='fa'?c.fa:c.en;b.onclick=()=>{activeCat=c.k;buildTabs();renderProjects();};tabsEl.appendChild(b);});}
+function renderProjects(){
+  buildTabs();
+  grid.innerHTML='';
+  const L=lang;
+  const list=PROJECTS.filter(p=>{
+    const inCat=activeCat==='all'||p.cat.includes(activeCat);
+    const t=(p[L].name+' '+p.tech.join(' ')+' '+p.cat.join(' ')).toLowerCase();
+    return inCat && (query===''||t.includes(query.toLowerCase()));
+  });
+  document.getElementById('pf-empty').classList.toggle('hidden',list.length>0);
+  const tpl=document.getElementById('pf-card-tpl');
+  list.forEach(p=>{
+    const n=tpl.content.cloneNode(true);
+    n.querySelector('.pf-cover').src=p.img; n.querySelector('.pf-cover').alt=p[L].name;
+    const catObj=CATS.find(c=>c.k===p.cat[0]);
+    n.querySelector('.pf-cat').textContent=L==='fa'?catObj.fa:catObj.en;
+    n.querySelector('.pf-name').textContent=p[L].name;
+    n.querySelector('.pf-short').textContent=p[L].short;
+    const tw=n.querySelector('.pf-tech');
+    p.tech.forEach(t=>{const s=document.createElement('span');s.className='glass px-2 py-1 rounded text-xs';s.textContent=t;tw.appendChild(s);});
+    const art=n.querySelector('article');
+    art.classList.add('in');
+    const open=()=>openModal(p);
+    art.addEventListener('click',open);
+    art.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+    grid.appendChild(n);
+  });
+}
+function openModal(p){
+  const L=lang, d=p[L];
+  document.getElementById('m-cover').src=p.img;
+  document.getElementById('m-cover').alt=d.name;
+  const catObj=CATS.find(c=>c.k===p.cat[0]);
+  document.getElementById('m-cat').textContent=L==='fa'?catObj.fa:catObj.en;
+  document.getElementById('m-name').textContent=d.name;
+  const labels=L==='fa'?{p:'مسئله',a:'رویکرد',ar:'معماری',o:'نتیجه',f:'توسعه آتی'}:{p:'Problem',a:'Approach',ar:'Architecture',o:'Outcome',f:'Future Improvements'};
+  document.getElementById('m-body').innerHTML=
+    `<div><h4 class="font-bold mb-1" style="color:var(--text)">${labels.p}</h4><p class="text-sm leading-7">${d.problem}</p></div>`+
+    `<div><h4 class="font-bold mb-1" style="color:var(--text)">${labels.a}</h4><p class="text-sm leading-7">${d.approach}</p></div>`+
+    `<div><h4 class="font-bold mb-1" style="color:var(--text)">${labels.ar}</h4><p class="text-sm leading-7">${d.arch}</p></div>`+
+    `<div><h4 class="font-bold mb-1" style="color:var(--text)">${labels.o}</h4><p class="text-sm leading-7">${d.outcome}</p></div>`+
+    `<div><h4 class="font-bold mb-1" style="color:var(--text)">${labels.f}</h4><p class="text-sm leading-7">${d.future}</p></div>`;
+  const mt=document.getElementById('m-tech');mt.innerHTML='';
+  p.tech.forEach(t=>{const s=document.createElement('span');s.className='glass px-3 py-1 rounded-lg text-xs';s.textContent=t;mt.appendChild(s);});
+  document.getElementById('pf-modal').classList.add('open');
+}
+document.getElementById('m-close').addEventListener('click',()=>document.getElementById('pf-modal').classList.remove('open'));
+document.getElementById('pf-modal').addEventListener('click',e=>{if(e.target.id==='pf-modal')e.target.classList.remove('open');});
+document.getElementById('pf-search').addEventListener('input',e=>{query=e.target.value;renderProjects();});
+renderProjects();
 
-const projects = [
-  {
-    id:1, category:"erp",
-    fa:{title:"سامانه مدیریت یکپارچه سازمانی",desc:"سامانه ERP یکپارچه شامل مدیریت مالی، انبار، منابع انسانی و خرید برای یک هلدینگ صنعتی.",problem:"عدم یکپارچگی اطلاعات بین واحدهای مختلف سازمان و فرآیندهای دستی زمان‌بر.",approach:"طراحی معماری ماژولار با میکروسرویس‌ها و ایجاد لایه ارتباطی یکپارچه بین ماژول‌ها.",architecture:"مبتنی بر Laravel به عنوان بک‌اند، Vue.js برای فرانت‌اند و MySQL برای ذخیره‌سازی داده‌ها با کش Redis.",outcome:"کاهش ۶۰ درصدی زمان پردازش فرآیندها و یکپارچگی کامل اطلاعات سازمانی.",future:"افزودن ماژول BI برای تحلیل داده‌ها و ماژول مدیریت زنجیره تامین.",features:["ماژول مالی و حسابداری","مدیریت انبار و موجودی","منابع انسانی","مدیریت خرید","گزارش‌گیری پیشرفته","داشبورد مدیریتی"]},
-    en:{title:"Integrated Enterprise Resource Planning",desc:"Comprehensive ERP system including financial management, inventory, HR, and procurement for an industrial holding.",problem:"Lack of information integration between different organizational units and time-consuming manual processes.",approach:"Modular microservices architecture with an integrated communication layer between modules.",architecture:"Laravel backend, Vue.js frontend, MySQL database with Redis caching.",outcome:"60% reduction in process execution time and complete organizational information integration.",future:"Adding BI module for data analysis and supply chain management module.",features:["Financial & Accounting Module","Inventory Management","Human Resources","Procurement Management","Advanced Reporting","Management Dashboard"]},
-    techs:["PHP","Laravel","Vue.js","MySQL","Redis","Docker"],
-    cover:"https://picsum.photos/seed/erp-misagh/800/600.jpg",
-    gallery:["https://picsum.photos/seed/erp1/400/300.jpg","https://picsum.photos/seed/erp2/400/300.jpg","https://picsum.photos/seed/erp3/400/300.jpg"],
-    date:"2024", status:"completed"
-  },
-  {
-    id:2, category:"crm",
-    fa:{title:"پلتفرم مدیریت ارتباط با مشتری",desc:"سامانه CRM پیشرفته با قابلیت مدیریت فروش، پیگیری مشتریان و تحلیل رفتار مشتری.",problem:"ناتوانی در پیگیری مؤثر مشتریان و عدم تحلیل داده‌های فروش برای تصمیم‌گیری بهتر.",approach:"توسعه سامانه‌ای با تمرکز بر تجربه کاربری و قابلیت‌های تحلیلی پیشرفته.",architecture:"Laravel API با فرانت‌اند React و دیتابیس PostgreSQL با قابلیت‌های جستجوی کامل.",outcome:"افزایش ۴۰ درصدی نرخ تبدیل مشتری و بهبود قابل توجه در پیگیری فروش.",future:"افزودن ماژول اتوماسیون بازاریابی و یکپارچگی با شبکه‌های اجتماعی.",features:["مدیریت خط لوله فروش","پیگیری تعاملات","تحلیل رفتار مشتری","مدیریت کمپین‌ها","گزارش‌های فروش","اتوماسیون وظایف"]},
-    en:{title:"Customer Relationship Management Platform",desc:"Advanced CRM system with sales management, customer tracking, and customer behavior analytics.",problem:"Inability to effectively track customers and lack of sales data analysis for better decision making.",approach:"Developing a system focused on user experience and advanced analytical capabilities.",architecture:"Laravel API with React frontend and PostgreSQL database with full-text search capabilities.",outcome:"40% increase in customer conversion rate and significant improvement in sales follow-up.",future:"Adding marketing automation module and social media integration.",features:["Sales Pipeline Management","Interaction Tracking","Customer Behavior Analytics","Campaign Management","Sales Reports","Task Automation"]},
-    techs:["PHP","Laravel","React","PostgreSQL","REST API","Docker"],
-    cover:"https://picsum.photos/seed/crm-misagh/800/600.jpg",
-    gallery:["https://picsum.photos/seed/crm1/400/300.jpg","https://picsum.photos/seed/crm2/400/300.jpg"],
-    date:"2024", status:"completed"
-  },
-  {
-    id:3, category:"iot",
-    fa:{title:"سامانه هوشمند مانیتورینگ صنعتی",desc:"پلتفرم مانیتورینگ لحظه‌ای تجهیزات صنعتی با استفاده از سنسورهای IoT و داشبورد مدیریتی.",problem:"عدم مشاهده وضعیت تجهیزات به صورت لحظه‌ای و وقوع خرابی‌های پیش‌بینی‌نشده.",approach:"طراحی سیستم جمع‌آوری داده از سنسورها، پردازش و نمایش در داشبورد بلادرنگ.",architecture:"Python برای پردازش داده، Node.js برای وب‌سوکت، InfluxDB برای داده‌های سری زمانی و React برای داشبورد.",outcome:"کاهش ۷۵ درصدی خرابی‌های ناگهانی و بهبود زمان پاسخ‌دهی به حوادث.",future:"افزودن ماژول پیش‌بینی خرابی با ماشین لرنینگ و یکپارچگی با سیستم‌های ERP.",features:["داشبورد بلادرنگ","هشدار هوشمند","گزارش‌گیری دوره‌ای","مدیریت سنسورها","نمایشگر گرافیکی","API یکپارچه"]},
-    en:{title:"Smart Industrial Monitoring System",desc:"Real-time industrial equipment monitoring platform using IoT sensors and management dashboard.",problem:"Inability to monitor equipment status in real-time and occurrence of unpredictable failures.",approach:"Designing a data collection system from sensors, processing and displaying on a real-time dashboard.",architecture:"Python for data processing, Node.js for websockets, InfluxDB for time-series data, React dashboard.",outcome:"75% reduction in sudden failures and improved incident response time.",future:"Adding ML-based failure prediction module and ERP integration.",features:["Real-time Dashboard","Smart Alerts","Periodic Reporting","Sensor Management","Graphical Display","Integrated API"]},
-    techs:["Python","Node.js","React","InfluxDB","Docker","Linux"],
-    cover:"https://picsum.photos/seed/iot-misagh/800/600.jpg",
-    gallery:["https://picsum.photos/seed/iot1/400/300.jpg","https://picsum.photos/seed/iot2/400/300.jpg","https://picsum.photos/seed/iot3/400/300.jpg"],
-    date:"2023", status:"completed"
-  },
-  {
-    id:4, category:"mobile",
-    fa:{title:"اپلیکیشن موبایل مدیریت مالی",desc:"اپلیکیشن موبایل کراس‌پلتفرم برای مدیریت هزینه‌ها، درآمدها و بودجه‌بندی شخصی و سازمانی.",problem:"عدم دسترسی آسان به اطلاعات مالی در حال حرکت و عدم شفافیت در هزینه‌ها.",approach:"توسعه اپلیکیشن با رابط کاربری ساده و قابلیت همگام‌سازی ابری.",architecture:"Flutter برای اپلیکیشن موبایل، Laravel API برای بک‌اند و MySQL برای ذخیره‌سازی.",outcome:"استفاده بیش از ۵۰۰۰ کاربر فعال و رضایت ۹۲ درصدی از تجربه کاربری.",future:"افزودن قابلیت‌های هوش مصنوعی برای پیش‌بینی هزینه و یکپارچگی با بانک‌ها.",features:["ثبت هزینه و درآمد","دسته‌بندی خودکار","بودجه‌بندی","نمودارهای تحلیلی","همگام‌سازی ابری","خروجی PDF"]},
-    en:{title:"Mobile Financial Management App",desc:"Cross-platform mobile app for expense, income, and budget management for personal and organizational use.",problem:"Lack of easy access to financial information on-the-go and expense opacity.",approach:"Developing an app with simple UI and cloud synchronization capabilities.",architecture:"Flutter mobile app, Laravel API backend, MySQL database.",outcome:"Over 5,000 active users and 92% user satisfaction rate.",future:"Adding AI-powered expense prediction and bank integration.",features:["Expense & Income Tracking","Auto-categorization","Budgeting","Analytical Charts","Cloud Sync","PDF Export"]},
-    techs:["Flutter","Dart","PHP","Laravel","MySQL","REST API"],
-    cover:"https://picsum.photos/seed/finance-misagh/800/600.jpg",
-    gallery:["https://picsum.photos/seed/fin1/400/300.jpg","https://picsum.photos/seed/fin2/400/300.jpg"],
-    date:"2024", status:"completed"
-  },
-  {
-    id:5, category:"automation",
-    fa:{title:"سامانه اتوماسیون اداری",desc:"سامانه اتوماسیون فرآیندهای اداری شامل مکاتبات، کارتابل، مدیریت ماموریت‌ها و فرآیندهای Approval.",problem:"فرآیندهای اداری کاغذی کند و مستعد خطای انسانی.",approach:"الکترونیکی‌سازی کامل فرآیندها با طراحی فرم‌ساز پویا و موتور جریان کار.",architecture:".NET Core بک‌اند، Angular فرانت‌اند، SQL Server دیتابیس و SignalR برای اعلان‌ها.",outcome:"کاهش ۸۰ درصدی زمان پردازش مکاتبات و حذف کاغذ از فرآیندهای اداری.",future:"افزودن ماژول امضای دیجیتال و یکپارچگی با سیستم‌های مالی.",features:["کارتابل هوشمند","فرم‌ساز پویا","موتور جریان کار","مکاتبات اداری","مدیریت ماموریت‌ها","اعلان بلادرنگ"]},
-    en:{title:"Office Automation System",desc:"Office process automation system including correspondence, inbox, mission management, and approval workflows.",problem:"Slow paper-based office processes prone to human error.",approach:"Full electronic transformation with dynamic form builder and workflow engine.",architecture:".NET Core backend, Angular frontend, SQL Server database, SignalR for notifications.",outcome:"80% reduction in correspondence processing time and paperless office processes.",future:"Adding digital signature module and financial system integration.",features:["Smart Inbox","Dynamic Form Builder","Workflow Engine","Official Correspondence","Mission Management","Real-time Notifications"]},
-    techs:[".NET","C#","Angular","SQL Server","SignalR","Docker"],
-    cover:"https://picsum.photos/seed/auto-misagh/800/600.jpg",
-    gallery:["https://picsum.photos/seed/auto1/400/300.jpg","https://picsum.photos/seed/auto2/400/300.jpg","https://picsum.photos/seed/auto3/400/300.jpg"],
-    date:"2023", status:"completed"
-  },
-  {
-    id:6, category:"web",
-    fa:{title:"پلتفرم تجارت الکترونیک",desc:"فروشگاه اینترنتی جامع با مدیریت محصولات، سبد خرید، پرداخت آنلاین و پنل فروشندگان.",problem:"نیاز به پلتفرم فروش آنلاین قابل مقیاس‌پذیری با پشتیبانی از چند فروشنده.",approach:"توسعه پلتفرم مارکت‌پلیس با معماری ماژولار و قابلیت توسعه.",architecture:"Laravel با ماژول‌های مجزا، Vue.js برای فرانت‌اند، Elasticsearch برای جستجو و Redis برای کش.",outcome:"پردازش بیش از ۱۰۰۰ سفارش روزانه باuptime بالای ۹۹.۹ درصد.",future:"افزودن پیشنهاد هوشمند محصول و یکپارچگی با سیستم‌های لجستیک.",features:["مدیریت چند فروشنده","سبد خرید پیشرفته","درگاه پرداخت","جستجوی هوشمند","مدیریت موجودی","گزارش‌های فروش"]},
-    en:{title:"E-Commerce Platform",desc:"Comprehensive online store with product management, shopping cart, online payment, and seller panel.",problem:"Need for a scalable online sales platform supporting multiple sellers.",approach:"Developing a marketplace platform with modular and extensible architecture.",architecture:"Laravel with separate modules, Vue.js frontend, Elasticsearch for search, Redis cache.",outcome:"Processing over 1,000 daily orders with 99.9% uptime.",future:"Adding smart product recommendations and logistics system integration.",features:["Multi-seller Management","Advanced Cart","Payment Gateway","Smart Search","Inventory Management","Sales Reports"]},
-    techs:["PHP","Laravel","Vue.js","Elasticsearch","Redis","Docker"],
-    cover:"https://picsum.photos/seed/ecom-misagh/800/600.jpg",
-    gallery:["https://picsum.photos/seed/ecom1/400/300.jpg","https://picsum.photos/seed/ecom2/400/300.jpg"],
-    date:"2024", status:"completed"
-  },
-  {
-    id:7, category:"windows",
-    fa:{title:"نرم‌افزار مدیریت انبار ویندوزی",desc:"نرم‌افزار دسکتاپ حرفه‌ای برای مدیریت انبار، ورود و خروج کالا، بارکد و گزارش‌گیری.",problem:"مدیریت دستی انبار با حجم بالای کالا و خطای زیاد در موجودی.",approach:"توسعه نرم‌افزار ویندوزی با پشتیبانی از بارکدخوان و رابط کاربری سریع.",architecture:"C# با WPF، SQL Server دیتابیس و پشتیبانی از سخت‌افزار بارکدخوان.",outcome:"دقت ۹۹.۵ درصدی در موجودی انبار و افزایش سه برابری سرعت عملیات.",future:"افزودن پشتیبانی از RFID و یکپارچگی با سیستم‌های حسابداری.",features:["مدیریت ورود و خروج","بارکدخوان","گزارش‌گیری جامع","مدیریت مکان‌ها","هشدار موجودی","چاپ برچسب"]},
-    en:{title:"Windows Warehouse Management Software",desc:"Professional desktop software for warehouse management, inbound/outbound, barcode, and reporting.",problem:"Manual warehouse management with high volume of goods and high inventory error rates.",approach:"Developing Windows software with barcode reader support and fast UI.",architecture:"C# with WPF, SQL Server database, barcode hardware support.",outcome:"99.5% inventory accuracy and 3x increase in operation speed.",future:"Adding RFID support and accounting system integration.",features:["Inbound/Outbound Management","Barcode Scanner","Comprehensive Reporting","Location Management","Stock Alerts","Label Printing"]},
-    techs:["C#",".NET","WPF","SQL Server","Windows","Git"],
-    cover:"https://picsum.photos/seed/warehouse-misagh/800/600.jpg",
-    gallery:["https://picsum.photos/seed/wh1/400/300.jpg","https://picsum.photos/seed/wh2/400/300.jpg"],
-    date:"2023", status:"completed"
-  },
-  {
-    id:8, category:"ai",
-    fa:{title:"سامانه تحلیل داده و هوش مصنوعی",desc:"پلتفرم تحلیل داده با قابلیت‌های یادگیری ماشین برای پیش‌بینی و کشف الگو در داده‌های سازمانی.",problem:"حجم بالای داده‌های سازمانی بدون ابزار تحلیلی مناسب و عدم امکان تصمیم‌گیری مبتنی بر داده.",approach:"توسعه پلتفرم تحلیلی با ماژول‌های یادگیری ماشین قابل تنظیم و داشبوردهای تعاملی.",architecture:"Python برای ML، FastAPI برای بک‌اند، React برای داشبورد و PostgreSQL برای داده.",outcome:"بهبود ۳۵ درصدی دقت پیش‌بینی‌ها و صرفه‌جویی قابل توجه در زمان تحلیل.",future:"افزودن قابلیت Processing زبان طبیعی و تحلیل تصویر.",features:["داشبورد تعاملی","مدل‌های پیش‌بینی","کشف الگو","پردازش داده‌های بزرگ","خروجی گزارش","API تحلیلی"]},
-    en:{title:"Data Analysis & AI System",desc:"Data analysis platform with machine learning capabilities for prediction and pattern discovery in organizational data.",problem:"High volume of organizational data without proper analytical tools and inability for data-driven decision making.",approach:"Developing an analytical platform with configurable ML modules and interactive dashboards.",architecture:"Python for ML, FastAPI backend, React dashboard, PostgreSQL database.",outcome:"35% improvement in prediction accuracy and significant time savings in analysis.",future:"Adding NLP capabilities and image analysis.",features:["Interactive Dashboard","Prediction Models","Pattern Discovery","Big Data Processing","Report Export","Analytical API"]},
-    techs:["Python","FastAPI","React","PostgreSQL","Docker","Linux"],
-    cover:"https://picsum.photos/seed/ai-misagh/800/600.jpg",
-    gallery:["https://picsum.photos/seed/ai1/400/300.jpg","https://picsum.photos/seed/ai2/400/300.jpg","https://picsum.photos/seed/ai3/400/300.jpg"],
-    date:"2024", status:"completed"
-  }
-];
+/* ---------- FAB ---------- */
+const fabItems=document.getElementById('fab-items');
+document.getElementById('fab-btn').addEventListener('click',()=>{fabItems.classList.toggle('hidden');fabItems.classList.toggle('flex');});
 
-const philosophyItems = [
-  { num:"01", fa:{title:"معماری‌محور",desc:"هر پروژه از طراحی معماری مناسب آغاز می‌شود. بدون معماری درست، هیچ نرم‌افزاری پایدار نخواهد بود."}, en:{title:"Architecture-First",desc:"Every project begins with proper architecture design. Without the right architecture, no software will be stable."} },
-  { num:"02", fa:{title:"مقیاس‌پذیری",desc:"سیستم‌ها باید بتوانند بدون بازنویسی، رشد کنند. مقیاس‌پذیری از روز اول در نظر گرفته می‌شود."}, en:{title:"Scalability",desc:"Systems must grow without rewriting. Scalability is considered from day one."} },
-  { num:"03", fa:{title:"امنیت توسط طراحی",desc:"امنیت یک ویژگی اضافی نیست، بخشی از طراحی است. هر لایه با در نظر گرفتن امنیت ساخته می‌شود."}, en:{title:"Security by Design",desc:"Security is not an add-on, it's part of the design. Every layer is built with security in mind."} },
-  { num:"04", fa:{title:"بهبود مستمر",desc:"نرم‌افزار هرگز کامل نیست. بازبینی کد، بازآرکیتچر و بهینه‌سازی مستمر بخشی از فرآیند ماست."}, en:{title:"Continuous Improvement",desc:"Software is never complete. Code review, re-architecture, and continuous optimization are part of our process."} },
-  { num:"05", fa:{title:"تجربه کاربری مهندسی‌شده",desc:"رابط کاربری باید هم زیبا باشد و هم کارآمد. هر تعامل با هدف و بر اساس تحلیل رفتار کاربر طراحی می‌شود."}, en:{title:"Engineered UX",desc:"UI must be both beautiful and functional. Every interaction is designed with purpose based on user behavior analysis."} }
-];
+/* ---------- Active nav highlight ---------- */
+const secs=[...document.querySelectorAll('main section')];
+const navMap={hero:'nav-home',about:'nav-about',services:'nav-services',portfolio:'nav-portfolio',founder:'nav-founder',contact:'nav-contact'};
+const navIo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id=navMap[e.target.id];document.querySelectorAll('[data-template-id^="nav-"]').forEach(l=>l.style.color='');const el=document.querySelector('[data-template-id="'+id+'"]');if(el)el.style.color='var(--orange2)';}}),{threshold:.4});
+secs.forEach(s=>navIo.observe(s));
 
-const founderSkills = [
-  {fa:"مهندسی نرم‌افزار",en:"Software Engineering"},
-  {fa:"سامانه‌های سازمانی",en:"Enterprise Systems"},
-  {fa:"نرم‌افزار دسکتاپ",en:"Desktop Applications"},
-  {fa:"توسعه وب",en:"Web Applications"},
-  {fa:"اپلیکیشن موبایل",en:"Mobile Apps"},
-  {fa:"معماری نرم‌افزار",en:"Software Architecture"},
-  {fa:"وردپرس",en:"WordPress Solutions"},
-  {fa:"هوش مصنوعی",en:"Artificial Intelligence"}
-];
-
-const contactItems = [
-  { icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>', key:"phone", value:"09198417510", href:"tel:+989198417510" },
-  { icon:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>', key:"whatsapp", value:"09198417510", href:"https://wa.me/989198417510" },
-  { icon:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>', key:"telegram", value:"@mhkh110", href:"https://t.me/mhkh110" },
-  { icon:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>', key:"bale", value:"@mhkh110", href:"https://ble.ir/mhkh110" },
-  { icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>', key:"email", value:"info@dpm-eng.com", href:"mailto:info@dpm-eng.com" },
-  { icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>', key:"address", value:"تهران، میدان انقلاب، نبش خیابان ۱۲ فروردین، ساختمان پارک علم و فناوری دانشگاه تهران، پلاک ۱۳۰۲، طبقه سوم، واحد ۳۰۱", href:null },
-  { icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width
+lucide.createIcons();
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a16e5a84a4f2360f',t:'MTc4MzMzODIyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
