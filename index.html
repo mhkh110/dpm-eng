@@ -67,7 +67,20 @@
   @keyframes sd{0%{opacity:0;top:8px;}40%{opacity:1;}80%{opacity:0;top:20px;}}
   #loader{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .8s,visibility .8s;}
   #loader.done{opacity:0;visibility:hidden;}
-  .loader-logo{width:76px;height:76px;border-radius:22px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:34px;color:#fff;animation:pulse 2.4s ease-in-out infinite;}
+  /* حذف استایل‌های قبلی loader-logo که برای متن بود */
+  .loader-logo{
+    width: 100px; /* عرض مناسب برای لوگو */
+    height: 100px; /* ارتفاع مناسب برای لوگو */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  .loader-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* نمایش کامل لوگو بدون برش */
+  }
   .loader-bar{width:220px;height:4px;border-radius:4px;background:var(--border);overflow:hidden;}
   .loader-fill{height:100%;width:0;background:linear-gradient(90deg,var(--orange),var(--purple));animation:load 2s ease forwards;}
   @keyframes load{to{width:100%;}}
@@ -86,9 +99,13 @@
   <script src="/_sdk/0179d719c431a79e.data_sdk.js" type="text/javascript" integrity="sha512-OsRvJkI5GkC3MJQcgotQYotpzrMSX415GiKKgvYdxQEEkzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
   <script src="/_sdk/0b3af1c300e720aa.resizing_sdk.js" type="text/javascript" integrity="sha512-nX1P6oXZmEY5wCI2lUVg3BwKu1cr0yi+ZpXgZ0Yn90vkSwvpmyzBMvOyD6VLJUtBwFI2dSrw1b6OvORxSggw3w=="></script>
  </head>
- <body data-template-id="__page-root"><!-- Loading -->
+ <body data-template-id="__page-root">
+  <!-- Loading -->
   <div id="loader" role="status" aria-label="در حال بارگذاری">
-   <div class="loader-logo grad-orange glow-orange" data-template-id="loader-logo"></div>
+   <!-- جایگزینی لوگوی متنی با لوگوی تصویری شما -->
+   <div class="loader-logo">
+    <img src="http://dpm-eng.com/wp-content/uploads/2024/03/logo-dpm.png" alt="Misagh Software Engineering Logo">
+   </div>
    <div class="loader-bar">
     <div class="loader-fill"></div>
    </div>
@@ -382,8 +399,20 @@ window.addEventListener('load',()=>{ setTimeout(()=>{
 },600); });
 document.getElementById('lang-btn').addEventListener('click',()=>{lang=lang==='fa'?'en':'fa';localStorage.setItem('misagh-lang',lang);applyLang();});
 
-/* ---------- Loader ---------- */
-window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('done'),2000));
+/* ---------- Loader (ایمن‌سازی شده) ---------- */
+// یک تایمر امن ۱.۵ ثانیه‌ای که در هر صورت لودر را مخفی می‌کند
+const loaderTimer = setTimeout(() => {
+  document.getElementById('loader').classList.add('done');
+}, 1500);
+
+// رویداد اصلی: اگر همه چیز زودتر از ۱.۵ ثانیه لود شد، تایمر را لغو و لودر را مخفی کن
+window.addEventListener('load', () => {
+  clearTimeout(loaderTimer);
+  // یک مکث کوچک برای اطمینان از رندر کامل
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('done');
+  }, 300);
+});
 
 /* ---------- Mobile menu ---------- */
 const mm=document.getElementById('mobile-menu');
