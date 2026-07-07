@@ -1868,7 +1868,44 @@ const T = {
 const technologies = ["PHP","Laravel",".NET","C#","C++","Python","JavaScript","TypeScript","WordPress","WooCommerce","MySQL","SQL Server","REST API","Docker","Linux","Git"];
 
 const serviceKeys = ['s1','s2','s3','s4','s5','s6','s7','s8','s9','s10','s11','s12'];
-const serviceIcons = ['⚙️','🏗️','🌐','🖥️','📱','📐','🔍','🤖','🏢','🔄','🔗','☁️'];
+function makeServiceIcon(paths) {
+  return function() {
+    var ns = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('stroke', 'currentColor');
+    svg.setAttribute('stroke-width', '1.5');
+    svg.setAttribute('stroke-linecap', 'round');
+    svg.setAttribute('stroke-linejoin', 'round');
+    svg.style.width = '100%';
+    svg.style.height = '100%';
+    paths.forEach(function(d) {
+      var el = document.createElementNS(ns, d.tag || 'path');
+      Object.keys(d.attrs).forEach(function(k) {
+        el.setAttribute(k, d.attrs[k]);
+      });
+      svg.appendChild(el);
+    });
+    return svg.outerHTML;
+  };
+}
+
+var serviceIcons = [
+  makeServiceIcon([{tag:'path',attrs:{d:'M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'}}]),
+  makeServiceIcon([{tag:'rect',attrs:{x:'2',y:'3',width:'20',height:'14',rx:'2'}},{tag:'line',attrs:{x1:'8',y1:'21',x2:'16',y2:'21'}},{tag:'line',attrs:{x1:'12',y1:'17',x2:'12',y2:'21'}},{tag:'path',attrs:{d:'M7 8h10M7 12h6'}}]),
+  makeServiceIcon([{tag:'circle',attrs:{cx:'12',cy:'12',r:'10'}},{tag:'line',attrs:{x1:'2',y1:'12',x2:'22',y2:'12'}},{tag:'path',attrs:{d:'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'}}]),
+  makeServiceIcon([{tag:'rect',attrs:{x:'2',y:'3',width:'20',height:'14',rx:'2'}},{tag:'line',attrs:{x1:'8',y1:'21',x2:'16',y2:'21'}},{tag:'line',attrs:{x1:'12',y1:'17',x2:'12',y2:'21'}}]),
+  makeServiceIcon([{tag:'rect',attrs:{x:'5',y:'2',width:'14',height:'20',rx:'2'}},{tag:'line',attrs:{x1:'12',y1:'18',x2:'12.01',y2:'18'}}]),
+  makeServiceIcon([{tag:'path',attrs:{d:'M12 2L2 7l10 5 10-5-10-5z'}},{tag:'path',attrs:{d:'M2 17l10 5 10-5'}},{tag:'path',attrs:{d:'M2 12l10 5 10-5'}}]),
+  makeServiceIcon([{tag:'circle',attrs:{cx:'11',cy:'11',r:'8'}},{tag:'line',attrs:{x1:'21',y1:'21',x2:'16.65',y2:'16.65'}},{tag:'path',attrs:{d:'M11 8v6M8 11h6'}}]),
+  makeServiceIcon([{tag:'path',attrs:{d:'M12 2a4 4 0 0 1 4 4v1h1a4 4 0 0 1 0 8h-1v1a4 4 0 0 1-8 0v-1H7a4 4 0 0 1 0-8h1V6a4 4 0 0 1 4-4z'}},{tag:'circle',attrs:{cx:'12',cy:'12',r:'3'}}]),
+  makeServiceIcon([{tag:'rect',attrs:{x:'4',y:'2',width:'16',height:'20',rx:'2'}},{tag:'line',attrs:{x1:'9',y1:'6',x2:'15',y2:'6'}},{tag:'line',attrs:{x1:'12',y1:'10',x2:'12',y2:'18'}},{tag:'circle',attrs:{cx:'12',cy:'16',r:'2'}}]),
+  makeServiceIcon([{tag:'polyline',attrs:{points:'16 18 22 12 16 6'}},{tag:'polyline',attrs:{points:'8 6 2 12 8 18'}}]),
+  makeServiceIcon([{tag:'path',attrs:{d:'M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'}},{tag:'path',attrs:{d:'M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'}}]),
+  makeServiceIcon([{tag:'path',attrs:{d:'M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z'}}])
+];
+//const serviceIcons = ['⚙️','🏗️','🌐','🖥️','📱','📐','🔍','🤖','🏢','🔄','🔗','☁️'];
 
 const categories = [
   { key: "all", fa: "همه پروژه‌ها", en: "All Projects" },
