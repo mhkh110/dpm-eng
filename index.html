@@ -2142,14 +2142,14 @@ const philosophyItems = [
 ];
 
 const founderSkillsData = [
-  { key: "s1", fa: "PHP", en: "PHP" },
-  { key: "s2", fa: "Laravel", en: "Laravel" },
-  { key: "s3", fa: "WordPress", en: "WordPress" },
-  { key: "s4", fa: "WooCommerce", en: "WooCommerce" },
-  { key: "s5", fa: "REST API", en: "REST API" },
-  { key: "s6", fa: "MySQL", en: "MySQL" },
-  { key: "s7", fa: "C++ / Qt", en: "C++ / Qt" },
-  { key: "s8", fa: "Software Architecture", en: "Software Architecture" }
+  { fa: "PHP", en: "PHP" },
+  { fa: "Laravel", en: "Laravel" },
+  { fa: "WordPress", en: "WordPress" },
+  { fa: "WooCommerce", en: "WooCommerce" },
+  { fa: "REST API", en: "REST API" },
+  { fa: "MySQL", en: "MySQL" },
+  { fa: "C++ / Qt", en: "C++ / Qt" },
+  { fa: "Software Architecture", en: "Software Architecture" }
 ];
 
 const contactItems = [
@@ -2305,9 +2305,9 @@ function renderFounderSkills() {
   const lang = getLang();
   const container = document.getElementById('founder-skills');
   if (!container) return;
-  container.innerHTML = founderSkillsData.map(s => 
-    `<span class="founder-skill">${T[lang][`founder.${s.key}`]}</span>`
-  ).join('');
+container.innerHTML = founderSkillsData.map(s => 
+  `<span class="founder-skill">${s[lang]}</span>`
+).join('');
 }
 
 function renderContact() {
