@@ -1869,26 +1869,24 @@ const technologies = ["PHP","Laravel",".NET","C#","C++","Python","JavaScript","T
 
 const serviceKeys = ['s1','s2','s3','s4','s5','s6','s7','s8','s9','s10','s11','s12'];
 function makeServiceIcon(paths) {
-  return function() {
-    var ns = 'http://www.w3.org/2000/svg';
-    var svg = document.createElementNS(ns, 'svg');
-    svg.setAttribute('viewBox', '0 0 24 24');
-    svg.setAttribute('fill', 'none');
-    svg.setAttribute('stroke', 'currentColor');
-    svg.setAttribute('stroke-width', '1.5');
-    svg.setAttribute('stroke-linecap', 'round');
-    svg.setAttribute('stroke-linejoin', 'round');
-    svg.style.width = '100%';
-    svg.style.height = '100%';
-    paths.forEach(function(d) {
-      var el = document.createElementNS(ns, d.tag || 'path');
-      Object.keys(d.attrs).forEach(function(k) {
-        el.setAttribute(k, d.attrs[k]);
-      });
-      svg.appendChild(el);
+  var ns = 'http://www.w3.org/2000/svg';
+  var svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24');
+  svg.setAttribute('fill', 'none');
+  svg.setAttribute('stroke', 'currentColor');
+  svg.setAttribute('stroke-width', '1.5');
+  svg.setAttribute('stroke-linecap', 'round');
+  svg.setAttribute('stroke-linejoin', 'round');
+  svg.style.width = '100%';
+  svg.style.height = '100%';
+  paths.forEach(function(d) {
+    var el = document.createElementNS(ns, d.tag || 'path');
+    Object.keys(d.attrs).forEach(function(k) {
+      el.setAttribute(k, d.attrs[k]);
     });
-    return svg.outerHTML;
-  };
+    svg.appendChild(el);
+  });
+  return svg.outerHTML;
 }
 
 var serviceIcons = [
