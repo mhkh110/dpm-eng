@@ -1873,11 +1873,13 @@ const serviceIcons = ['⚙️','🏗️','🌐','🖥️','📱','📐','🔍','
 const categories = [
   { key: "all", fa: "همه پروژه‌ها", en: "All Projects" },
   { key: "healthcare", fa: "سلامت", en: "Healthcare" },
-  { key: "enterprise", fa: "سامانه سازمانی", en: "Enterprise Systems" },
+  { key: "enterprise", fa: "سامانه‌های سازمانی", en: "Enterprise Systems" },
   { key: "crm", fa: "CRM", en: "CRM" },
-  { key: "desktop", fa: "دسکتاپ", en: "Desktop" },
-  { key: "ecommerce", fa: "فروشگاه", en: "E-Commerce" },
-  { key: "marketplace", fa: "مارکت‌پلیس", en: "Marketplace" }
+  { key: "saas", fa: "SaaS", en: "SaaS" },
+  { key: "desktop", fa: "نرم‌افزارهای دسکتاپ", en: "Desktop Software" },
+  { key: "web", fa: "پلتفرم‌های وب", en: "Web Platforms" },
+  { key: "marketplace", fa: "مارکت‌پلیس", en: "Marketplace" },
+  { key: "corporate", fa: "شرکتی", en: "Corporate" }
 ];
 
 const projects = [
@@ -1886,16 +1888,16 @@ const projects = [
     category: "healthcare",
     image: "darmangaran.png",
     fa: {
-      title: "درمانگران برتر",
-      desc: "سکو و پلتفرم خدمات سلامت با مدیریت اطلاعات پزشکی، نوبت‌دهی و دسترسی کاربران در محیطی پایدار و قابل توسعه.",
-      modal: "این پروژه در حوزه خدمات سلامت و مدیریت تعاملات دیجیتال طراحی شده است. ساختار فنی آن بر پایه معماری قابل توسعه و مدیریت داده‌های حساس ایجاد شده و امکان توسعه ماژول‌های جدید را در آینده حفظ می‌کند.",
-      responsibilities: ["Backend Development", "Database Design", "API Development", "Performance Optimization", "Security Improvements"]
+      title: "سامانه نوبت‌دهی و مدیریت پزشکان",
+      desc: "پلتفرمی برای ثبت‌نام پزشکان، نوبت‌دهی آنلاین بیماران، مدیریت پروفایل پزشکان، جستجوی تخصص‌ها و ارائه خدمات پزشکی در بستری پایدار، امن و توسعه‌پذیر.",
+      modal: "این پروژه یک پلتفرم جامع سلامت دیجیتال است که با هدف ساماندهی فرآیند نوبت‌دهی و مدیریت اطلاعات پزشکان طراحی شده است. ساختار فنی آن بر پایه معماری مقیاس‌پذیر و مدیریت امن داده‌های حساس ایجاد شده و امکان توسعه ماژول‌های جدید را در آینده حفظ می‌کند.",
+      responsibilities: ["Backend Architecture", "Database Design", "API Development", "Performance Optimization", "Security Implementation"]
     },
     en: {
-      title: "Darmangaran Bartar",
-      desc: "A health services platform for managing medical information, appointments, and user access in a stable and extensible environment.",
-      modal: "This project was developed for digital health service delivery. Its technical structure is based on a scalable architecture and secure data handling, allowing future module expansion.",
-      responsibilities: ["Backend Development", "Database Design", "API Development", "Performance Optimization", "Security Improvements"]
+      title: "Online Appointment & Doctor Management Platform",
+      desc: "A platform for doctor registration, online patient appointments, physician profile management, specialty search, and medical service delivery in a stable, secure, and scalable environment.",
+      modal: "This project is a comprehensive digital health platform designed to streamline appointment scheduling and physician data management. Its technical foundation is built on a scalable architecture with secure handling of sensitive data, allowing future module expansion.",
+      responsibilities: ["Backend Architecture", "Database Design", "API Development", "Performance Optimization", "Security Implementation"]
     },
     techs: ["PHP", "Laravel", "MySQL", "REST API", "JavaScript"],
     website: "https://darmangaranbartar.com/"
@@ -1905,15 +1907,15 @@ const projects = [
     category: "healthcare",
     image: "shokri.jpg",
     fa: {
-      title: "سامانه مدیریت درمان بیماران",
-      desc: "سامانه‌ای برای مدیریت پرونده بیماران، روند درمان، ثبت سوابق پزشکی و کنترل فرآیندهای درمانی در محیطی متمرکز و قابل پیگیری.",
-      modal: "این سامانه برای مدیریت دیجیتال فرآیند درمان طراحی شده است. هر بیمار در آن دارای پرونده اختصاصی است و پزشک می‌تواند وضعیت درمان، یادداشت‌های تخصصی و روند درمان را ثبت و پیگیری کند.",
+      title: "اتوماسیون مدیریت درمان بیماران",
+      desc: "اتوماسیون تخصصی جهت مدیریت پرونده بیماران، ثبت فرآیندهای درمان، سوابق پزشکی و گردش کار مراکز درمانی در محیطی متمرکز و قابل پیگیری.",
+      modal: "این اتوماسیون برای مدیریت دیجیتال فرآیندهای درمان در مراکز درمانی طراحی شده است. هر بیمار دارای پرونده اختصاصی است و کادر درمان می‌توانند وضعیت درمان، یادداشت‌های تخصصی و روند مراقبت را ثبت و پیگیری کنند.",
       responsibilities: ["Patient Management", "Treatment Workflow", "Medical Records", "QR Code Integration", "Operational Tracking"]
     },
     en: {
-      title: "Patient Treatment Management System",
-      desc: "A system for managing patient records, treatment workflows, medical history, and clinical operations in a centralized environment.",
-      modal: "This system was developed to digitize treatment operations. Each patient has a dedicated record, and physicians can track treatment status, specialist notes, and ongoing care processes.",
+      title: "Patient Treatment Management Automation",
+      desc: "A specialized automation system for managing patient records, treatment workflows, medical history, and clinical operations in a centralized and traceable environment.",
+      modal: "This automation was developed to digitize treatment operations in clinical settings. Each patient has a dedicated record, and healthcare professionals can track treatment status, specialist notes, and ongoing care processes.",
       responsibilities: ["Patient Management", "Treatment Workflow", "Medical Records", "QR Code Integration", "Operational Tracking"]
     },
     techs: ["PHP", "Laravel", "MySQL", "QR Code", "JavaScript"],
@@ -1926,14 +1928,14 @@ const projects = [
     image: "panel.png",
     fa: {
       title: "پنل اختصاصی مدیریت پزشکان",
-      desc: "پنل اختصاصی برای مدیریت اطلاعات پزشک، پروفایل، برنامه حضور، نوبت‌ها، تعرفه ویزیت، اشتراک و دسترسی‌های کاربری در یک محیط سازمانی و سریع.",
+      desc: "پنل اختصاصی برای مدیریت پروفایل پزشک، برنامه حضور، نوبت‌ها، تعرفه ویزیت، اشتراک و دسترسی‌های کاربری در محیطی امن، یکپارچه و کاربرپسند.",
       modal: "این پنل برای استفاده حرفه‌ای پزشکان در محیطی امن و قابل مدیریت طراحی شده است. امکانات آن شامل ویرایش پروفایل، مدیریت برنامه حضور، کنترل نوبت‌ها، تعیین تعرفه ویزیت، مدیریت اشتراک و احراز هویت کاربر است.",
       responsibilities: ["Doctor Profile Management", "Schedule Management", "Appointment Handling", "Subscription Management", "Authentication"]
     },
     en: {
-      title: "Doctor Management Panel",
-      desc: "A dedicated panel for managing physician profiles, schedules, appointments, consultation fees, subscriptions, and user access in a fast and structured environment.",
-      modal: "This panel was built for professional use by physicians in a secure and manageable environment. It supports profile editing, schedule control, appointment handling, fee configuration, subscription management, and user authentication.",
+      title: "Dedicated Doctor Management Portal",
+      desc: "A dedicated portal for managing physician profiles, schedules, appointments, consultation fees, subscriptions, and user access in a secure, integrated, and user-friendly environment.",
+      modal: "This portal was built for professional use by physicians in a secure and manageable environment. It supports profile editing, schedule control, appointment handling, fee configuration, subscription management, and user authentication.",
       responsibilities: ["Doctor Profile Management", "Schedule Management", "Appointment Handling", "Subscription Management", "Authentication"]
     },
     techs: ["Laravel", "PHP", "MySQL", "JavaScript", "REST API"],
@@ -1942,17 +1944,17 @@ const projects = [
   },
   {
     id: 4,
-    category: "enterprise",
+    category: "saas",
     image: "license.png",
     fa: {
       title: "سامانه مدیریت لایسنس و اشتراک نرم‌افزار",
-      desc: "زیرساختی برای تولید و اعتبارسنجی لایسنس، تعریف پلن‌های اشتراک، تمدید اشتراک، مدیریت کاربران و کنترل دسترسی در سطح محصول.",
+      desc: "زیرساختی برای تولید و اعتبارسنجی لایسنس، تعریف پلن‌های اشتراک، تمدید دسترسی، مدیریت کاربران و کنترل سطح دسترسی در محصولات نرم‌افزاری.",
       modal: "این سامانه به‌عنوان یک زیرساخت نرم‌افزاری برای مدیریت مجوز محصولات طراحی شده است. در آن می‌توان لایسنس‌ها را تولید، اعتبارسنجی، فعال یا غیرفعال کرد و وضعیت اشتراک‌ها را در یک پنل مدیریتی کنترل نمود.",
       responsibilities: ["License Generation", "License Validation", "Subscription Plans", "User Management", "Access Control", "REST API"]
     },
     en: {
-      title: "Software License Management Platform",
-      desc: "An infrastructure layer for generating and validating licenses, defining subscription plans, renewing access, managing users, and controlling permissions across products.",
+      title: "Software License & Subscription Management Platform",
+      desc: "An infrastructure layer for generating and validating licenses, defining subscription plans, renewing access, managing users, and controlling permissions across software products.",
       modal: "This platform was built as an enterprise software foundation for product licensing. It supports license issuance, validation, activation, deactivation, subscription control, and centralized administrative oversight.",
       responsibilities: ["License Generation", "License Validation", "Subscription Plans", "User Management", "Access Control", "REST API"]
     },
@@ -1965,14 +1967,14 @@ const projects = [
     category: "crm",
     image: "crm.png",
     fa: {
-      title: "سامانه مدیریت ارتباط با مشتری و اتوماسیون فروش",
-      desc: "سامانه CRM اختصاصی برای مدیریت ارتباط با مشتریان، پیگیری فرآیند فروش، گزارش‌های مدیریتی و اتوماسیون گردش کار.",
+      title: "سامانه CRM و اتوماسیون فروش",
+      desc: "سامانه‌ای برای مدیریت ارتباط با مشتریان، پیگیری درخواست‌ها، مدیریت فرآیندهای فروش، اتوماسیون گردش کار و ارائه گزارش‌های مدیریتی یکپارچه.",
       modal: "این پروژه با هدف مکانیزه‌سازی فرآیندهای ارتباط با مشتری و مدیریت فروش توسعه یافته است. سامانه امکان ثبت و پیگیری سرنخ‌های فروش، مدیریت مشتریان، ثبت تعاملات، ایجاد وظایف، گزارش‌گیری مدیریتی و کنترل فرآیندهای داخلی را در یک محیط یکپارچه فراهم می‌کند.",
       responsibilities: ["CRM Architecture", "Backend Development", "User Management", "Reporting", "Workflow Control"]
     },
     en: {
-      title: "Customer Relationship Management and Sales Automation System",
-      desc: "A dedicated CRM system for managing customer relationships, tracking sales processes, producing management reports, and automating workflows.",
+      title: "CRM & Sales Automation Platform",
+      desc: "A system for customer relationship management, request tracking, sales process management, workflow automation, and unified management reporting.",
       modal: "This project was developed to digitize customer relationship and sales operations. It supports lead management, customer administration, interaction tracking, task creation, management reporting, and internal process control in a unified environment.",
       responsibilities: ["CRM Architecture", "Backend Development", "User Management", "Reporting", "Workflow Control"]
     },
@@ -1982,17 +1984,17 @@ const projects = [
   },
   {
     id: 6,
-    category: "ecommerce",
+    category: "web",
     image: "sell-book.png",
     fa: {
-      title: "سامانه آموزش آنلاین و فروش محتوای دیجیتال",
-      desc: "پلتفرمی اختصاصی برای فروش کتاب‌های فیزیکی و الکترونیکی، برگزاری دوره‌های آموزشی آنلاین، مدیریت سمینارها و اتصال مستقیم به Skyroom.",
+      title: "پلتفرم آموزش آنلاین و فروش محتوای دیجیتال",
+      desc: "پلتفرمی اختصاصی برای فروش کتاب‌های فیزیکی و الکترونیکی، برگزاری دوره‌های آموزشی آنلاین، مدیریت وبینارها و اتصال مستقیم به Skyroom برای کلاس‌های مجازی.",
       modal: "این پروژه به‌عنوان یک سامانه جامع آموزش آنلاین و فروش محتوای دیجیتال توسعه یافته است. ساختار سیستم به‌گونه‌ای طراحی شده که علاوه بر فروش کتاب‌های چاپی و الکترونیکی، امکان ایجاد دوره‌های آموزشی، مدیریت جلسات آنلاین و برگزاری وبینارها را نیز فراهم می‌کند. اتصال مستقیم به Skyroom برای ایجاد کلاس‌های آنلاین، مدیریت جلسات، ثبت‌نام شرکت‌کنندگان و دسترسی کاربران به لینک ورود نیز در این سامانه پیاده‌سازی شده است.",
       responsibilities: ["Backend Development", "E-Commerce Development", "Course Management", "Skyroom Integration", "Online Sessions", "User Management", "Payments", "Order Management", "Educational Content Management"]
     },
     en: {
-      title: "Online Learning and Digital Content Sales Platform",
-      desc: "A custom platform for selling physical and digital books, running online courses, managing seminars, and connecting directly to Skyroom for live classes.",
+      title: "Online Learning & Digital Content Sales Platform",
+      desc: "A dedicated platform for selling physical and digital books, running online courses, managing webinars, and direct Skyroom integration for virtual classrooms.",
       modal: "This project was developed as a comprehensive online learning and digital content sales platform. It supports physical and digital book sales, course creation, online session management, webinars, and direct Skyroom integration for live classes, participant registration, and access links.",
       responsibilities: ["Backend Development", "E-Commerce Development", "Course Management", "Skyroom Integration", "Online Sessions", "User Management", "Payments", "Order Management", "Educational Content Management"]
     },
@@ -2005,16 +2007,16 @@ const projects = [
     category: "desktop",
     image: "xbody.jpg",
     fa: {
-      title: "XBody Controller",
-      desc: "نرم‌افزار دسکتاپ برای ارتباط با دستگاه XBody، کنترل عملکرد و مدیریت داده‌های سخت‌افزاری.",
-      modal: "این پروژه برای برقراری ارتباط مستقیم با دستگاه XBody و مدیریت داده‌های مرتبط با آن توسعه یافته است.",
-      responsibilities: ["C++", "Hardware Communication", "Desktop Development", "Performance Optimization"]
+      title: "نرم‌افزار کنترل دستگاه XBody",
+      desc: "نرم‌افزار ویندوزی برای برقراری ارتباط با دستگاه XBody، کنترل عملکرد تجهیزات و مدیریت داده‌های سخت‌افزاری مرتبط با آن.",
+      modal: "این پروژه برای برقراری ارتباط مستقیم با دستگاه XBody و مدیریت داده‌های مرتبط با آن توسعه یافته است. نرم‌افزار امکان کنترل کامل عملکرد دستگاه و پردازش اطلاعات دریافتی را فراهم می‌کند.",
+      responsibilities: ["C++ Development", "Hardware Communication", "Desktop Application", "Performance Optimization"]
     },
     en: {
-      title: "XBody Controller",
-      desc: "Desktop software for communicating with the XBody device, controlling its behavior, and managing hardware-related data.",
-      modal: "This project was developed for direct communication with the XBody device and management of its associated data.",
-      responsibilities: ["C++", "Hardware Communication", "Desktop Development", "Performance Optimization"]
+      title: "Desktop Device Control Software",
+      desc: "Windows software for communicating with the XBody device, controlling equipment functionality, and managing associated hardware data.",
+      modal: "This project was developed for direct communication with the XBody device and management of its associated data. The software enables full device control and processing of incoming information.",
+      responsibilities: ["C++ Development", "Hardware Communication", "Desktop Application", "Performance Optimization"]
     },
     techs: ["C++", "Windows", "Visual Studio"],
     website: null
@@ -2024,15 +2026,15 @@ const projects = [
     category: "marketplace",
     image: "hani.png",
     fa: {
-      title: "Hani Parts",
-      desc: "فروشگاه تخصصی قطعات یدکی با مدیریت محصولات، سفارش‌ها و فرآیندهای مرتبط با فروشندگان و مشتریان.",
-      modal: "این پروژه برای پیاده‌سازی یک فروشگاه تخصصی با امکانات سفارشی و مدیریت فرآیندهای خرید و سفارش‌دهی طراحی شده است.",
+      title: "مارکت‌پلیس تخصصی قطعات یدکی",
+      desc: "مارکت‌پلیس تخصصی قطعات یدکی با مدیریت فروشندگان، محصولات، سفارش‌ها و فرآیندهای فروش در یک بستر یکپارچه و بهینه‌شده.",
+      modal: "این پروژه برای پیاده‌سازی یک مارکت‌پلیس تخصصی با امکانات سفارشی و مدیریت فرآیندهای خرید و سفارش‌دهی طراحی شده است. ساختار آن امکان فعالیت همزمان چندین فروشنده و مدیریت متمرکز محصولات را فراهم می‌کند.",
       responsibilities: ["WooCommerce Development", "Custom Features", "Marketplace Functions", "Performance"]
     },
     en: {
-      title: "Hani Parts",
-      desc: "A specialized spare-parts marketplace with product management, order handling, and seller-related processes.",
-      modal: "This project was implemented as a specialized storefront with custom features and streamlined buying workflows.",
+      title: "Specialized Spare Parts Marketplace",
+      desc: "A specialized spare parts marketplace with seller management, product handling, order processing, and sales workflows in a unified and optimized environment.",
+      modal: "This project was implemented as a specialized marketplace with custom features and streamlined buying workflows, enabling multi-vendor activity and centralized product management.",
       responsibilities: ["WooCommerce Development", "Custom Features", "Marketplace Functions", "Performance"]
     },
     techs: ["WordPress", "WooCommerce", "PHP", "JavaScript"],
@@ -2040,18 +2042,18 @@ const projects = [
   },
   {
     id: 9,
-    category: "ecommerce",
+    category: "web",
     image: "decochub.png",
     fa: {
-      title: "دکوچوب",
-      desc: "فروشگاه اینترنتی با مدیریت محصولات، سفارش‌ها و تجربه خرید برای محصولات دکوراسیون داخلی.",
-      modal: "پیاده‌سازی فروشگاه آنلاین با تمرکز بر مدیریت سفارش، موجودی و امکانات سفارشی مرتبط با فروش.",
+      title: "فروشگاه آنلاین دکوراسیون داخلی",
+      desc: "فروشگاه آنلاین محصولات دکوراسیون داخلی با مدیریت محصولات، سفارش‌ها، پرداخت و تجربه خرید یکپارچه برای مشتریان.",
+      modal: "پیاده‌سازی فروشگاه آنلاین با تمرکز بر مدیریت سفارش، موجودی و امکانات سفارشی مرتبط با فروش محصولات دکوراسیون داخلی.",
       responsibilities: ["WooCommerce", "Custom Plugins", "Performance", "SEO"]
     },
     en: {
-      title: "Decochub",
-      desc: "An online store with product management, order handling, and a tailored shopping experience for interior decor products.",
-      modal: "Implementation of an online store focused on order management, inventory handling, and custom commerce features.",
+      title: "Interior Decoration E-commerce Platform",
+      desc: "An online store for interior decoration products with product management, order handling, payment processing, and a seamless shopping experience for customers.",
+      modal: "Implementation of an online store focused on order management, inventory handling, and custom commerce features for interior decor products.",
       responsibilities: ["WooCommerce", "Custom Plugins", "Performance", "SEO"]
     },
     techs: ["WordPress", "WooCommerce", "PHP", "JavaScript"],
@@ -2062,15 +2064,15 @@ const projects = [
     category: "corporate",
     image: "azarakhsh.png",
     fa: {
-      title: "آذرخش سولار",
-      desc: "وب‌سایت شرکتی با تمرکز بر معرفی خدمات، محصولات و پروژه‌های حوزه انرژی خورشیدی.",
-      modal: "توسعه وب‌سایت شرکتی با ساختار بهینه، مدیریت محتوای منظم و رعایت اصول سئو و تجربه کاربری.",
+      title: "وب‌سایت سازمانی آذرخش سولار",
+      desc: "وب‌سایت سازمانی با تمرکز بر معرفی خدمات، محصولات و پروژه‌های حوزه انرژی خورشیدی با ساختار بهینه و تجربه کاربری حرفه‌ای.",
+      modal: "توسعه وب‌سایت سازمانی با ساختار بهینه، مدیریت محتوای منظم و رعایت اصول سئو و تجربه کاربری برای ارائه خدمات و محصولات انرژی خورشیدی.",
       responsibilities: ["Custom WordPress Development", "Theme Development", "Performance Optimization", "Responsive Design"]
     },
     en: {
-      title: "Azarakhsh Solar",
-      desc: "A corporate website focused on presenting services, products, and solar energy projects.",
-      modal: "Development of a corporate website with an optimized structure, organized content management, and SEO-focused presentation.",
+      title: "Azarakhsh Solar Corporate Website",
+      desc: "A corporate website focused on presenting services, products, and solar energy projects with an optimized structure and professional user experience.",
+      modal: "Development of a corporate website with an optimized structure, organized content management, and SEO-focused presentation for solar energy services and products.",
       responsibilities: ["Custom WordPress Development", "Theme Development", "Performance Optimization", "Responsive Design"]
     },
     techs: ["WordPress", "PHP", "JavaScript", "CSS"],
@@ -2125,7 +2127,6 @@ const contactItems = [
   { key: "address", value: "تهران، میدان انقلاب، نبش خیابان ۱۲ فروردین، ساختمان پارک علم و فناوری دانشگاه تهران، پلاک ۱۳۰۲، طبقه سوم، واحد ۳۰۱", href: null },
   { key: "hours", value: "شنبه تا چهارشنبه ۹:۰۰ تا ۲۰:۰۰ — پنجشنبه پاسخگویی آنلاین", href: null }
 ];
-
 // ============================================================
 // RENDER FUNCTIONS
 // ============================================================
