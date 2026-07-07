@@ -644,7 +644,16 @@ section { padding:100px 0; position:relative; width:100%; overflow:hidden; }
 #portfolio { position:relative; }
 .portfolio-toolbar {
   display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
-  gap:16px; margin-bottom:40px;
+  gap:16px; margin-bottom:24px;
+}
+.portfolio-highlights {
+  display:flex; flex-wrap:wrap; gap:8px;
+  margin-bottom:24px;
+}
+.portfolio-highlight-chip {
+  padding:6px 12px; border-radius:999px;
+  background:var(--glass); border:1px solid var(--border);
+  color:var(--text-secondary); font-size:0.74rem;
 }
 .portfolio-filters {
   display:flex; flex-wrap:wrap; gap:8px;
@@ -693,6 +702,7 @@ section { padding:100px 0; position:relative; width:100%; overflow:hidden; }
   position:relative;
   transform-style:preserve-3d;
   perspective:1000px;
+  display:flex; flex-direction:column; height:100%;
 }
 .project-card:hover {
   border-color:var(--border-hover);
@@ -719,7 +729,7 @@ section { padding:100px 0; position:relative; width:100%; overflow:hidden; }
   aspect-ratio:1/1;
 }
 .project-cover img {
-  width:100%; height:100%; object-fit:cover;
+  width:100%; height:100%; object-fit:cover; object-position:center;
   transition:transform var(--transition-slow);
 }
 .project-card:hover .project-cover img { transform:scale(1.08); }
@@ -735,16 +745,16 @@ section { padding:100px 0; position:relative; width:100%; overflow:hidden; }
   backdrop-filter:blur(10px);
 }
 [dir="ltr"] .project-category-badge { right:auto; left:14px; }
-.project-info { padding:20px 24px 24px; }
+.project-info { padding:20px 24px 24px; display:flex; flex-direction:column; flex:1; }
 .project-info h3 { font-size:1.05rem; font-weight:700; margin-bottom:8px; }
-.project-info p { font-size:0.82rem; color:var(--text-secondary); line-height:1.7; margin-bottom:14px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.project-info p { font-size:0.82rem; color:var(--text-secondary); line-height:1.7; margin-bottom:14px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; min-height:2.8em; }
 .project-techs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
 .project-tech {
   padding:3px 12px; border-radius:100px;
   background:var(--glass); border:1px solid var(--border);
   font-size:0.68rem; font-family:var(--font-en); color:var(--text-muted);
 }
-.project-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.project-actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:auto; }
 .project-btn {
   padding:7px 18px; border-radius:var(--radius-sm);
   font-size:0.78rem; font-weight:500;
@@ -1370,9 +1380,17 @@ section { padding:100px 0; position:relative; width:100%; overflow:hidden; }
   <section id="portfolio">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="portfolio.title">نمونه‌کارها</h2>
-        <p class="section-subtitle" data-i18n="portfolio.subtitle">راهکارهایی که برای کسب‌وکارها خلق کرده‌ایم</p>
-        <p class="section-subtitle" data-i18n="portfolio.desc" style="margin-top:8px;max-width:600px;margin-left:auto;margin-right:auto;">نمونه‌ای از پروژه‌ها و راهکارهای نرم‌افزاری توسعه‌یافته توسط شرکت نرم‌افزاری میثاق در حوزه‌های مختلف.</p>
+        <h2 class="section-title" data-i18n="portfolio.title">نمونه‌کارهای مهندسی نرم‌افزار</h2>
+        <p class="section-subtitle" data-i18n="portfolio.subtitle">پروژه‌هایی در حوزه سامانه‌های سازمانی، سلامت، CRM و زیرساخت نرم‌افزاری</p>
+        <p class="section-subtitle" data-i18n="portfolio.desc" style="margin-top:8px;max-width:720px;margin-left:auto;margin-right:auto;">نمونه‌ای از پروژه‌های توسعه‌یافته برای سازمان‌ها و کسب‌وکارهایی که نیازمند سامانه‌های اختصاصی، کنترل فرآیندها و پایداری فنی هستند.</p>
+      </div>
+      <div class="portfolio-highlights reveal">
+        <span class="portfolio-highlight-chip" data-i18n="portfolio.highlight1">سامانه‌های سازمانی</span>
+        <span class="portfolio-highlight-chip" data-i18n="portfolio.highlight2">Healthcare</span>
+        <span class="portfolio-highlight-chip" data-i18n="portfolio.highlight3">CRM</span>
+        <span class="portfolio-highlight-chip" data-i18n="portfolio.highlight4">SaaS</span>
+        <span class="portfolio-highlight-chip" data-i18n="portfolio.highlight5">Desktop Software</span>
+        <span class="portfolio-highlight-chip" data-i18n="portfolio.highlight6">Web Applications</span>
       </div>
       <div class="portfolio-toolbar reveal">
         <div class="portfolio-filters" id="portfolio-filters" role="tablist"></div>
@@ -1635,22 +1653,29 @@ const T = {
     "services.s11desc": "طراحی و توسعه APIهای RESTful و وب‌سرویس‌های یکپارچه.",
     "services.s12": "Cloud-ready Solutions",
     "services.s12desc": "راهکارهایی آماده استقرار در فضای ابری با مقیاس‌پذیری بالا.",
-    "portfolio.title": "نمونه‌کارها",
-    "portfolio.subtitle": "راهکارهایی که برای کسب‌وکارها خلق کرده‌ایم",
-    "portfolio.desc": "نمونه‌ای از پروژه‌ها و راهکارهای نرم‌افزاری توسعه‌یافته توسط شرکت نرم‌افزاری میثاق در حوزه‌های مختلف.",
+    "portfolio.title": "نمونه‌کارهای مهندسی نرم‌افزار",
+    "portfolio.subtitle": "پروژه‌هایی در حوزه سامانه‌های سازمانی، سلامت، CRM و زیرساخت نرم‌افزاری",
+    "portfolio.desc": "نمونه‌ای از پروژه‌های توسعه‌یافته برای سازمان‌ها و کسب‌وکارهایی که نیازمند سامانه‌های اختصاصی، کنترل فرآیندها و پایداری فنی هستند.",
     "portfolio.search": "جستجوی پروژه...",
     "portfolio.all": "همه پروژه‌ها",
-    "portfolio.healthtech": "سلامت",
+    "portfolio.healthcare": "سلامت",
+    "portfolio.enterprise": "سامانه سازمانی",
     "portfolio.crm": "CRM",
     "portfolio.corporate": "شرکتی",
     "portfolio.ecommerce": "فروشگاه",
     "portfolio.marketplace": "مارکت‌پلیس",
-    "portfolio.medical": "پزشکی",
     "portfolio.desktop": "دسکتاپ",
+    "portfolio.highlight1": "سامانه‌های سازمانی",
+    "portfolio.highlight2": "Healthcare",
+    "portfolio.highlight3": "CRM",
+    "portfolio.highlight4": "SaaS",
+    "portfolio.highlight5": "Desktop Software",
+    "portfolio.highlight6": "Web Applications",
     "portfolio.empty": "هیچ پروژه‌ای یافت نشد",
     "portfolio.details": "مشاهده جزئیات",
-    "portfolio.github": "گیت‌هاب",
+    "portfolio.private": "پروژه اختصاصی",
     "portfolio.demo": "دمو",
+    "portfolio.requestDemo": "درخواست دمو",
     "modal.close": "بستن",
     "modal.features": "ویژگی‌های کلیدی",
     "modal.responsibilities": "مسئولیت‌ها",
@@ -1760,22 +1785,29 @@ const T = {
     "services.s11desc": "Designing and developing RESTful APIs and integrated web services.",
     "services.s12": "Cloud-ready Solutions",
     "services.s12desc": "Solutions ready for cloud deployment with high scalability.",
-    "portfolio.title": "Portfolio",
-    "portfolio.subtitle": "Solutions we've built for businesses",
-    "portfolio.desc": "A selection of software projects and solutions developed by Misagh Software Engineering across various domains.",
+    "portfolio.title": "Software Engineering Portfolio",
+    "portfolio.subtitle": "Projects in enterprise systems, healthcare, CRM, and software infrastructure",
+    "portfolio.desc": "A selection of software projects delivered for organizations and businesses that require custom systems, process control, and technical reliability.",
     "portfolio.search": "Search projects...",
     "portfolio.all": "All Projects",
-    "portfolio.healthtech": "HealthTech",
+    "portfolio.healthcare": "Healthcare",
+    "portfolio.enterprise": "Enterprise Systems",
     "portfolio.crm": "CRM",
     "portfolio.corporate": "Corporate",
     "portfolio.ecommerce": "E-Commerce",
     "portfolio.marketplace": "Marketplace",
-    "portfolio.medical": "Medical",
     "portfolio.desktop": "Desktop",
+    "portfolio.highlight1": "Enterprise Systems",
+    "portfolio.highlight2": "Healthcare",
+    "portfolio.highlight3": "CRM",
+    "portfolio.highlight4": "SaaS",
+    "portfolio.highlight5": "Desktop Software",
+    "portfolio.highlight6": "Web Applications",
     "portfolio.empty": "No projects found",
     "portfolio.details": "View Details",
-    "portfolio.github": "GitHub",
+    "portfolio.private": "Private Project",
     "portfolio.demo": "Demo",
+    "portfolio.requestDemo": "Demo Available Upon Request",
     "modal.close": "Close",
     "modal.features": "Key Features",
     "modal.responsibilities": "Responsibilities",
@@ -1840,30 +1872,29 @@ const serviceIcons = ['⚙️','🏗️','🌐','🖥️','📱','📐','🔍','
 
 const categories = [
   { key: "all", fa: "همه پروژه‌ها", en: "All Projects" },
-  { key: "healthtech", fa: "سلامت", en: "HealthTech" },
+  { key: "healthcare", fa: "سلامت", en: "Healthcare" },
+  { key: "enterprise", fa: "سامانه سازمانی", en: "Enterprise Systems" },
   { key: "crm", fa: "CRM", en: "CRM" },
-  { key: "corporate", fa: "شرکتی", en: "Corporate" },
+  { key: "desktop", fa: "دسکتاپ", en: "Desktop" },
   { key: "ecommerce", fa: "فروشگاه", en: "E-Commerce" },
-  { key: "marketplace", fa: "مارکت‌پلیس", en: "Marketplace" },
-  { key: "medical", fa: "پزشکی", en: "Medical" },
-  { key: "desktop", fa: "دسکتاپ", en: "Desktop" }
+  { key: "marketplace", fa: "مارکت‌پلیس", en: "Marketplace" }
 ];
 
 const projects = [
   {
     id: 1,
-    category: "healthtech",
+    category: "healthcare",
     image: "darmangaran.png",
     fa: {
       title: "درمانگران برتر",
-      desc: "پلتفرم جامع خدمات سلامت با امکان معرفی پزشکان، نوبت‌دهی اینترنتی، مشاوره آنلاین و مدیریت اطلاعات بیماران با تمرکز بر عملکرد، امنیت و تجربه کاربری.",
-      modal: "این سامانه با هدف تسهیل دسترسی کاربران به خدمات سلامت طراحی و توسعه یافته است. ساختار نرم‌افزار بر پایه معماری مقیاس‌پذیر ایجاد شده و امکان مدیریت پزشکان، نوبت‌دهی اینترنتی، مشاوره آنلاین، مدیریت اطلاعات بیماران و توسعه ماژول‌های جدید را فراهم می‌کند.",
+      desc: "سکو و پلتفرم خدمات سلامت با مدیریت اطلاعات پزشکی، نوبت‌دهی و دسترسی کاربران در محیطی پایدار و قابل توسعه.",
+      modal: "این پروژه در حوزه خدمات سلامت و مدیریت تعاملات دیجیتال طراحی شده است. ساختار فنی آن بر پایه معماری قابل توسعه و مدیریت داده‌های حساس ایجاد شده و امکان توسعه ماژول‌های جدید را در آینده حفظ می‌کند.",
       responsibilities: ["Backend Development", "Database Design", "API Development", "Performance Optimization", "Security Improvements"]
     },
     en: {
       title: "Darmangaran Bartar",
-      desc: "Comprehensive health services platform with doctor introduction, online appointment booking, teleconsultation, and patient information management focused on performance, security, and user experience.",
-      modal: "This system was designed to facilitate user access to health services. The software architecture is built on a scalable foundation enabling doctor management, online appointment booking, teleconsultation, patient information management, and new module development.",
+      desc: "A health services platform for managing medical information, appointments, and user access in a stable and extensible environment.",
+      modal: "This project was developed for digital health service delivery. Its technical structure is based on a scalable architecture and secure data handling, allowing future module expansion.",
       responsibilities: ["Backend Development", "Database Design", "API Development", "Performance Optimization", "Security Improvements"]
     },
     techs: ["PHP", "Laravel", "MySQL", "REST API", "JavaScript"],
@@ -1871,116 +1902,158 @@ const projects = [
   },
   {
     id: 2,
+    category: "healthcare",
+    image: "shokri.jpg",
+    fa: {
+      title: "سامانه مدیریت درمان بیماران",
+      desc: "سامانه‌ای برای مدیریت پرونده بیماران، روند درمان، ثبت سوابق پزشکی و کنترل فرآیندهای درمانی در محیطی متمرکز و قابل پیگیری.",
+      modal: "این سامانه برای مدیریت دیجیتال فرآیند درمان طراحی شده است. هر بیمار در آن دارای پرونده اختصاصی است و پزشک می‌تواند وضعیت درمان، یادداشت‌های تخصصی و روند درمان را ثبت و پیگیری کند.",
+      responsibilities: ["Patient Management", "Treatment Workflow", "Medical Records", "QR Code Integration", "Operational Tracking"]
+    },
+    en: {
+      title: "Patient Treatment Management System",
+      desc: "A system for managing patient records, treatment workflows, medical history, and clinical operations in a centralized environment.",
+      modal: "This system was developed to digitize treatment operations. Each patient has a dedicated record, and physicians can track treatment status, specialist notes, and ongoing care processes.",
+      responsibilities: ["Patient Management", "Treatment Workflow", "Medical Records", "QR Code Integration", "Operational Tracking"]
+    },
+    techs: ["PHP", "Laravel", "MySQL", "QR Code", "JavaScript"],
+    website: null,
+    private: true
+  },
+  {
+    id: 3,
+    category: "healthcare",
+    image: "panel.png",
+    fa: {
+      title: "پنل اختصاصی مدیریت پزشکان",
+      desc: "پنل اختصاصی برای مدیریت اطلاعات پزشک، پروفایل، برنامه حضور، نوبت‌ها، تعرفه ویزیت، اشتراک و دسترسی‌های کاربری در یک محیط سازمانی و سریع.",
+      modal: "این پنل برای استفاده حرفه‌ای پزشکان در محیطی امن و قابل مدیریت طراحی شده است. امکانات آن شامل ویرایش پروفایل، مدیریت برنامه حضور، کنترل نوبت‌ها، تعیین تعرفه ویزیت، مدیریت اشتراک و احراز هویت کاربر است.",
+      responsibilities: ["Doctor Profile Management", "Schedule Management", "Appointment Handling", "Subscription Management", "Authentication"]
+    },
+    en: {
+      title: "Doctor Management Panel",
+      desc: "A dedicated panel for managing physician profiles, schedules, appointments, consultation fees, subscriptions, and user access in a fast and structured environment.",
+      modal: "This panel was built for professional use by physicians in a secure and manageable environment. It supports profile editing, schedule control, appointment handling, fee configuration, subscription management, and user authentication.",
+      responsibilities: ["Doctor Profile Management", "Schedule Management", "Appointment Handling", "Subscription Management", "Authentication"]
+    },
+    techs: ["Laravel", "PHP", "MySQL", "JavaScript", "REST API"],
+    website: null,
+    private: true
+  },
+  {
+    id: 4,
+    category: "enterprise",
+    image: "license.png",
+    fa: {
+      title: "سامانه مدیریت لایسنس و اشتراک نرم‌افزار",
+      desc: "زیرساختی برای تولید و اعتبارسنجی لایسنس، تعریف پلن‌های اشتراک، تمدید اشتراک، مدیریت کاربران و کنترل دسترسی در سطح محصول.",
+      modal: "این سامانه به‌عنوان یک زیرساخت نرم‌افزاری برای مدیریت مجوز محصولات طراحی شده است. در آن می‌توان لایسنس‌ها را تولید، اعتبارسنجی، فعال یا غیرفعال کرد و وضعیت اشتراک‌ها را در یک پنل مدیریتی کنترل نمود.",
+      responsibilities: ["License Generation", "License Validation", "Subscription Plans", "User Management", "Access Control", "REST API"]
+    },
+    en: {
+      title: "Software License Management Platform",
+      desc: "An infrastructure layer for generating and validating licenses, defining subscription plans, renewing access, managing users, and controlling permissions across products.",
+      modal: "This platform was built as an enterprise software foundation for product licensing. It supports license issuance, validation, activation, deactivation, subscription control, and centralized administrative oversight.",
+      responsibilities: ["License Generation", "License Validation", "Subscription Plans", "User Management", "Access Control", "REST API"]
+    },
+    techs: ["Laravel", "PHP", "MySQL", "REST API", "JavaScript"],
+    website: null,
+    private: true
+  },
+  {
+    id: 5,
     category: "crm",
     image: "crm.png",
     fa: {
       title: "CRM درمانگران برتر",
-      desc: "سامانه اختصاصی مدیریت ارتباط با مشتریان و فرآیندهای داخلی با قابلیت مدیریت کاربران، گزارش‌گیری و اتوماسیون گردش کار.",
-      modal: "سامانه CRM با هدف مدیریت ارتباط با مشتریان، پیگیری درخواست‌ها، کنترل فرآیندها و ایجاد گزارش‌های مدیریتی توسعه یافته است.",
-      responsibilities: ["CRM Architecture", "Backend", "User Management", "Reporting", "API Integration"]
+      desc: "سامانه‌ای برای مدیریت ارتباط با مشتریان، پیگیری درخواست‌ها، کنترل فرآیندهای داخلی و گزارش‌گیری مدیریتی.",
+      modal: "این پروژه برای مدیریت فرآیندهای فروش و ارتباط با مشتریان طراحی شده است و امکان پیگیری درخواست‌ها، مدیریت کاربران و ارائه گزارش‌های مدیریتی را فراهم می‌کند.",
+      responsibilities: ["CRM Architecture", "Backend Development", "User Management", "Reporting", "Workflow Control"]
     },
     en: {
       title: "Darmangaran Bartar CRM",
-      desc: "Custom CRM system for customer relationship management and internal processes with user management, reporting, and workflow automation capabilities.",
-      modal: "The CRM system was developed to manage customer relationships, track requests, control processes, and generate management reports.",
-      responsibilities: ["CRM Architecture", "Backend", "User Management", "Reporting", "API Integration"]
+      desc: "A system for managing customer relationships, tracking requests, controlling internal workflows, and producing management reports.",
+      modal: "This project was developed to support customer-facing and internal operations, including request tracking, user administration, and management reporting.",
+      responsibilities: ["CRM Architecture", "Backend Development", "User Management", "Reporting", "Workflow Control"]
     },
     techs: ["PHP", "Laravel", "MySQL", "JavaScript", "REST API"],
-    website: "https://crm.darmangaranbartar.com/"
+    website: null,
+    private: true
   },
   {
-    id: 3,
-    category: "corporate",
-    image: "azarakhsh.png",
+    id: 6,
+    category: "desktop",
+    image: "xbody.jpg",
     fa: {
-      title: "آذرخش سولار",
-      desc: "وب‌سایت رسمی شرکت مهندسی آذرخش سولار با تمرکز بر معرفی خدمات، محصولات و پروژه‌های حوزه انرژی خورشیدی.",
-      modal: "توسعه وب‌سایت شرکتی با طراحی اختصاصی، ساختار بهینه، مدیریت محتوای پیشرفته و رعایت اصول SEO.",
-      responsibilities: ["Custom WordPress Development", "Theme Development", "Performance Optimization", "Responsive Design"]
+      title: "XBody Controller",
+      desc: "نرم‌افزار دسکتاپ برای ارتباط با دستگاه XBody، کنترل عملکرد و مدیریت داده‌های سخت‌افزاری.",
+      modal: "این پروژه برای برقراری ارتباط مستقیم با دستگاه XBody و مدیریت داده‌های مرتبط با آن توسعه یافته است.",
+      responsibilities: ["C++", "Hardware Communication", "Desktop Development", "Performance Optimization"]
     },
     en: {
-      title: "Azarakhsh Solar",
-      desc: "Official website of Azarakhsh Solar Engineering Company focusing on introducing services, products, and solar energy projects.",
-      modal: "Corporate website development with custom design, optimized structure, advanced content management, and SEO principles.",
-      responsibilities: ["Custom WordPress Development", "Theme Development", "Performance Optimization", "Responsive Design"]
+      title: "XBody Controller",
+      desc: "Desktop software for communicating with the XBody device, controlling its behavior, and managing hardware-related data.",
+      modal: "This project was developed for direct communication with the XBody device and management of its associated data.",
+      responsibilities: ["C++", "Hardware Communication", "Desktop Development", "Performance Optimization"]
     },
-    techs: ["WordPress", "PHP", "JavaScript", "CSS"],
+    techs: ["C++", "Windows", "Visual Studio"],
     website: null
   },
   {
-    id: 4,
-    category: "ecommerce",
-    image: "decochub.png",
-    fa: {
-      title: "دکوچوب",
-      desc: "فروشگاه اینترنتی محصولات دکوراسیون داخلی با امکانات اختصاصی فروش، مدیریت سفارشات و توسعه قابلیت‌های سفارشی.",
-      modal: "پیاده‌سازی فروشگاه اینترنتی با قابلیت مدیریت محصولات، سفارش‌ها و توسعه امکانات اختصاصی ووکامرس.",
-      responsibilities: ["WooCommerce", "Custom Plugins", "Performance", "SEO"]
-    },
-    en: {
-      title: "Decochub",
-      desc: "Online store for interior decoration products with custom sales features, order management, and custom capabilities development.",
-      modal: "E-commerce implementation with product management, order management, and custom WooCommerce features development.",
-      responsibilities: ["WooCommerce", "Custom Plugins", "Performance", "SEO"]
-    },
-    techs: ["WordPress", "WooCommerce", "PHP", "JavaScript"],
-    website: null
-  },
-  {
-    id: 5,
+    id: 7,
     category: "marketplace",
     image: "hani.png",
     fa: {
       title: "Hani Parts",
-      desc: "فروشگاه تخصصی قطعات یدکی دستگاه‌های بستنی‌ساز با قابلیت مدیریت محصولات، سفارش‌ها و امکانات اختصاصی فروشندگان.",
-      modal: "پیاده‌سازی فروشگاه اینترنتی تخصصی با توسعه امکانات سفارشی ووکامرس، مدیریت فروشندگان و بهینه‌سازی فرآیند خرید.",
+      desc: "فروشگاه تخصصی قطعات یدکی با مدیریت محصولات، سفارش‌ها و فرآیندهای مرتبط با فروشندگان و مشتریان.",
+      modal: "این پروژه برای پیاده‌سازی یک فروشگاه تخصصی با امکانات سفارشی و مدیریت فرآیندهای خرید و سفارش‌دهی طراحی شده است.",
       responsibilities: ["WooCommerce Development", "Custom Features", "Marketplace Functions", "Performance"]
     },
     en: {
       title: "Hani Parts",
-      desc: "Specialized spare parts store for ice cream machines with product management, order management, and custom seller features.",
-      modal: "Specialized e-commerce implementation with custom WooCommerce features, seller management, and purchase process optimization.",
+      desc: "A specialized spare-parts marketplace with product management, order handling, and seller-related processes.",
+      modal: "This project was implemented as a specialized storefront with custom features and streamlined buying workflows.",
       responsibilities: ["WooCommerce Development", "Custom Features", "Marketplace Functions", "Performance"]
     },
     techs: ["WordPress", "WooCommerce", "PHP", "JavaScript"],
     website: "https://hani-parts.ir/"
   },
   {
-    id: 6,
-    category: "medical",
-    image: "shokri.jpg",
+    id: 8,
+    category: "ecommerce",
+    image: "decochub.png",
     fa: {
-      title: "سامانه هوشمند مدیریت درمان بیماران",
-      desc: "سامانه اتوماسیون تخصصی بیمارستان دندان‌پزشکی جهت مدیریت پرونده بیماران، فرآیند درمان و ثبت سوابق پزشکی.",
-      modal: "این سامانه فرآیند درمان بیماران را به صورت دیجیتال مدیریت می‌کند. پس از تشکیل پرونده، برای هر بیمار کارت اختصاصی دارای QR Code صادر می‌شود. پزشک با اسکن کارت، پرونده بیمار را مشاهده کرده و وضعیت دندان‌ها، اقدامات درمانی، یادداشت‌های تخصصی و روند درمان را ثبت و مدیریت می‌کند.",
-      responsibilities: ["Patient Management", "QR Code System", "Treatment Workflow", "Medical Records", "Digital Forms"]
+      title: "دکوچوب",
+      desc: "فروشگاه اینترنتی با مدیریت محصولات، سفارش‌ها و تجربه خرید برای محصولات دکوراسیون داخلی.",
+      modal: "پیاده‌سازی فروشگاه آنلاین با تمرکز بر مدیریت سفارش، موجودی و امکانات سفارشی مرتبط با فروش.",
+      responsibilities: ["WooCommerce", "Custom Plugins", "Performance", "SEO"]
     },
     en: {
-      title: "Smart Patient Treatment Management System",
-      desc: "Specialized automation system for dental hospital managing patient records, treatment processes, and medical history.",
-      modal: "This system digitally manages the patient treatment process. After registration, each patient receives a dedicated QR Code card. The doctor scans the card to view the patient's record, dental status, treatment actions, specialist notes, and treatment progress.",
-      responsibilities: ["Patient Management", "QR Code System", "Treatment Workflow", "Medical Records", "Digital Forms"]
+      title: "Decochub",
+      desc: "An online store with product management, order handling, and a tailored shopping experience for interior decor products.",
+      modal: "Implementation of an online store focused on order management, inventory handling, and custom commerce features.",
+      responsibilities: ["WooCommerce", "Custom Plugins", "Performance", "SEO"]
     },
-    techs: ["PHP", "Laravel", "MySQL", "QR Code", "JavaScript"],
+    techs: ["WordPress", "WooCommerce", "PHP", "JavaScript"],
     website: null
   },
   {
-    id: 7,
-    category: "desktop",
-    image: "xbody.jpg",
+    id: 9,
+    category: "corporate",
+    image: "azarakhsh.png",
     fa: {
-      title: "XBody Controller",
-      desc: "نرم‌افزار ویندوزی جهت کنترل دستگاه XBody، ارتباط با سخت‌افزار و مدیریت داده‌های دستگاه.",
-      modal: "توسعه نرم‌افزار دسکتاپ جهت ارتباط مستقیم با دستگاه XBody، مدیریت اطلاعات، کنترل عملکرد دستگاه و پردازش داده‌ها.",
-      responsibilities: ["C++", "Hardware Communication", "Desktop Development", "Performance Optimization"]
+      title: "آذرخش سولار",
+      desc: "وب‌سایت شرکتی با تمرکز بر معرفی خدمات، محصولات و پروژه‌های حوزه انرژی خورشیدی.",
+      modal: "توسعه وب‌سایت شرکتی با ساختار بهینه، مدیریت محتوای منظم و رعایت اصول سئو و تجربه کاربری.",
+      responsibilities: ["Custom WordPress Development", "Theme Development", "Performance Optimization", "Responsive Design"]
     },
     en: {
-      title: "XBody Controller",
-      desc: "Windows software for XBody device control, hardware communication, and device data management.",
-      modal: "Desktop software development for direct communication with XBody device, information management, device performance control, and data processing.",
-      responsibilities: ["C++", "Hardware Communication", "Desktop Development", "Performance Optimization"]
+      title: "Azarakhsh Solar",
+      desc: "A corporate website focused on presenting services, products, and solar energy projects.",
+      modal: "Development of a corporate website with an optimized structure, organized content management, and SEO-focused presentation.",
+      responsibilities: ["Custom WordPress Development", "Theme Development", "Performance Optimization", "Responsive Design"]
     },
-    techs: ["C++", "Windows", "Visual Studio"],
+    techs: ["WordPress", "PHP", "JavaScript", "CSS"],
     website: null
   }
 ];
@@ -2112,6 +2185,14 @@ function renderProjects() {
   container.innerHTML = filtered.map(p => {
     const data = lang === 'fa' ? p.fa : p.en;
     const catLabel = lang === 'fa' ? (catMap[p.category]?.fa || p.category) : (catMap[p.category]?.en || p.category);
+    const secondaryType = p.private ? 'private' : (p.website ? 'demo' : 'request');
+    const secondaryLabel = secondaryType === 'private'
+      ? T[lang]['portfolio.private']
+      : (secondaryType === 'demo' ? T[lang]['portfolio.demo'] : T[lang]['portfolio.requestDemo']);
+    const secondaryAction = secondaryType === 'demo'
+      ? `event.stopPropagation();window.open('${p.website}','_blank')`
+      : 'event.stopPropagation();';
+
     return `
       <div class="project-card" onclick="openProject(${p.id})">
         <div class="project-cover">
@@ -2125,7 +2206,7 @@ function renderProjects() {
           <div class="project-techs">${p.techs.slice(0,4).map(t => `<span class="project-tech">${t}</span>`).join('')}</div>
           <div class="project-actions">
             <button class="project-btn project-btn-primary" onclick="event.stopPropagation();openProject(${p.id})">${T[lang]['portfolio.details']}</button>
-            <button class="project-btn project-btn-ghost" onclick="event.stopPropagation();window.open('https://github.com','_blank')">${T[lang]['portfolio.github']}</button>
+            <button class="project-btn project-btn-ghost" onclick="${secondaryAction}">${secondaryLabel}</button>
           </div>
         </div>
       </div>
@@ -2301,6 +2382,7 @@ function openProject(id) {
   const catMap = {};
   categories.forEach(c => { catMap[c.key] = c; });
   const catLabel = lang === 'fa' ? (catMap[p.category]?.fa || p.category) : (catMap[p.category]?.en || p.category);
+  const privateBadge = p.private ? `<span class="modal-badge" style="background:rgba(249,115,22,0.1);border-color:rgba(249,115,22,0.2);color:var(--accent-orange);">${T[lang]['portfolio.private']}</span>` : '';
   
   let galleryHtml = '';
   if (p.gallery && p.gallery.length > 0) {
@@ -2333,6 +2415,7 @@ function openProject(id) {
       <h2>${data.title}</h2>
       <div class="modal-meta">
         <span class="modal-badge">${catLabel}</span>
+        ${privateBadge}
         <span class="modal-badge" style="background:rgba(16,185,129,0.1);border-color:rgba(16,185,129,0.2);color:#10b981;">${p.date || '2024'}</span>
       </div>
       <p style="color:var(--text-secondary);font-size:0.92rem;line-height:2;margin-bottom:24px;">${data.modal || data.desc}</p>
