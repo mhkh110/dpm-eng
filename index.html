@@ -929,7 +929,7 @@ section { padding:100px 0; position:relative; width:100%; overflow:hidden; }
 .fc-toggle svg { width:24px; height:24px; transition:transform var(--transition); }
 #floating-contact.open .fc-toggle { transform:rotate(45deg); }
 .fc-menu {
-  position:absolute; bottom:75px; left:0; right:auto;
+  position:absolute; bottom:75px; left:0;
   display:flex; flex-direction:column; gap:10px;
   opacity:0; visibility:hidden; transform:translateY(10px);
   transition:all var(--transition);
@@ -940,15 +940,16 @@ section { padding:100px 0; position:relative; width:100%; overflow:hidden; }
 .fc-item {
   display:flex; align-items:center; gap:10px;
   white-space:nowrap;
-  flex-direction:row;
 }
-[dir="ltr"] .fc-item { flex-direction:row-reverse; }
+.fc-item-btn { order:1; }
+.fc-item-label { order:2; }
+[dir="ltr"] .fc-item-btn { order:2; }
+[dir="ltr"] .fc-item-label { order:1; }
 .fc-item-label {
   padding:6px 14px; border-radius:var(--radius-sm);
   background:var(--glass); border:1px solid var(--border);
   backdrop-filter:blur(var(--blur));
   font-size:0.78rem; color:var(--text-secondary);
-  flex-shrink:0;
 }
 .fc-item-btn {
   width:42px; height:42px; border-radius:50%;
